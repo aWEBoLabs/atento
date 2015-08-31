@@ -1,0 +1,25 @@
+.breadcrumbs{
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+  display: table;
+  li{
+    list-style: none;
+    display: inline-block;
+    font-family: Omnes;
+    font-size: 12px;
+    color: #9B9B9B;
+    margin-right: 8px;
+    a{
+      color: #9B9B9B;
+      text-decoration: none;
+    }
+  }
+  li.last{
+    color: #005589;
+    margin-right: 0;
+    a{
+      color: #005589;
+    }
+  }
+}

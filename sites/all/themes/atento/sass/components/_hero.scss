@@ -1,0 +1,48 @@
+#block-ds-extras-hero{
+  min-width: $desktop-width;
+  height: 198px;
+  overflow: hidden;
+  
+  .block__content{
+    position: relative;
+  }
+  .info{
+    width: $desktop-width;
+    padding: 0 30px;
+    box-sizing: border-box;
+    left: 50%;
+    margin-left: -($desktop-width/2);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    margin-top: 40px;
+  }
+  .hero-background{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -720px;
+    z-index: 0;
+  }
+  
+  .hero-icon{
+    float: left;
+    width: 80px;
+  }
+  h1{
+    font-family: Omnes;
+    font-weight: 600;
+    float: left;
+    width: 247px;
+    margin-right: 20px;
+    color: $cat-dark-blue;
+    font-size: 36px;
+  }
+  .hero-body{
+    font-family: Omnes;
+    font-size: 18px;
+    float: left;
+    width: 350px;
+    color: $cat-dark-blue;
+  }
+}

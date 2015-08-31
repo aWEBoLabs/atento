@@ -1,0 +1,46 @@
+#block-menu-block-1{
+  background: $cat-dark-blue;
+  clear: both;
+  padding: 32px 0 12px;
+  .menu-block-wrapper{
+    width: $desktop-width;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  ul.menu{
+    list-style: none;
+    display: table;
+    margin: 0;
+    text-align: right;
+    width: 100%;
+    > li{
+      display: inline-block;
+      text-align: left;
+    }
+    > li > a{
+      display: table;
+      width: 88px;
+      height: 44px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-family: Omnes;
+      font-size: 12px;
+      box-sizing: border-box;
+      padding: 0 10px;
+    }
+    > li > a span{
+      display: table-cell;
+      vertical-align: middle;
+    }
+    > li.active-trail > a, 
+    > li > a:hover{
+      background: white;
+      color: $cat-dark-blue;
+    }
+    > li ul{
+      display: none;
+    }
+  }
+}

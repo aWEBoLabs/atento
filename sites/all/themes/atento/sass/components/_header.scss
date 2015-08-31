@@ -1,0 +1,17 @@
+.l-branding{
+  width: $desktop-width;
+  padding: 0 30px;
+  margin: 22px auto 0;
+  box-sizing: border-box;
+}
+.l-branding:after{
+  content: "";
+  clear: both;
+  display: table;
+  height: 0;
+}
+.site-logo{
+  margin-top: 32px;
+  float: left;
+  display: block;
+}

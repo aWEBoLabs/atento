@@ -1,0 +1,12 @@
+.l-branding{
+  width: $desktop-width;
+  padding: 0 30px;
+  box-sizing: border-box;
+  margin: 22px auto 0;
+}
+.l-branding:after{
+  content: "";
+  clear: both;
+  display: table;
+  height: 0;
+}

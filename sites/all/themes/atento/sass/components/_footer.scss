@@ -1,0 +1,29 @@
+.l-footer{
+  width: $desktop-width;
+  padding: 0 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+#block-menu-block-2{
+  .menu-block-wrapper:after{
+    clear: both;
+    content: "";
+    display: table;
+    height: 0;
+  }
+  .menu-block-wrapper > ul.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    > li{
+      width: 176px;
+      float: left;
+      list-style: none;
+      box-sizing: border-box;
+      padding-right: 20px;
+      .icon-hover{
+        display: none;
+      }
+    }
+  }
+}

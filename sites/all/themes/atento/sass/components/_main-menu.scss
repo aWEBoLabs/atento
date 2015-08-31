@@ -1,0 +1,62 @@
+.l-region--branding{
+  float: right;
+}
+#block-system-main-menu{
+  margin: 0 0 22px;
+  text-align: right;
+  float: left;
+
+  > ul.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    text-align: left;
+  }
+  > ul.menu > li{
+    font-family: Omnes;
+    list-style: none;
+    display: inline-block;
+    ul{
+      display: none;
+    }
+  }
+  > ul.menu > li > a{
+    display: block;
+    width: 88px;
+    height: 88px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    padding-top: 60px;
+    color: #9A9A9A;
+    text-decoration: none;
+    font-size: 14px;
+    
+    .menu-icon{
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      margin-left: -25px;
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+    }
+    
+    .menu-icon .icon-hover{
+      display: none;
+    }
+  }
+  
+  > ul.menu > li > a:hover, 
+  > ul.menu > li.active-trail > a{
+    background: $cat-dark-blue;
+    color: white;
+    .menu-icon .icon{
+      display: none;
+    }
+    .menu-icon .icon-hover{
+      display: block;
+    }
+  }
+}
