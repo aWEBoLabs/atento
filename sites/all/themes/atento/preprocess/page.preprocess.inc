@@ -4,6 +4,11 @@
  * Implements hook_preprocess_page().
  */
 function atento_preprocess_page(&$variables) {
-  // You can use preprocess hooks to modify the variables before they are passed
-  // to the theme function or template file.
+  if ( !(arg(0) == 'taxonomy' && arg(1) == 'term' && intval(arg(2)) > 0 && ($term = taxonomy_term_load(arg(2)))) ) {
+    return;
+  }
+  
+  if ( $term->vid == 1 ) {
+    $variables['theme_hook_suggestions'][] = 'page__taxonomy__vid_' . $term->vid;
+  }
 }

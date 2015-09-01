@@ -1,6 +1,10 @@
 .l-content-inner{
   width: $desktop-width;
-  padding: 0 30px;
+  padding: 0 25px 44px;
   margin: 0 auto;
   box-sizing: border-box;
+  .l-content-inner-inner{
+    border-bottom: solid 1px #CDCDCD;
+    padding-bottom: 88px;
+  }
 }

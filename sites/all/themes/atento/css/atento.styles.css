@@ -64,9 +64,13 @@ body {
 /* line 1, ../sass/components/_content.scss */
 .l-content-inner {
   width: 1020px;
-  padding: 0 30px;
+  padding: 0 25px 44px;
   margin: 0 auto;
   box-sizing: border-box; }
+  /* line 6, ../sass/components/_content.scss */
+  .l-content-inner .l-content-inner-inner {
+    border-bottom: solid 1px #CDCDCD;
+    padding-bottom: 88px; }
 
 /* line 1, ../sass/components/_footer.scss */
 .l-footer {
@@ -325,5 +329,82 @@ body {
     /* line 42, ../sass/components/_subcategories.scss */
     #block-menu-block-1 ul.menu > li ul {
       display: none; }
+
+/* line 2, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.taxonomy-term.vocabulary-categories .landing-body {
+  width: 304px;
+  min-height: 291px;
+  background: #005589;
+  padding: 40px 50px 65px 42px;
+  font-family: Omnes;
+  font-size: 36px;
+  color: white;
+  float: left; }
+
+/* line 14, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+#block-atentom-taxonomy-children {
+  margin-left: 440px; }
+  /* line 16, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+  #block-atentom-taxonomy-children ul.taxonomy-children {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: table; }
+  /* line 22, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+  #block-atentom-taxonomy-children ul.taxonomy-children li {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2px 0;
+    display: inline-block; }
+    /* line 28, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+    #block-atentom-taxonomy-children ul.taxonomy-children li a {
+      display: block;
+      padding: 27px 14px 34px 27px;
+      cursor: pointer;
+      width: 264px;
+      min-height: 132px;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 22px;
+      font-family: Omnes;
+      color: #005589; }
+      /* line 41, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      #block-atentom-taxonomy-children ul.taxonomy-children li a .icon .icon {
+        display: block; }
+      /* line 44, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      #block-atentom-taxonomy-children ul.taxonomy-children li a .icon .icon-hover {
+        display: none; }
+      /* line 47, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      #block-atentom-taxonomy-children ul.taxonomy-children li a > .icon {
+        float: left;
+        width: 70px;
+        height: 70px;
+        overflow: hidden; }
+      /* line 53, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      #block-atentom-taxonomy-children ul.taxonomy-children li a .title {
+        margin-top: 18px;
+        margin-left: 84px;
+        display: table;
+        vertical-align: middle;
+        width: 90px;
+        height: 36px; }
+      /* line 61, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      #block-atentom-taxonomy-children ul.taxonomy-children li a .title span {
+        display: table-cell;
+        vertical-align: middle; }
+    /* line 66, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+    #block-atentom-taxonomy-children ul.taxonomy-children li a:hover {
+      background: #005589;
+      color: white; }
+      /* line 70, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      #block-atentom-taxonomy-children ul.taxonomy-children li a:hover .icon .icon {
+        display: none; }
+      /* line 73, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      #block-atentom-taxonomy-children ul.taxonomy-children li a:hover .icon .icon-hover {
+        display: block; }
+  /* line 78, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+  #block-atentom-taxonomy-children ul.taxonomy-children li.even {
+    margin-right: 2px; }
 
 /*# sourceMappingURL=atento.styles.css.map */
