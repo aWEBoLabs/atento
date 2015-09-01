@@ -61,6 +61,21 @@ body {
     .breadcrumbs li.last a {
       color: #005589; }
 
+/* line 28, ../sass/components/_breadcrumb.scss */
+.cat-blue .breadcrumbs li.last,
+.cat-blue .breadcrumbs li.last a {
+  color: #027DBA; }
+
+/* line 36, ../sass/components/_breadcrumb.scss */
+.cat-green .breadcrumbs li.last,
+.cat-green .breadcrumbs li.last a {
+  color: #02AFA6; }
+
+/* line 44, ../sass/components/_breadcrumb.scss */
+.cat-orange .breadcrumbs li.last,
+.cat-orange .breadcrumbs li.last a {
+  color: #FF8F19; }
+
 /* line 1, ../sass/components/_content.scss */
 .l-content-inner {
   width: 1020px;
@@ -269,6 +284,21 @@ body {
     width: 350px;
     color: #005589; }
 
+/* line 50, ../sass/components/_hero.scss */
+.cat-blue #block-ds-extras-hero h1,
+.cat-blue #block-ds-extras-hero .hero-body {
+  color: #027DBA; }
+
+/* line 58, ../sass/components/_hero.scss */
+.cat-green #block-ds-extras-hero h1,
+.cat-green #block-ds-extras-hero .hero-body {
+  color: #02AFA6; }
+
+/* line 66, ../sass/components/_hero.scss */
+.cat-orange #block-ds-extras-hero h1,
+.cat-orange #block-ds-extras-hero .hero-body {
+  color: #FF8F19; }
+
 /* line 1, ../sass/components/_main-menu.scss */
 .l-region--branding {
   float: right; }
@@ -329,6 +359,21 @@ body {
     #block-system-main-menu > ul.menu > li > a:hover .menu-icon .icon-hover,
     #block-system-main-menu > ul.menu > li.active-trail > a .menu-icon .icon-hover {
       display: block; }
+
+/* line 65, ../sass/components/_main-menu.scss */
+.cat-blue #block-system-main-menu > ul.menu > li > a:hover,
+.cat-blue #block-system-main-menu > ul.menu > li.active-trail > a {
+  background: #027DBA; }
+
+/* line 73, ../sass/components/_main-menu.scss */
+.cat-green #block-system-main-menu > ul.menu > li > a:hover,
+.cat-green #block-system-main-menu > ul.menu > li.active-trail > a {
+  background: #02AFA6; }
+
+/* line 81, ../sass/components/_main-menu.scss */
+.cat-orange #block-system-main-menu > ul.menu > li > a:hover,
+.cat-orange #block-system-main-menu > ul.menu > li.active-trail > a {
+  background: #FF8F19; }
 
 /* line 1, ../sass/components/_regions.scss */
 .l-branding {
@@ -428,6 +473,30 @@ body {
     #block-menu-block-1 ul.menu > li ul {
       display: none; }
 
+/* line 48, ../sass/components/_subcategories.scss */
+.cat-blue #block-menu-block-1 {
+  background: #027DBA; }
+  /* line 51, ../sass/components/_subcategories.scss */
+  .cat-blue #block-menu-block-1 ul.menu > li.active-trail > a,
+  .cat-blue #block-menu-block-1 ul.menu > li > a:hover {
+    color: #027DBA; }
+
+/* line 59, ../sass/components/_subcategories.scss */
+.cat-green #block-menu-block-1 {
+  background: #02AFA6; }
+  /* line 62, ../sass/components/_subcategories.scss */
+  .cat-green #block-menu-block-1 ul.menu > li.active-trail > a,
+  .cat-green #block-menu-block-1 ul.menu > li > a:hover {
+    color: #02AFA6; }
+
+/* line 70, ../sass/components/_subcategories.scss */
+.cat-orange #block-menu-block-1 {
+  background: #FF8F19; }
+  /* line 73, ../sass/components/_subcategories.scss */
+  .cat-orange #block-menu-block-1 ul.menu > li.active-trail > a,
+  .cat-orange #block-menu-block-1 ul.menu > li > a:hover {
+    color: #FF8F19; }
+
 /* line 2, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 .taxonomy-term.vocabulary-categories .landing-body {
   width: 304px;
@@ -502,5 +571,38 @@ body {
   /* line 76, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
   #block-atentom-taxonomy-children ul.taxonomy-children li.even {
     margin-right: 0; }
+
+/* line 83, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.cat-blue .taxonomy-term.vocabulary-categories .landing-body {
+  background: #027DBA; }
+/* line 90, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.cat-blue #block-atentom-taxonomy-children ul.taxonomy-children li a {
+  color: #027DBA; }
+/* line 93, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.cat-blue #block-atentom-taxonomy-children ul.taxonomy-children li a:hover {
+  color: white;
+  background: #027DBA; }
+
+/* line 102, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.cat-green .taxonomy-term.vocabulary-categories .landing-body {
+  background: #02AFA6; }
+/* line 109, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.cat-green #block-atentom-taxonomy-children ul.taxonomy-children li a {
+  color: #02AFA6; }
+/* line 112, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.cat-green #block-atentom-taxonomy-children ul.taxonomy-children li a:hover {
+  color: white;
+  background: #02AFA6; }
+
+/* line 121, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.cat-orange .taxonomy-term.vocabulary-categories .landing-body {
+  background: #FF8F19; }
+/* line 128, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.cat-orange #block-atentom-taxonomy-children ul.taxonomy-children li a {
+  color: #FF8F19; }
+/* line 131, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.cat-orange #block-atentom-taxonomy-children ul.taxonomy-children li a:hover {
+  color: white;
+  background: #FF8F19; }
 
 /*# sourceMappingURL=atento.styles.css.map */

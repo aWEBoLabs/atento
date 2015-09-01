@@ -15,10 +15,35 @@
     }
   }
   li.last{
-    color: #005589;
+    color: $cat-dark-blue;
     margin-right: 0;
     a{
-      color: #005589;
+      color: $cat-dark-blue;
+    }
+  }
+}
+
+.cat-blue{
+  .breadcrumbs{
+    li.last, 
+    li.last a{
+      color: $cat-blue;
+    }
+  }
+}
+.cat-green{
+  .breadcrumbs{
+    li.last, 
+    li.last a{
+      color: $cat-green;
+    }
+  }
+}
+.cat-orange{
+  .breadcrumbs{
+    li.last, 
+    li.last a{
+      color: $cat-orange;
     }
   }
 }

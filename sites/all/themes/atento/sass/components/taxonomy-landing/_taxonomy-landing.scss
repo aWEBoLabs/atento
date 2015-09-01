@@ -77,3 +77,61 @@
     margin-right: 0;
   }
 }
+
+.cat-blue{
+  .taxonomy-term.vocabulary-categories{
+    .landing-body{
+      background: $cat-blue;
+    }
+  }
+  
+  #block-atentom-taxonomy-children{
+    ul.taxonomy-children li{      
+      a{
+        color: $cat-blue;
+      }
+      a:hover{
+        color: white;
+        background: $cat-blue;
+      }
+    }
+  }
+}
+.cat-green{
+  .taxonomy-term.vocabulary-categories{
+    .landing-body{
+      background: $cat-green;
+    }
+  }
+  
+  #block-atentom-taxonomy-children{
+    ul.taxonomy-children li{      
+      a{
+        color: $cat-green;
+      }
+      a:hover{
+        color: white;
+        background: $cat-green;
+      }
+    }
+  }
+}
+.cat-orange{
+  .taxonomy-term.vocabulary-categories{
+    .landing-body{
+      background: $cat-orange;
+    }
+  }
+  
+  #block-atentom-taxonomy-children{
+    ul.taxonomy-children li{      
+      a{
+        color: $cat-orange;
+      }
+      a:hover{
+        color: white;
+        background: $cat-orange;
+      }
+    }
+  }
+}

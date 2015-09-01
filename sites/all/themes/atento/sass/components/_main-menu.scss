@@ -59,3 +59,28 @@
     }
   }
 }
+
+.cat-blue{
+  #block-system-main-menu{
+    > ul.menu > li > a:hover, 
+    > ul.menu > li.active-trail > a{
+      background: $cat-blue;
+    }
+  }
+}
+.cat-green{
+  #block-system-main-menu{
+    > ul.menu > li > a:hover, 
+    > ul.menu > li.active-trail > a{
+      background: $cat-green;
+    }
+  }
+}
+.cat-orange{
+  #block-system-main-menu{
+    > ul.menu > li > a:hover, 
+    > ul.menu > li.active-trail > a{
+      background: $cat-orange;
+    }
+  }
+}

@@ -43,3 +43,37 @@
     }
   }
 }
+
+.cat-blue{
+  #block-menu-block-1{
+    background: $cat-blue;
+    ul.menu{
+      > li.active-trail > a, 
+      > li > a:hover{
+        color: $cat-blue;
+      }
+    }
+  }
+}
+.cat-green{
+  #block-menu-block-1{
+    background: $cat-green;
+    ul.menu{
+      > li.active-trail > a, 
+      > li > a:hover{
+        color: $cat-green;
+      }
+    }
+  }
+}
+.cat-orange{
+  #block-menu-block-1{
+    background: $cat-orange;
+    ul.menu{
+      > li.active-trail > a, 
+      > li > a:hover{
+        color: $cat-orange;
+      }
+    }
+  }
+}
