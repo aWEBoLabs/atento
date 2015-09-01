@@ -4,7 +4,6 @@
     min-height: 291px;
     background: $cat-dark-blue;
     padding: 40px 50px 65px 42px;
-    font-family: Omnes;
     font-size: 36px;
     color: white;
     float: left;
@@ -22,7 +21,7 @@
   ul.taxonomy-children li{
     list-style: none;
     padding: 0;
-    margin: 0 0 2px 0;
+    margin: 0 0 0 0;
     display: inline-block;
     
     a{
@@ -35,7 +34,6 @@
       text-decoration: none;
       font-size: 18px;
       line-height: 22px;
-      font-family: Omnes;
       color: $cat-dark-blue;
       
       .icon .icon{
@@ -76,6 +74,6 @@
     }
   }
   ul.taxonomy-children li.even{
-    margin-right: 2px;
+    margin-right: 0;
   }
 }
