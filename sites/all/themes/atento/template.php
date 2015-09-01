@@ -11,6 +11,10 @@
  */
 function atento_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
+  if ( empty($breadcrumb) ) {
+    $breadcrumb[] = l('Home', '<front>');
+  }
+  
   $breadcrumb[] = drupal_get_title();
 
   if (!empty($breadcrumb)) {

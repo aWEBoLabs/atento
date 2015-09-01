@@ -121,27 +121,28 @@ body {
       padding: 2px 0 3px; }
     /* line 48, ../sass/components/_footer.scss */
     #block-menu-block-2 .menu-block-wrapper > ul.menu > li > a .menu-icon {
+      position: relative;
       height: 50px;
       width: 50px;
       overflow: hidden;
       opacity: 0.49; }
-    /* line 54, ../sass/components/_footer.scss */
+    /* line 55, ../sass/components/_footer.scss */
     #block-menu-block-2 .menu-block-wrapper > ul.menu > li > a .icon-hover {
       display: none; }
-  /* line 58, ../sass/components/_footer.scss */
+  /* line 59, ../sass/components/_footer.scss */
   #block-menu-block-2 .menu-block-wrapper > ul.menu > li > ul {
     list-style: none;
     margin: 0;
     padding: 0; }
-  /* line 63, ../sass/components/_footer.scss */
+  /* line 64, ../sass/components/_footer.scss */
   #block-menu-block-2 .menu-block-wrapper > ul.menu > li > ul > li > ul {
     display: none; }
-  /* line 66, ../sass/components/_footer.scss */
+  /* line 67, ../sass/components/_footer.scss */
   #block-menu-block-2 .menu-block-wrapper > ul.menu > li > ul > li {
     list-style: none;
     padding: 0;
     margin: 0; }
-  /* line 71, ../sass/components/_footer.scss */
+  /* line 72, ../sass/components/_footer.scss */
   #block-menu-block-2 .menu-block-wrapper > ul.menu > li > ul > li > a {
     display: block;
     padding: 3px 0;
@@ -149,25 +150,25 @@ body {
     color: #C9C9C9;
     text-decoration: none; }
 
-/* line 81, ../sass/components/_footer.scss */
+/* line 82, ../sass/components/_footer.scss */
 #block-menu-menu-footer-side-menu {
   width: 132px;
   margin-right: 44px;
   float: right; }
-  /* line 85, ../sass/components/_footer.scss */
+  /* line 86, ../sass/components/_footer.scss */
   #block-menu-menu-footer-side-menu ul.menu {
     list-style: none;
     padding: 0;
     margin: 0; }
-  /* line 90, ../sass/components/_footer.scss */
+  /* line 91, ../sass/components/_footer.scss */
   #block-menu-menu-footer-side-menu ul.menu li ul {
     display: none; }
-  /* line 93, ../sass/components/_footer.scss */
+  /* line 94, ../sass/components/_footer.scss */
   #block-menu-menu-footer-side-menu ul.menu li {
     list-style: none;
     margin: 0;
     padding: 0; }
-  /* line 98, ../sass/components/_footer.scss */
+  /* line 99, ../sass/components/_footer.scss */
   #block-menu-menu-footer-side-menu ul.menu li a {
     display: block;
     background-size: 50px 50px;
@@ -179,28 +180,28 @@ body {
     font-weight: 600;
     color: #C9C9C9;
     text-decoration: none; }
-  /* line 110, ../sass/components/_footer.scss */
+  /* line 111, ../sass/components/_footer.scss */
   #block-menu-menu-footer-side-menu a#footer-contact-us {
     background-image: url("../images/menu-icons/footer-contact-us.png"); }
 
-/* line 115, ../sass/components/_footer.scss */
+/* line 116, ../sass/components/_footer.scss */
 #block-block-1 {
   clear: both;
   float: right;
   width: 142px;
   margin-right: 34px; }
-  /* line 120, ../sass/components/_footer.scss */
+  /* line 121, ../sass/components/_footer.scss */
   #block-block-1 .block__content {
     color: #C9C9C9;
     font-size: 14px; }
-    /* line 124, ../sass/components/_footer.scss */
+    /* line 125, ../sass/components/_footer.scss */
     #block-block-1 .block__content a {
       text-decoration: none;
       color: #C9C9C9;
       font-size: 14px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 134, ../sass/components/_footer.scss */
+  /* line 135, ../sass/components/_footer.scss */
   #block-menu-menu-footer-side-menu a#footer-contact-us {
     background-image: url("../images/menu-icons/footer-contact-us-x2.png"); } }
 /* line 1, ../sass/components/_header.scss */
