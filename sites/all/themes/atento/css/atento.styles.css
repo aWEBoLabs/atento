@@ -142,22 +142,26 @@ body {
       overflow: hidden;
       opacity: 0.49; }
     /* line 55, ../sass/components/_footer.scss */
+    #block-menu-block-2 .menu-block-wrapper > ul.menu > li > a .menu-icon img {
+      width: 50px;
+      height: 50px; }
+    /* line 59, ../sass/components/_footer.scss */
     #block-menu-block-2 .menu-block-wrapper > ul.menu > li > a .icon-hover {
       display: none; }
-  /* line 59, ../sass/components/_footer.scss */
+  /* line 63, ../sass/components/_footer.scss */
   #block-menu-block-2 .menu-block-wrapper > ul.menu > li > ul {
     list-style: none;
     margin: 0;
     padding: 0; }
-  /* line 64, ../sass/components/_footer.scss */
+  /* line 68, ../sass/components/_footer.scss */
   #block-menu-block-2 .menu-block-wrapper > ul.menu > li > ul > li > ul {
     display: none; }
-  /* line 67, ../sass/components/_footer.scss */
+  /* line 71, ../sass/components/_footer.scss */
   #block-menu-block-2 .menu-block-wrapper > ul.menu > li > ul > li {
     list-style: none;
     padding: 0;
     margin: 0; }
-  /* line 72, ../sass/components/_footer.scss */
+  /* line 76, ../sass/components/_footer.scss */
   #block-menu-block-2 .menu-block-wrapper > ul.menu > li > ul > li > a {
     display: block;
     padding: 3px 0;
@@ -165,25 +169,25 @@ body {
     color: #C9C9C9;
     text-decoration: none; }
 
-/* line 82, ../sass/components/_footer.scss */
+/* line 86, ../sass/components/_footer.scss */
 #block-menu-menu-footer-side-menu {
   width: 132px;
   margin-right: 44px;
   float: right; }
-  /* line 86, ../sass/components/_footer.scss */
+  /* line 90, ../sass/components/_footer.scss */
   #block-menu-menu-footer-side-menu ul.menu {
     list-style: none;
     padding: 0;
     margin: 0; }
-  /* line 91, ../sass/components/_footer.scss */
+  /* line 95, ../sass/components/_footer.scss */
   #block-menu-menu-footer-side-menu ul.menu li ul {
     display: none; }
-  /* line 94, ../sass/components/_footer.scss */
+  /* line 98, ../sass/components/_footer.scss */
   #block-menu-menu-footer-side-menu ul.menu li {
     list-style: none;
     margin: 0;
     padding: 0; }
-  /* line 99, ../sass/components/_footer.scss */
+  /* line 103, ../sass/components/_footer.scss */
   #block-menu-menu-footer-side-menu ul.menu li a {
     display: block;
     background-size: 50px 50px;
@@ -195,28 +199,28 @@ body {
     font-weight: 600;
     color: #C9C9C9;
     text-decoration: none; }
-  /* line 111, ../sass/components/_footer.scss */
+  /* line 115, ../sass/components/_footer.scss */
   #block-menu-menu-footer-side-menu a#footer-contact-us {
     background-image: url("../images/menu-icons/footer-contact-us.png"); }
 
-/* line 116, ../sass/components/_footer.scss */
+/* line 120, ../sass/components/_footer.scss */
 #block-block-1 {
   clear: both;
   float: right;
   width: 142px;
   margin-right: 34px; }
-  /* line 121, ../sass/components/_footer.scss */
+  /* line 125, ../sass/components/_footer.scss */
   #block-block-1 .block__content {
     color: #C9C9C9;
     font-size: 14px; }
-    /* line 125, ../sass/components/_footer.scss */
+    /* line 129, ../sass/components/_footer.scss */
     #block-block-1 .block__content a {
       text-decoration: none;
       color: #C9C9C9;
       font-size: 14px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 135, ../sass/components/_footer.scss */
+  /* line 139, ../sass/components/_footer.scss */
   #block-menu-menu-footer-side-menu a#footer-contact-us {
     background-image: url("../images/menu-icons/footer-contact-us-x2.png"); } }
 /* line 1, ../sass/components/_header.scss */
@@ -269,7 +273,11 @@ body {
   #block-ds-extras-hero .hero-icon {
     float: left;
     width: 80px; }
-  /* line 32, ../sass/components/_hero.scss */
+    /* line 31, ../sass/components/_hero.scss */
+    #block-ds-extras-hero .hero-icon img {
+      width: 70px;
+      height: 70px; }
+  /* line 36, ../sass/components/_hero.scss */
   #block-ds-extras-hero h1 {
     font-weight: 600;
     float: left;
@@ -277,24 +285,24 @@ body {
     margin-right: 20px;
     color: #005589;
     font-size: 36px; }
-  /* line 40, ../sass/components/_hero.scss */
+  /* line 44, ../sass/components/_hero.scss */
   #block-ds-extras-hero .hero-body {
     font-size: 18px;
     float: left;
     width: 350px;
     color: #005589; }
 
-/* line 50, ../sass/components/_hero.scss */
+/* line 54, ../sass/components/_hero.scss */
 .cat-blue #block-ds-extras-hero h1,
 .cat-blue #block-ds-extras-hero .hero-body {
   color: #027DBA; }
 
-/* line 58, ../sass/components/_hero.scss */
+/* line 62, ../sass/components/_hero.scss */
 .cat-green #block-ds-extras-hero h1,
 .cat-green #block-ds-extras-hero .hero-body {
   color: #02AFA6; }
 
-/* line 66, ../sass/components/_hero.scss */
+/* line 70, ../sass/components/_hero.scss */
 .cat-orange #block-ds-extras-hero h1,
 .cat-orange #block-ds-extras-hero .hero-body {
   color: #FF8F19; }
@@ -311,18 +319,20 @@ body {
   /* line 9, ../sass/components/_main-menu.scss */
   #block-system-main-menu > ul.menu {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: -5px -4px -5px -6px;
+    padding: 5px 4px 5px 6px;
     display: table;
-    text-align: left; }
-  /* line 16, ../sass/components/_main-menu.scss */
+    text-align: left;
+    background: url("../images/cross/menu-cross-x2.png");
+    background-size: 88px 88px; }
+  /* line 18, ../sass/components/_main-menu.scss */
   #block-system-main-menu > ul.menu > li {
     list-style: none;
     display: inline-block; }
-    /* line 19, ../sass/components/_main-menu.scss */
+    /* line 21, ../sass/components/_main-menu.scss */
     #block-system-main-menu > ul.menu > li ul {
       display: none; }
-  /* line 23, ../sass/components/_main-menu.scss */
+  /* line 25, ../sass/components/_main-menu.scss */
   #block-system-main-menu > ul.menu > li > a {
     display: block;
     width: 88px;
@@ -334,7 +344,7 @@ body {
     color: #9A9A9A;
     text-decoration: none;
     font-size: 14px; }
-    /* line 35, ../sass/components/_main-menu.scss */
+    /* line 37, ../sass/components/_main-menu.scss */
     #block-system-main-menu > ul.menu > li > a .menu-icon {
       position: absolute;
       top: 6px;
@@ -343,34 +353,38 @@ body {
       width: 50px;
       height: 50px;
       overflow: hidden; }
-    /* line 45, ../sass/components/_main-menu.scss */
+    /* line 47, ../sass/components/_main-menu.scss */
     #block-system-main-menu > ul.menu > li > a .menu-icon .icon-hover {
       display: none; }
-  /* line 50, ../sass/components/_main-menu.scss */
+  /* line 52, ../sass/components/_main-menu.scss */
+  #block-system-main-menu > ul.menu > li > a .menu-icon img {
+    width: 50px;
+    height: 50px; }
+  /* line 57, ../sass/components/_main-menu.scss */
   #block-system-main-menu > ul.menu > li > a:hover,
   #block-system-main-menu > ul.menu > li.active-trail > a {
     background: #005589;
     color: white; }
-    /* line 54, ../sass/components/_main-menu.scss */
+    /* line 61, ../sass/components/_main-menu.scss */
     #block-system-main-menu > ul.menu > li > a:hover .menu-icon .icon,
     #block-system-main-menu > ul.menu > li.active-trail > a .menu-icon .icon {
       display: none; }
-    /* line 57, ../sass/components/_main-menu.scss */
+    /* line 64, ../sass/components/_main-menu.scss */
     #block-system-main-menu > ul.menu > li > a:hover .menu-icon .icon-hover,
     #block-system-main-menu > ul.menu > li.active-trail > a .menu-icon .icon-hover {
       display: block; }
 
-/* line 65, ../sass/components/_main-menu.scss */
+/* line 72, ../sass/components/_main-menu.scss */
 .cat-blue #block-system-main-menu > ul.menu > li > a:hover,
 .cat-blue #block-system-main-menu > ul.menu > li.active-trail > a {
   background: #027DBA; }
 
-/* line 73, ../sass/components/_main-menu.scss */
+/* line 80, ../sass/components/_main-menu.scss */
 .cat-green #block-system-main-menu > ul.menu > li > a:hover,
 .cat-green #block-system-main-menu > ul.menu > li.active-trail > a {
   background: #02AFA6; }
 
-/* line 81, ../sass/components/_main-menu.scss */
+/* line 88, ../sass/components/_main-menu.scss */
 .cat-orange #block-system-main-menu > ul.menu > li > a:hover,
 .cat-orange #block-system-main-menu > ul.menu > li.active-trail > a {
   background: #FF8F19; }
@@ -427,11 +441,41 @@ body {
   #block-menu-menu-side-menu ul.menu li.last a {
     line-height: 28px; }
 
+/* line 39, ../sass/components/_side-menu.scss */
+#menu-search-link {
+  background: url("../images/menu-side-icons/search.png") no-repeat right center; }
+
+/* line 42, ../sass/components/_side-menu.scss */
+#menu-atento-link {
+  background: url("../images/menu-side-icons/play.png") no-repeat right center; }
+
+/* line 45, ../sass/components/_side-menu.scss */
+#menu-contact-link {
+  background: url("../images/menu-side-icons/mail.png") no-repeat right 6px; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 50, ../sass/components/_side-menu.scss */
+  #menu-search-link,
+  #menu-atento-link,
+  #menu-contact-link {
+    background-size: 15px 15px; }
+
+  /* line 55, ../sass/components/_side-menu.scss */
+  #menu-search-link {
+    background-image: url("../images/menu-side-icons/search-x2.png"); }
+
+  /* line 58, ../sass/components/_side-menu.scss */
+  #menu-atento-link {
+    background-image: url("../images/menu-side-icons/play-x2.png"); }
+
+  /* line 61, ../sass/components/_side-menu.scss */
+  #menu-contact-link {
+    background-image: url("../images/menu-side-icons/mail-x2.png"); } }
 /* line 1, ../sass/components/_subcategories.scss */
 #block-menu-block-1 {
   background: #005589;
   clear: both;
-  padding: 32px 0 12px; }
+  padding: 17px 0 14px; }
   /* line 5, ../sass/components/_subcategories.scss */
   #block-menu-block-1 .menu-block-wrapper {
     width: 1020px;
@@ -439,17 +483,26 @@ body {
     box-sizing: border-box;
     margin: 0 auto; }
   /* line 11, ../sass/components/_subcategories.scss */
+  #block-menu-block-1 .menu-block-wrapper:after {
+    clear: both;
+    content: "";
+    display: table;
+    height: 0; }
+  /* line 17, ../sass/components/_subcategories.scss */
   #block-menu-block-1 ul.menu {
     list-style: none;
     display: table;
-    margin: 0;
+    margin: 0 -5px 0 0;
     text-align: right;
-    width: 100%; }
-    /* line 17, ../sass/components/_subcategories.scss */
+    float: right;
+    background: url("../images/menu-cross.png");
+    background-size: 88px 44px;
+    padding: 5px; }
+    /* line 27, ../sass/components/_subcategories.scss */
     #block-menu-block-1 ul.menu > li {
       display: inline-block;
       text-align: left; }
-    /* line 21, ../sass/components/_subcategories.scss */
+    /* line 31, ../sass/components/_subcategories.scss */
     #block-menu-block-1 ul.menu > li > a {
       display: table;
       width: 88px;
@@ -459,44 +512,48 @@ body {
       color: white;
       font-size: 12px;
       box-sizing: border-box;
-      padding: 0 10px; }
-    /* line 32, ../sass/components/_subcategories.scss */
+      padding: 0; }
+    /* line 42, ../sass/components/_subcategories.scss */
     #block-menu-block-1 ul.menu > li > a span {
       display: table-cell;
       vertical-align: middle; }
-    /* line 36, ../sass/components/_subcategories.scss */
+    /* line 46, ../sass/components/_subcategories.scss */
     #block-menu-block-1 ul.menu > li.active-trail > a,
     #block-menu-block-1 ul.menu > li > a:hover {
       background: white;
       color: #005589; }
-    /* line 41, ../sass/components/_subcategories.scss */
+    /* line 51, ../sass/components/_subcategories.scss */
     #block-menu-block-1 ul.menu > li ul {
       display: none; }
 
-/* line 48, ../sass/components/_subcategories.scss */
+/* line 58, ../sass/components/_subcategories.scss */
 .cat-blue #block-menu-block-1 {
   background: #027DBA; }
-  /* line 51, ../sass/components/_subcategories.scss */
+  /* line 61, ../sass/components/_subcategories.scss */
   .cat-blue #block-menu-block-1 ul.menu > li.active-trail > a,
   .cat-blue #block-menu-block-1 ul.menu > li > a:hover {
     color: #027DBA; }
 
-/* line 59, ../sass/components/_subcategories.scss */
+/* line 69, ../sass/components/_subcategories.scss */
 .cat-green #block-menu-block-1 {
   background: #02AFA6; }
-  /* line 62, ../sass/components/_subcategories.scss */
+  /* line 72, ../sass/components/_subcategories.scss */
   .cat-green #block-menu-block-1 ul.menu > li.active-trail > a,
   .cat-green #block-menu-block-1 ul.menu > li > a:hover {
     color: #02AFA6; }
 
-/* line 70, ../sass/components/_subcategories.scss */
+/* line 80, ../sass/components/_subcategories.scss */
 .cat-orange #block-menu-block-1 {
   background: #FF8F19; }
-  /* line 73, ../sass/components/_subcategories.scss */
+  /* line 83, ../sass/components/_subcategories.scss */
   .cat-orange #block-menu-block-1 ul.menu > li.active-trail > a,
   .cat-orange #block-menu-block-1 ul.menu > li > a:hover {
     color: #FF8F19; }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 93, ../sass/components/_subcategories.scss */
+  #block-menu-block-1 ul.menu {
+    background-image: url("../images/menu-cross-x2.png"); } }
 /* line 2, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 .taxonomy-term.vocabulary-categories .landing-body {
   width: 304px;
@@ -509,20 +566,26 @@ body {
 
 /* line 13, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 #block-atentom-taxonomy-children {
-  margin-left: 440px; }
-  /* line 15, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+  margin-left: 435px;
+  margin-right: -6px; }
+  /* line 16, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
   #block-atentom-taxonomy-children ul.taxonomy-children {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: table; }
-  /* line 21, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+    display: table;
+    background: url("../images/cross/teaser-cross-dark-blue.png");
+    background-size: 264px 132px;
+    padding: 5px;
+    font-size: 0; }
+  /* line 26, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
   #block-atentom-taxonomy-children ul.taxonomy-children li {
+    font-size: 18px;
     list-style: none;
     padding: 0;
     margin: 0 0 0 0;
     display: inline-block; }
-    /* line 27, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+    /* line 33, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
     #block-atentom-taxonomy-children ul.taxonomy-children li a {
       display: block;
       padding: 27px 14px 34px 27px;
@@ -534,19 +597,19 @@ body {
       font-size: 18px;
       line-height: 22px;
       color: #005589; }
-      /* line 39, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      /* line 45, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
       #block-atentom-taxonomy-children ul.taxonomy-children li a .icon .icon {
         display: block; }
-      /* line 42, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      /* line 48, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
       #block-atentom-taxonomy-children ul.taxonomy-children li a .icon .icon-hover {
         display: none; }
-      /* line 45, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      /* line 51, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
       #block-atentom-taxonomy-children ul.taxonomy-children li a > .icon {
         float: left;
         width: 70px;
         height: 70px;
         overflow: hidden; }
-      /* line 51, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      /* line 57, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
       #block-atentom-taxonomy-children ul.taxonomy-children li a .title {
         margin-top: 18px;
         margin-left: 84px;
@@ -554,55 +617,88 @@ body {
         vertical-align: middle;
         width: 90px;
         height: 36px; }
-      /* line 59, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      /* line 65, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
       #block-atentom-taxonomy-children ul.taxonomy-children li a .title span {
         display: table-cell;
         vertical-align: middle; }
-    /* line 64, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+    /* line 70, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+    #block-atentom-taxonomy-children ul.taxonomy-children li a .icon img {
+      width: 70px;
+      height: 70px; }
+    /* line 74, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
     #block-atentom-taxonomy-children ul.taxonomy-children li a:hover {
       background: #005589;
       color: white; }
-      /* line 68, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      /* line 78, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
       #block-atentom-taxonomy-children ul.taxonomy-children li a:hover .icon .icon {
         display: none; }
-      /* line 71, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      /* line 81, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
       #block-atentom-taxonomy-children ul.taxonomy-children li a:hover .icon .icon-hover {
         display: block; }
-  /* line 76, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+  /* line 86, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
   #block-atentom-taxonomy-children ul.taxonomy-children li.even {
     margin-right: 0; }
 
-/* line 83, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+/* line 93, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 .cat-blue .taxonomy-term.vocabulary-categories .landing-body {
   background: #027DBA; }
-/* line 90, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+/* line 100, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 .cat-blue #block-atentom-taxonomy-children ul.taxonomy-children li a {
   color: #027DBA; }
-/* line 93, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+/* line 103, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 .cat-blue #block-atentom-taxonomy-children ul.taxonomy-children li a:hover {
   color: white;
   background: #027DBA; }
 
-/* line 102, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+/* line 112, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 .cat-green .taxonomy-term.vocabulary-categories .landing-body {
   background: #02AFA6; }
-/* line 109, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+/* line 119, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 .cat-green #block-atentom-taxonomy-children ul.taxonomy-children li a {
   color: #02AFA6; }
-/* line 112, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+/* line 122, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 .cat-green #block-atentom-taxonomy-children ul.taxonomy-children li a:hover {
   color: white;
   background: #02AFA6; }
 
-/* line 121, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+/* line 131, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 .cat-orange .taxonomy-term.vocabulary-categories .landing-body {
   background: #FF8F19; }
-/* line 128, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+/* line 138, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 .cat-orange #block-atentom-taxonomy-children ul.taxonomy-children li a {
   color: #FF8F19; }
-/* line 131, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+/* line 141, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 .cat-orange #block-atentom-taxonomy-children ul.taxonomy-children li a:hover {
   color: white;
   background: #FF8F19; }
+
+/* line 151, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.cat-blue #block-atentom-taxonomy-children ul.taxonomy-children {
+  background-image: url("../images/cross/teaser-cross-blue.png"); }
+
+/* line 158, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.cat-green #block-atentom-taxonomy-children ul.taxonomy-children {
+  background-image: url("../images/cross/teaser-cross-green.png"); }
+
+/* line 165, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+.cat-orange #block-atentom-taxonomy-children ul.taxonomy-children {
+  background-image: url("../images/cross/teaser-cross-orange.png"); }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 173, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+  #block-atentom-taxonomy-children ul.taxonomy-children {
+    background-image: url("../images/cross/teaser-cross-dark-blue-x2.png"); }
+
+  /* line 180, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+  .cat-blue #block-atentom-taxonomy-children ul.taxonomy-children {
+    background-image: url("../images/cross/teaser-cross-blue-x2.png"); }
+
+  /* line 187, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+  .cat-green #block-atentom-taxonomy-children ul.taxonomy-children {
+    background-image: url("../images/cross/teaser-cross-green-x2.png"); }
+
+  /* line 194, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+  .cat-orange #block-atentom-taxonomy-children ul.taxonomy-children {
+    background-image: url("../images/cross/teaser-cross-orange-x2.png"); } }
 
 /*# sourceMappingURL=atento.styles.css.map */

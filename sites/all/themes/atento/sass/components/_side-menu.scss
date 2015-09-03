@@ -36,3 +36,29 @@
     line-height: 28px;
   }
 }
+#menu-search-link{
+  background: url("../images/menu-side-icons/search.png") no-repeat right center;
+}
+#menu-atento-link{
+  background: url("../images/menu-side-icons/play.png") no-repeat right center;
+}
+#menu-contact-link{
+  background: url("../images/menu-side-icons/mail.png") no-repeat right 6px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #menu-search-link, 
+  #menu-atento-link, 
+  #menu-contact-link{
+    background-size: 15px 15px;
+  }
+  #menu-search-link{
+    background-image: url("../images/menu-side-icons/search-x2.png");
+  }
+  #menu-atento-link{
+    background-image: url("../images/menu-side-icons/play-x2.png");
+  }
+  #menu-contact-link{
+    background-image: url("../images/menu-side-icons/mail-x2.png");
+  }
+}

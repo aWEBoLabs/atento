@@ -1,19 +1,29 @@
 #block-menu-block-1{
   background: $cat-dark-blue;
   clear: both;
-  padding: 32px 0 12px;
+  padding: 17px 0 14px;
   .menu-block-wrapper{
     width: $desktop-width;
     padding: 0 30px;
     box-sizing: border-box;
     margin: 0 auto;
   }
+  .menu-block-wrapper:after{
+    clear: both;
+    content: "";
+    display: table;
+    height: 0;
+  }
   ul.menu{
     list-style: none;
     display: table;
-    margin: 0;
+    margin: 0 -5px 0 0;
     text-align: right;
-    width: 100%;
+    float: right;
+    background: url("../images/menu-cross.png");
+    background-size: 88px 44px;
+    padding: 5px;
+    
     > li{
       display: inline-block;
       text-align: left;
@@ -27,7 +37,7 @@
       color: white;
       font-size: 12px;
       box-sizing: border-box;
-      padding: 0 10px;
+      padding: 0;
     }
     > li > a span{
       display: table-cell;
@@ -74,6 +84,14 @@
       > li > a:hover{
         color: $cat-orange;
       }
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #block-menu-block-1{
+    ul.menu{
+      background-image: url("../images/menu-cross-x2.png");
     }
   }
 }

@@ -11,14 +11,20 @@
 }
 
 #block-atentom-taxonomy-children{
-  margin-left: 440px;
+  margin-left: 435px;
+  margin-right: -6px;
   ul.taxonomy-children{
     list-style: none;
     padding: 0;
     margin: 0;
     display: table;
+    background: url("../images/cross/teaser-cross-dark-blue.png");
+    background-size: 264px 132px;
+    padding: 5px;
+    font-size: 0;
   }
   ul.taxonomy-children li{
+    font-size: 18px;
     list-style: none;
     padding: 0;
     margin: 0 0 0 0;
@@ -60,6 +66,10 @@
         display: table-cell;
         vertical-align: middle;
       }
+    }
+    a .icon img{
+      width: 70px;
+      height: 70px;
     }
     a:hover{
       background: $cat-dark-blue;
@@ -131,6 +141,58 @@
       a:hover{
         color: white;
         background: $cat-orange;
+      }
+    }
+  }
+}
+
+.cat-blue{
+  #block-atentom-taxonomy-children{
+    ul.taxonomy-children{
+      background-image: url("../images/cross/teaser-cross-blue.png");
+    }
+  }
+}
+.cat-green{
+  #block-atentom-taxonomy-children{
+    ul.taxonomy-children{
+      background-image: url("../images/cross/teaser-cross-green.png");
+    }
+  }
+}
+.cat-orange{
+  #block-atentom-taxonomy-children{
+    ul.taxonomy-children{
+      background-image: url("../images/cross/teaser-cross-orange.png");
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #block-atentom-taxonomy-children{
+    ul.taxonomy-children{
+      background-image: url("../images/cross/teaser-cross-dark-blue-x2.png");
+    }
+  }
+  
+  .cat-blue{
+    #block-atentom-taxonomy-children{
+      ul.taxonomy-children{
+        background-image: url("../images/cross/teaser-cross-blue-x2.png");
+      }
+    }
+  }
+  .cat-green{
+    #block-atentom-taxonomy-children{
+      ul.taxonomy-children{
+        background-image: url("../images/cross/teaser-cross-green-x2.png");
+      }
+    }
+  }
+  .cat-orange{
+    #block-atentom-taxonomy-children{
+      ul.taxonomy-children{
+        background-image: url("../images/cross/teaser-cross-orange-x2.png");
       }
     }
   }
