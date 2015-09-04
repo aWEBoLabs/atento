@@ -15,9 +15,16 @@
     background: url("../images/cross/menu-cross-x2.png");
     background-size: 88px 88px;
   }
+  > ul.menu:after{
+    clear: both;
+    display: table;
+    height: 0;
+    content: "";
+  }
   > ul.menu > li{
     list-style: none;
     display: inline-block;
+    float: left;
     ul{
       display: none;
     }

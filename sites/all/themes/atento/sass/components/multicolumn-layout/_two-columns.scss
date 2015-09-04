@@ -1,0 +1,54 @@
+$sidebar-width: 180px;
+$column-space: 40px;
+.l-main-inner{
+  width: $desktop-width;
+  padding: 0 26px 88px;
+  margin: 0 auto 44px;
+  box-sizing: border-box;
+  border-bottom: solid 1px #CDCDCD;
+}
+.two-columns{
+  .l-main-inner:after{
+    content: "";
+    display: table;
+    height: 0;
+    clear: both;
+  }
+  .colmask{
+    position: relative;
+    clear: both;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+  }
+  .colleft{
+    float: left;
+    width: 200%;
+    margin-left: -($sidebar-width + $column-space);
+    position: relative;
+    right: 100%;
+    background: white;
+  }
+  colleft:after{
+    clear: both;
+    content: "";
+    display: table;
+    height: 0;
+  }
+  .col1wrap{
+    float: left;
+    width: 50%;
+    position: relative;
+    left: 50%;
+  }
+  .l-content{
+    margin: 0 0 0 $sidebar-width + $column-space;
+    overflow: hidden;
+  }
+  .l-region--sidebar-second{
+    float: right;
+    width: $sidebar-width;
+    position: relative;
+    left: $sidebar-width + $column-space;
+  }
+}
