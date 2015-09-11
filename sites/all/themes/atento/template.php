@@ -99,3 +99,17 @@ function atento_get_human_size($filesize = 0) {
   return $hfilesize;
   
 }
+
+/**
+ * Get custom counter.
+ */
+function atento_get_counter($hash) {
+  static $i;
+  if ( isset($i[$hash]) ) {
+    $i[$hash]++;
+  } else {
+    $i[$hash] = 1;
+  }
+  
+  return $i[$hash];
+}
