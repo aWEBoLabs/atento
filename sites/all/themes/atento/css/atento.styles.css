@@ -661,6 +661,60 @@ body {
   position: relative;
   left: 220px; }
 
+/* line 3, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .accordion-item .accordion-content {
+  display: none;
+  padding: 44px 0; }
+/* line 9, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .accordion-item.last {
+  border-bottom: solid 1px #CDCDCD; }
+/* line 13, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .field-name-field-title {
+  border-top: solid 1px #CDCDCD;
+  padding: 10px 0 7px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #FF7900;
+  cursor: pointer;
+  position: relative; }
+/* line 23, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .field-name-field-title:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../images/accordion-icons/opener.png") no-repeat;
+  background-size: 15px 31px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -7px; }
+/* line 36, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .accordion-item.first .accordion-content {
+  display: block; }
+/* line 39, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .accordion-item.first .field-name-field-title:after {
+  background-position: 0 -16px; }
+/* line 46, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .accordion-item.off .accordion-content,
+.accordion .accordion-item.off.first .accordion-content {
+  display: none; }
+/* line 49, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .accordion-item.off .field-name-field-title:after,
+.accordion .accordion-item.off.first .field-name-field-title:after {
+  background-position: 0 0; }
+/* line 54, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .accordion-item.on .accordion-content {
+  display: block; }
+/* line 57, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .accordion-item.on .field-name-field-title:after {
+  background-position: 0 -16px; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 65, ../sass/components/subcategory-page/_accordion.scss */
+  .accordion .field-name-field-title:after {
+    background-image: url("../images/accordion-icons/opener-x2.png"); } }
 /* line 2, ../sass/components/subcategory-page/_generic-page.scss */
 .group-generic-page h1 {
   font-weight: 600;

@@ -40,3 +40,24 @@ function _allow_all_file_extensions_fix_validator(&$element) {
     }
   }
 }
+
+/**
+ * Implements hook_theme_registry_alter.
+ */
+function allow_all_file_extensions_theme_registry_alter(&$theme_registry) {
+  if(isset($theme_registry['file_upload_help']))
+  {
+    $theme_registry['file_upload_help']['preprocess functions'] = array('allow_all_file_extensions_theme_file_upload_help_preprocess');
+  }
+}
+
+/**
+ * Performs an operation.
+ */
+function allow_all_file_extensions_theme_file_upload_help_preprocess(&$variables) {
+  if (isset($variables['upload_validators']['file_validate_extensions'])) {
+    if(empty($variables['upload_validators']['file_validate_extensions'])){
+      unset($variables['upload_validators']['file_validate_extensions']);
+    }
+  }
+}

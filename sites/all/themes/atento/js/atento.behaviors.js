@@ -38,23 +38,40 @@
    *   Drupal.settings directly you should use this because of potential
    *   modifications made by the Ajax callback that also produced 'context'.
    */
-  Drupal.behaviors.atentoExampleBehavior = {
+  Drupal.behaviors.atentoAccordion = {
     attach: function (context, settings) {
-      // By using the 'context' variable we make sure that our code only runs on
-      // the relevant HTML. Furthermore, by using jQuery.once() we make sure that
-      // we don't run the same piece of code for an HTML snippet that we already
-      // processed previously. By using .once('foo') all processed elements will
-      // get tagged with a 'foo-processed' class, causing all future invocations
-      // of this behavior to ignore them.
-      $('.some-selector', context).once('foo', function () {
-        // Now, we are invoking the previously declared theme function using two
-        // settings as arguments.
-        var $anchor = Drupal.theme('atentoExampleButton', settings.myExampleLinkPath, settings.myExampleLinkTitle);
-
-        // The anchor is then appended to the current element.
-        $anchor.appendTo(this);
+      $('.accordion', context).once('atento', function () {
+        // Open First by Default
+        $(this).find('.accordion-item.first').addClass('on');
+        
+        // Add Click Event
+        $(this).find('.accordion-item .field-name-field-title').click(atentoAccordionClick);
       });
     }
   };
+  
+  function atentoAccordionClick(e) {
+    btn = $(this);
+    // Just Hide this One if is On
+    if ( $(btn).parent().hasClass('on') ) {
+      $(btn).parent().find('.accordion-content').slideUp(300, function(){
+        $(this).parent().removeClass('on').addClass('off');
+      });
+      e.preventDefault();
+      return false;
+    }
+    
+    // Close Previous
+    $(btn).parent().parent().find('.accordion-item.on .accordion-content').slideUp(300, function(){
+      $(this).parent().removeClass('on').addClass('off');
+    });
+    
+    // Open This One
+    $(btn).parent().find('.accordion-content').slideDown(300, function(){
+      $(this).parent().removeClass('off').addClass('on');
+    });
+    
+    e.preventDefault();
+  }
 
 })(jQuery);
