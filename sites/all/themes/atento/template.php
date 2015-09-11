@@ -67,3 +67,35 @@ function atento_menu_link__main_menu(&$vars) {
   
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
+
+/**
+ * Gets a human friendly size.
+ */
+function atento_get_human_size($filesize = 0) {
+  // KB
+  $hfilesize = 0;
+  if ( $filesize < 1024 ) {
+    $hfilesize = (intval($filesize / 1024 * 100) / 100) . 'K';
+    return $hfilesize;
+  }
+  
+  // KB
+  $filesize /= 1024;
+  if ( $filesize < 1024 ) {
+    $hfilesize = intval($filesize) . 'K';
+    return $hfilesize;
+  }
+  
+  // MB
+  $filesize /= 1024;
+  if ( $filesize < 1024 ) {
+    $hfilesize = intval($filesize) . 'M';
+    return $hfilesize;
+  }
+  
+  // GB
+  $filesize /= 1024;
+  $hfilesize = intval($filesize) . 'G';
+  return $hfilesize;
+  
+}
