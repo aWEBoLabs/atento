@@ -1,0 +1,51 @@
+.cke_editable, 
+.field-name-field-generic-intro, 
+.field-name-field-generic-body{
+  h2{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Omnes Semibold';
+    line-height: 1.25em;
+    color: #00426A;
+  }
+  h3{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Omnes Semibold';
+    color: #636363;
+  }
+  h4{
+    font-size: 14px;
+    line-height: 1.33em;
+    color: $cat-dark-blue;
+  }
+  p{
+    font-size: 18px;
+    line-height: 1.33em;
+    a{
+      font-weight: 600;
+      font-family: 'Omnes Semibold';
+      text-decoration: none;
+      color: #FF7900;
+    }
+  }
+  *{
+    margin: 0;
+  }
+  *+*{
+    margin-top: 22px;
+  }
+  h2+p{
+    margin-top: 0;
+  }
+  hr{
+    background: #B3B3B3;
+    border: 0;
+    height: 1px;
+    margin: 33px 0;
+  }
+}
+
+.field-name-field-generic-intro+.field-name-field-generic-body{
+  margin-top: 22px;
+}
