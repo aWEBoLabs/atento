@@ -13,3 +13,16 @@ function atentom_data_get_taxonomy_children() {
   
   return taxonomy_get_tree($term->vid, $term->tid, 1, true);
 }
+
+/**
+ * Find the root term of a term.
+ */
+function atentom_data_get_term_root($tid) {
+  if ( !($term = taxonomy_term_load($tid)) ) {
+    return false;
+  }
+  
+  dpm($term);
+  return 1;
+}
+

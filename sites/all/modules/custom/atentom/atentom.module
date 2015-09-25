@@ -1,5 +1,7 @@
 <?php
 include_once('inc/block.inc');
 include_once('inc/data.inc');
+include_once('inc/menu-alter.inc');
+include_once('inc/permission.inc');
 include_once('inc/taxonomy.form-alter.inc');
 include_once('inc/theme.inc');
