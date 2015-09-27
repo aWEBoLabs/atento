@@ -1,0 +1,71 @@
+.not-logged-in{
+  position: relative;
+  background: #F2F2F2;
+  padding: 44px 0;
+  .l-header{
+    margin-bottom: 62px;
+  }
+  .l-page{
+    margin: 0 auto;
+    width: 800px;
+    padding: 90px 85px 80px;
+    background: white;
+    border-radius: 13px 13px 13px 13px;
+    box-sizing: border-box;
+  }
+  .site-logo{
+    margin-top: 0;
+  }
+  .l-branding, 
+  .l-main-inner, 
+  .controls{
+    width: auto;
+    padding: 0;
+  }
+  .l-branding{
+    margin-top: 0;
+  }
+  
+  .breadcrumbs, 
+  .l-footer, 
+  .tabs.tabs--primary{
+    display: none;
+  }
+  .l-main-inner{
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.not-logged-in.page-toboggan-denied{
+  
+}
+
+#user-login{
+  h1{
+    margin-top: 0;
+    margin-bottom: 38px;
+    font-family: 'Omnes Medium';
+    font-weight: 500;
+    font-size: 43px;
+    color: #FF7900;
+  }
+  p{
+    font-size: 27px;
+    color: #636567;
+    margin-bottom: 26px;
+  }
+  .form-item .description{
+    display: none;
+  }
+  p.login-footer{
+    font-size: 17.80px;
+    line-height: 21.8px;
+    color: #929497;
+    margin-bottom: 0;
+  }
+  .form-actions{
+    margin-top: 55px;
+    margin-bottom: 102px;
+  }
+}

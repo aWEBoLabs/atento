@@ -1,0 +1,35 @@
+diff --git a/logintoboggan.admin.inc b/logintoboggan.admin.inc
+index 0674a4c..d3fd0e8 100644
+--- a/logintoboggan.admin.inc
++++ b/logintoboggan.admin.inc
+@@ -150,6 +150,14 @@ function logintoboggan_main_settings() {
+     '#default_value' => $default,
+     '#description' => t('Anonymous users will be presented with a login form along with an access denied message.')
+   );
++  
++  $form['other']['logintoboggan_site_403_hide_message_at_front_page'] = array(
++    '#type' => 'radios',
++    '#title' => t('Hide Access Denied Error Message from the Front Page.'),
++    '#options' => array(0 => t('Disabled'), 1 => t('Enabled')),
++    '#default_value' => variable_get('logintoboggan_site_403_hide_message_at_front_page', 0), 
++    '#description' => t('By default, users trying to accessing non public pages as anonymous receives a \'Access denied. You may need to login below or register to access this page.\' message, if enabled, users won\'t see that message at the front page.'), 
++  );
+   $form['other']['logintoboggan_login_successful_message'] = array(
+     '#type' => 'radios',
+     '#title' => t('Display login successful message'),
+diff --git a/logintoboggan.module b/logintoboggan.module
+index cf23f30..023ef7a 100755
+--- a/logintoboggan.module
++++ b/logintoboggan.module
+@@ -421,7 +421,10 @@ function logintoboggan_js_alter(&$javascript) {
+ function logintoboggan_page_alter(&$page) {
+   // Remove blocks on access denied pages.
+   if (isset($page['#logintoboggan_denied'])) {
+-    drupal_set_message(t('Access denied. You may need to login below or register to access this page.'), 'error');
++    if ( variable_get('logintoboggan_site_403_hide_message_at_front_page', 0) == 0 ) {
++      drupal_set_message(t('Access denied. You may need to login below or register to access this page.'), 'error');
++    }
++    
+     // Allow overriding the removal of the sidebars, since there's no way to
+     // override this in the theme.
+     if (variable_get('logintoboggan_denied_remove_sidebars', TRUE)) {

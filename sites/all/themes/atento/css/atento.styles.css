@@ -10,6 +10,12 @@
   src: url("../fonts/omnes/Omnes.eot?") format("eot"), url("../fonts/omnes/Omnes.woff") format("woff"), url("../fonts/omnes/Omnes.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
+/* Omnes Medium */
+@font-face {
+  font-family: 'Omnes Medium';
+  src: url("../fonts/omnes/Omnes-Medium.eot?") format("eot"), url("../fonts/omnes/Omnes-Medium.woff") format("woff"), url("../fonts/omnes/Omnes-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
 /* Omnes SemiBold */
 @font-face {
   font-family: 'Omnes Semibold';
@@ -46,6 +52,57 @@
   font-style: normal;
 }
 */
+/* line 1, ../sass/base/_form-stuff.scss */
+::-webkit-input-placeholder {
+  color: #0B436A;
+  text-transform: lowercase; }
+
+/* line 2, ../sass/base/_form-stuff.scss */
+::-moz-placeholder {
+  color: #0B436A;
+  text-transform: lowercase; }
+
+/* line 3, ../sass/base/_form-stuff.scss */
+:-ms-input-placeholder {
+  color: #0B436A;
+  text-transform: lowercase; }
+
+/* line 4, ../sass/base/_form-stuff.scss */
+input:-moz-placeholder {
+  color: #0B436A;
+  text-transform: lowercase; }
+
+/* line 6, ../sass/base/_form-stuff.scss */
+.form-item {
+  margin-bottom: 28px; }
+  /* line 9, ../sass/base/_form-stuff.scss */
+  .form-item input.form-text {
+    width: 100%;
+    font-size: 27px;
+    color: #0B436A;
+    border: solid 1px #E5E5E5;
+    border-radius: 4px 4px 4px 4px;
+    padding: 9px 16px;
+    outline: none; }
+
+/* line 19, ../sass/base/_form-stuff.scss */
+.form-submit {
+  background: #FF7900;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  font-family: Omnes Semibold;
+  font-weight: 600;
+  font-size: 27px;
+  color: white;
+  padding: 13px 10px 11px;
+  min-width: 158px;
+  cursor: pointer;
+  outline: none; }
+
+/* line 33, ../sass/base/_form-stuff.scss */
+.controls .messages {
+  margin: 0 0 22px 0; }
+
 /* line 1, ../sass/components/_ field-collection-view.scss */
 .field-collection-view {
   padding: 0;
@@ -694,6 +751,71 @@ body {
 /* line 49, ../sass/components/ckeditor/_ckeditor-content.scss */
 .field-name-field-generic-intro + .field-name-field-generic-body {
   margin-top: 22px; }
+
+/* line 1, ../sass/components/login/_not-logged-in.scss */
+.not-logged-in {
+  position: relative;
+  background: #F2F2F2;
+  padding: 44px 0; }
+  /* line 5, ../sass/components/login/_not-logged-in.scss */
+  .not-logged-in .l-header {
+    margin-bottom: 62px; }
+  /* line 8, ../sass/components/login/_not-logged-in.scss */
+  .not-logged-in .l-page {
+    margin: 0 auto;
+    width: 800px;
+    padding: 90px 85px 80px;
+    background: white;
+    border-radius: 13px 13px 13px 13px;
+    box-sizing: border-box; }
+  /* line 16, ../sass/components/login/_not-logged-in.scss */
+  .not-logged-in .site-logo {
+    margin-top: 0; }
+  /* line 19, ../sass/components/login/_not-logged-in.scss */
+  .not-logged-in .l-branding,
+  .not-logged-in .l-main-inner,
+  .not-logged-in .controls {
+    width: auto;
+    padding: 0; }
+  /* line 25, ../sass/components/login/_not-logged-in.scss */
+  .not-logged-in .l-branding {
+    margin-top: 0; }
+  /* line 29, ../sass/components/login/_not-logged-in.scss */
+  .not-logged-in .breadcrumbs,
+  .not-logged-in .l-footer,
+  .not-logged-in .tabs.tabs--primary {
+    display: none; }
+  /* line 34, ../sass/components/login/_not-logged-in.scss */
+  .not-logged-in .l-main-inner {
+    border-bottom: none;
+    margin-bottom: 0; }
+
+/* line 45, ../sass/components/login/_not-logged-in.scss */
+#user-login h1 {
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-family: 'Omnes Medium';
+  font-weight: 500;
+  font-size: 43px;
+  color: #FF7900; }
+/* line 53, ../sass/components/login/_not-logged-in.scss */
+#user-login p {
+  font-size: 27px;
+  color: #636567;
+  margin-bottom: 26px; }
+/* line 58, ../sass/components/login/_not-logged-in.scss */
+#user-login .form-item .description {
+  display: none; }
+/* line 61, ../sass/components/login/_not-logged-in.scss */
+#user-login p.login-footer {
+  font-size: 17.80px;
+  line-height: 21.8px;
+  color: #929497;
+  margin-bottom: 0; }
+/* line 67, ../sass/components/login/_not-logged-in.scss */
+#user-login .form-actions {
+  margin-top: 55px;
+  margin-bottom: 102px; }
 
 /* line 3, ../sass/components/multicolumn-layout/_two-columns.scss */
 .l-main-inner {
