@@ -70,68 +70,70 @@
  * @see omega_preprocess_page()
  */
 ?>
-<div class="l-page">
-  <header class="l-header" role="banner">
-    <?php print render($page['header']); ?>
-    
-    <div class="l-branding">
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-      <?php endif; ?>
-
-      <?php if ($site_name || $site_slogan): ?>
-        <?php if ($site_name): ?>
-          <h1 class="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-          </h1>
+<div class="l-page-wrapper">
+  <div class="l-page">
+    <header class="l-header" role="banner">
+      <?php print render($page['header']); ?>
+      
+      <div class="l-branding">
+        <?php if ($logo): ?>
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
         <?php endif; ?>
-
-        <?php if ($site_slogan): ?>
-          <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
+  
+        <?php if ($site_name || $site_slogan): ?>
+          <?php if ($site_name): ?>
+            <h1 class="site-name">
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+            </h1>
+          <?php endif; ?>
+  
+          <?php if ($site_slogan): ?>
+            <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
+          <?php endif; ?>
         <?php endif; ?>
-      <?php endif; ?>
-
-      <?php print render($page['branding']); ?>
-    </div>
-
-    <?php print render($page['navigation']); ?>
-  </header>
-
-  <div class="l-main">
-    <?php print render($page['highlighted']); ?>
-    
-    <div class="controls">
-      <?php print $breadcrumb; ?>
-      <a id="main-content"></a>
-      <?php print $messages; ?>
-      <?php print render($tabs); ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-    </div>
-    
-    <div class="l-main-inner">
-      <div class="colmask">
-        <div class="colleft">
-          <div class="col1wrap">
-            <div class="l-content" role="main">
-              <div class="l-content-inner">
-                <div class="l-content-inner-inner">
-                  <?php print render($page['content']); ?>
-                  <?php //print $feed_icons; ?>
+  
+        <?php print render($page['branding']); ?>
+      </div>
+  
+      <?php print render($page['navigation']); ?>
+    </header>
+  
+    <div class="l-main">
+      <?php print render($page['highlighted']); ?>
+      
+      <div class="controls">
+        <?php print $breadcrumb; ?>
+        <a id="main-content"></a>
+        <?php print $messages; ?>
+        <?php print render($tabs); ?>
+        <?php print render($page['help']); ?>
+        <?php if ($action_links): ?>
+          <ul class="action-links"><?php print render($action_links); ?></ul>
+        <?php endif; ?>
+      </div>
+      
+      <div class="l-main-inner">
+        <div class="colmask">
+          <div class="colleft">
+            <div class="col1wrap">
+              <div class="l-content" role="main">
+                <div class="l-content-inner">
+                  <div class="l-content-inner-inner">
+                    <?php print render($page['content']); ?>
+                    <?php //print $feed_icons; ?>
+                  </div>
                 </div>
               </div>
             </div>
+        
+            <?php print render($page['sidebar_second']); ?>
           </div>
-      
-          <?php print render($page['sidebar_second']); ?>
         </div>
       </div>
     </div>
+  
+    <footer class="l-footer" role="contentinfo">
+      <?php print render($page['footer']); ?>
+    </footer>
   </div>
-
-  <footer class="l-footer" role="contentinfo">
-    <?php print render($page['footer']); ?>
-  </footer>
 </div>

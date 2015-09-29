@@ -4,33 +4,33 @@
 input:-moz-placeholder{color: #0B436A; text-transform: lowercase;}
 
 .form-item{
-  margin-bottom: 28px;
+  margin-bottom: 14px;
   
   input.form-text{
     width: 100%;
-    font-size: 27px;
+    font-size: 13px;
     color: #0B436A;
     border: solid 1px #E5E5E5;
-    border-radius: 4px 4px 4px 4px;
-    padding: 9px 16px;
+    border-radius: 2px 2px 2px 2px;
+    padding: 4px 8px;
     outline: none;
   }
 }
 .form-submit{
   background: #FF7900;
   border: none;
-  border-radius: 4px 4px 4px 4px;
+  border-radius: 2px 2px 2px 2px;
   font-family: Omnes Semibold;
   font-weight: 600;
-  font-size: 27px;
+  font-size: 13px;
   color: white;
-  padding: 13px 10px 11px;
-  min-width: 158px;
+  padding: 7px 5px 5px;
+  min-width: 80px;
   cursor: pointer;
   outline: none;
 }
 
 .controls .messages{
-  margin: 0 0 22px 0;
+  margin: 0 0 11px 0;
   
 }
