@@ -1,30 +1,39 @@
 .not-logged-in{
-  position: relative;
+  position: absolute;
   background: #F2F2F2;
   padding: 0 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   .l-header{
     margin-bottom: 27px;
   }
   .l-page-wrapper{
     width: $desktop-width;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
   .l-page{
-    margin: 194px 20px 0 auto;
+    min-height: 404px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin: -200px 0 0 0;
     width: 400px;
     padding: 45px 41px 40px;
-    background: white;
+    background: rgba(255, 255, 255, 0.93);
     border-radius: 7px 7px 7px 7px;
     box-sizing: border-box;
   }
   .site-logo{
     margin-top: 0;
     width: 86px;
-    img{
-      width: 100%;
-      height: auto;
-    }
+    height: 18px;
   }
   .l-branding, 
   .l-main-inner, 
@@ -79,12 +88,20 @@
 
 @media only screen and (max-width: $desktop-width){
   .not-logged-in{
-    min-width: 440px;
+    min-width: 420px;
     .l-page-wrapper{
       width: auto;
     }
+
+  }
+}
+
+@media only screen and (max-height: 443px) {
+  .not-logged-in{
     .l-page{
-      margin: 194px 20px 0 auto;
+      top: 0;
+      bottom: 0;
+      margin: 20px 0 20px 0;
     }
   }
 }

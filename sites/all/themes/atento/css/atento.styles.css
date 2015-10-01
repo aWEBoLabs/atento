@@ -323,7 +323,13 @@ body {
 .site-logo {
   margin-top: 32px;
   float: left;
+  width: 145px;
+  height: 30px;
   display: block; }
+  /* line 19, ../sass/components/_header.scss */
+  .site-logo img {
+    width: 100%;
+    height: auto; }
 
 /* line 1, ../sass/components/_hero.scss */
 #block-ds-extras-hero {
@@ -754,53 +760,62 @@ body {
 
 /* line 1, ../sass/components/login/_not-logged-in.scss */
 .not-logged-in {
-  position: relative;
+  position: absolute;
   background: #F2F2F2;
-  padding: 0 0; }
-  /* line 5, ../sass/components/login/_not-logged-in.scss */
+  padding: 0 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+  /* line 9, ../sass/components/login/_not-logged-in.scss */
   .not-logged-in .l-header {
     margin-bottom: 27px; }
-  /* line 8, ../sass/components/login/_not-logged-in.scss */
+  /* line 12, ../sass/components/login/_not-logged-in.scss */
   .not-logged-in .l-page-wrapper {
     width: 1020px;
     margin: 0 auto;
-    position: relative; }
-  /* line 13, ../sass/components/login/_not-logged-in.scss */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  /* line 21, ../sass/components/login/_not-logged-in.scss */
   .not-logged-in .l-page {
-    margin: 194px 20px 0 auto;
+    min-height: 404px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin: -200px 0 0 0;
     width: 400px;
     padding: 45px 41px 40px;
-    background: white;
+    background: rgba(255, 255, 255, 0.93);
     border-radius: 7px 7px 7px 7px;
     box-sizing: border-box; }
-  /* line 21, ../sass/components/login/_not-logged-in.scss */
+  /* line 33, ../sass/components/login/_not-logged-in.scss */
   .not-logged-in .site-logo {
     margin-top: 0;
-    width: 86px; }
-    /* line 24, ../sass/components/login/_not-logged-in.scss */
-    .not-logged-in .site-logo img {
-      width: 100%;
-      height: auto; }
-  /* line 29, ../sass/components/login/_not-logged-in.scss */
+    width: 86px;
+    height: 18px; }
+  /* line 38, ../sass/components/login/_not-logged-in.scss */
   .not-logged-in .l-branding,
   .not-logged-in .l-main-inner,
   .not-logged-in .controls {
     width: auto;
     padding: 0; }
-  /* line 35, ../sass/components/login/_not-logged-in.scss */
+  /* line 44, ../sass/components/login/_not-logged-in.scss */
   .not-logged-in .l-branding {
     margin-top: 0; }
-  /* line 39, ../sass/components/login/_not-logged-in.scss */
+  /* line 48, ../sass/components/login/_not-logged-in.scss */
   .not-logged-in .breadcrumbs,
   .not-logged-in .l-footer,
   .not-logged-in .tabs.tabs--primary {
     display: none; }
-  /* line 44, ../sass/components/login/_not-logged-in.scss */
+  /* line 53, ../sass/components/login/_not-logged-in.scss */
   .not-logged-in .l-main-inner {
     border-bottom: none;
     margin-bottom: 0; }
 
-/* line 52, ../sass/components/login/_not-logged-in.scss */
+/* line 61, ../sass/components/login/_not-logged-in.scss */
 #user-login h1 {
   margin-top: 0;
   margin-bottom: 19px;
@@ -808,35 +823,38 @@ body {
   font-weight: 500;
   font-size: 22px;
   color: #FF7900; }
-/* line 60, ../sass/components/login/_not-logged-in.scss */
+/* line 69, ../sass/components/login/_not-logged-in.scss */
 #user-login p {
   font-size: 13px;
   color: #636567;
   margin-bottom: 12px; }
-/* line 65, ../sass/components/login/_not-logged-in.scss */
+/* line 74, ../sass/components/login/_not-logged-in.scss */
 #user-login .form-item .description {
   display: none; }
-/* line 68, ../sass/components/login/_not-logged-in.scss */
+/* line 77, ../sass/components/login/_not-logged-in.scss */
 #user-login p.login-footer {
   font-size: 9px;
   line-height: 11px;
   color: #929497;
   margin-bottom: 0; }
-/* line 74, ../sass/components/login/_not-logged-in.scss */
+/* line 83, ../sass/components/login/_not-logged-in.scss */
 #user-login .form-actions {
   margin-top: 28px;
   margin-bottom: 51px; }
 
 @media only screen and (max-width: 1020px) {
-  /* line 81, ../sass/components/login/_not-logged-in.scss */
+  /* line 90, ../sass/components/login/_not-logged-in.scss */
   .not-logged-in {
-    min-width: 440px; }
-    /* line 83, ../sass/components/login/_not-logged-in.scss */
+    min-width: 420px; }
+    /* line 92, ../sass/components/login/_not-logged-in.scss */
     .not-logged-in .l-page-wrapper {
-      width: auto; }
-    /* line 86, ../sass/components/login/_not-logged-in.scss */
-    .not-logged-in .l-page {
-      margin: 194px 20px 0 auto; } }
+      width: auto; } }
+@media only screen and (max-height: 443px) {
+  /* line 101, ../sass/components/login/_not-logged-in.scss */
+  .not-logged-in .l-page {
+    top: 0;
+    bottom: 0;
+    margin: 20px 0 20px 0; } }
 /* line 3, ../sass/components/multicolumn-layout/_two-columns.scss */
 .l-main-inner {
   width: 1020px;
