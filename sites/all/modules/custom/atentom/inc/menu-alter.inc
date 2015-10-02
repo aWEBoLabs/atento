@@ -26,9 +26,7 @@ function atentom_menu_alter(&$items) {
     [412] => 
     [413] => 
     [414] => 
-    [415] => admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/list
   */
-  $items['admin/structure/taxonomy/%taxonomy_vocabulary_machine_name']['access arguments'] = array('Administer Taxonomies');
   $items['admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/display']['access arguments'] = array('Administer Taxonomies');
   $items['admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/display/default']['access arguments'] = array('Administer Taxonomies');
   $items['admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/display/full']['access arguments'] = array('Administer Taxonomies');
