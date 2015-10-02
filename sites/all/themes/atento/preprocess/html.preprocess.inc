@@ -4,6 +4,10 @@
  * Implements hook_preprocess_html().
  */
 function atento_preprocess_html(&$variables) {
+  if ( in_array('html__toboggan__denied', $variables['theme_hook_suggestions']) && drupal_is_front_page() ) {
+    $variables['theme_hook_suggestions'][] = 'html__front__login';
+  }
+
   // General Helper
   atento_preprocess_html_general($variables);
   

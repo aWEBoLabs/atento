@@ -50,6 +50,10 @@ function atentom_taxonomy_access($user_access, $term) {
  */
 function atentom_permission() {
   return array(
+    'Administer Taxonomies' => array(
+      'title' => 'Administer Taxonomies', 
+      'description' => 'Administer Taxonomies', 
+    ), 
     'Access to Our Brand' => array(
       'title' => 'Access to Our Brand', 
       'description' => 'Access to Our Brand', 
