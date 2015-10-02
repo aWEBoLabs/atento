@@ -27,6 +27,7 @@ function atentom_menu_alter(&$items) {
     [413] => 
     [414] => 
   */
+  $items['admin/structure/taxonomy/%taxonomy_vocabulary_machine_name']['access callback'] = 'user_access';
   $items['admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/display']['access arguments'] = array('Administer Taxonomies');
   $items['admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/display/default']['access arguments'] = array('Administer Taxonomies');
   $items['admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/display/full']['access arguments'] = array('Administer Taxonomies');
