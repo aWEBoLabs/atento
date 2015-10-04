@@ -937,29 +937,40 @@ body {
   right: 10px;
   top: 50%;
   margin-top: -7px; }
-/* line 37, ../sass/components/subcategory-page/_accordion.scss */
+/* line 38, ../sass/components/subcategory-page/_accordion.scss */
 .accordion .accordion-item.first .accordion-content {
   display: block; }
-/* line 40, ../sass/components/subcategory-page/_accordion.scss */
+/* line 41, ../sass/components/subcategory-page/_accordion.scss */
 .accordion .accordion-item.first .field-name-field-title:after {
   background-position: 0 -16px; }
-/* line 47, ../sass/components/subcategory-page/_accordion.scss */
+/* line 48, ../sass/components/subcategory-page/_accordion.scss */
 .accordion .accordion-item.off .accordion-content,
 .accordion .accordion-item.off.first .accordion-content {
   display: none; }
-/* line 50, ../sass/components/subcategory-page/_accordion.scss */
+/* line 51, ../sass/components/subcategory-page/_accordion.scss */
 .accordion .accordion-item.off .field-name-field-title:after,
 .accordion .accordion-item.off.first .field-name-field-title:after {
   background-position: 0 0; }
-/* line 55, ../sass/components/subcategory-page/_accordion.scss */
+/* line 56, ../sass/components/subcategory-page/_accordion.scss */
 .accordion .accordion-item.on .accordion-content {
   display: block; }
-/* line 58, ../sass/components/subcategory-page/_accordion.scss */
+/* line 59, ../sass/components/subcategory-page/_accordion.scss */
 .accordion .accordion-item.on .field-name-field-title:after {
   background-position: 0 -16px; }
+/* line 62, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .accordion-item.on .body {
+  font-size: 18px;
+  color: #636363;
+  line-height: 22px; }
+/* line 67, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .accordion-item.on .body-top + .files {
+  margin-top: 30px; }
+/* line 70, ../sass/components/subcategory-page/_accordion.scss */
+.accordion .accordion-item.on .files + .body-bottom {
+  margin-top: 30px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 66, ../sass/components/subcategory-page/_accordion.scss */
+  /* line 78, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .field-name-field-title:after {
     background-image: url("../images/accordion-icons/opener-x2.png"); } }
 /* line 2, ../sass/components/subcategory-page/_generic-page.scss */
@@ -1047,49 +1058,61 @@ body {
   opacity: 1; }
 /* line 92, ../sass/components/subcategory-page/_generic-page.scss */
 .group-generic-page .file-title {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1em;
   margin-top: 32px;
   color: #636363; }
-/* line 99, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 97, ../sass/components/subcategory-page/_generic-page.scss */
+  .group-generic-page .file-title strong {
+    color: #005589; }
+/* line 102, ../sass/components/subcategory-page/_generic-page.scss */
 .group-generic-page .file-thumbnail-inner {
   background: url("../images/file-icons/generic-file.png") no-repeat;
   background-size: 220px 132px;
   width: 220px;
   height: 132px; }
 
-/* line 109, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 112, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-blue .group-generic-page h1,
 .cat-blue .group-generic-page .field-name-field-generic-intro {
   color: #027DBA; }
-/* line 114, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 117, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-blue .file-info {
   background: rgba(2, 125, 186, 0.7); }
-
 /* line 120, ../sass/components/subcategory-page/_generic-page.scss */
+.cat-blue .file-title strong {
+  color: #027DBA; }
+
+/* line 126, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-green .group-generic-page h1,
 .cat-green .group-generic-page .field-name-field-generic-intro {
   color: #02AFA6; }
-/* line 125, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 131, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-green .file-info {
   background: rgba(2, 175, 166, 0.7); }
+/* line 134, ../sass/components/subcategory-page/_generic-page.scss */
+.cat-green .file-title strong {
+  color: #02AFA6; }
 
-/* line 131, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 140, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-orange .group-generic-page h1,
 .cat-orange .group-generic-page .field-name-field-generic-intro {
   color: #FF8F19; }
-/* line 136, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 145, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-orange .file-info {
   background: rgba(255, 143, 25, 0.7); }
+/* line 148, ../sass/components/subcategory-page/_generic-page.scss */
+.cat-orange .file-title strong {
+  color: #FF8F19; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 144, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 156, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a.view {
     background-image: url("../images/file-icons/view-x2.png"); }
-  /* line 147, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 159, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a.download {
     background-image: url("../images/file-icons/download-x2.png"); }
-  /* line 151, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 163, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-thumbnail-inner {
     background-image: url("../images/file-icons/generic-file-x2.png"); } }
 /* line 2, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */

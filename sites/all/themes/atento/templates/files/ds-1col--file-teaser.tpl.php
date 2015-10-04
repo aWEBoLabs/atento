@@ -34,6 +34,11 @@ if ( $type == 'image' ) {
   $data_size = "{$vars2['width']}x{$vars2['height']}";
 }
 $filename_print = check_plain($filename);
+
+if ( isset($file->description) && !empty($file->description) ) {
+  $filename_print = check_markup($file->description, 'full_html');
+}
+
 ?>
 <div class="file-preview col-<?php print $col;?>">
   <div class="file-inner-wrapper">
