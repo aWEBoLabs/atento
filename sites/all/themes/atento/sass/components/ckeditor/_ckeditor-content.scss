@@ -12,7 +12,8 @@
     font-size: 24px;
     font-weight: 600;
     font-family: 'Omnes Semibold';
-    color: #636363;
+    /*color: #636363;*/
+    color: $cat-dark-blue;
   }
   h4{
     font-size: 14px;
@@ -45,4 +46,38 @@
 
 .field-name-field-generic-intro+.field-name-field-generic-body{
   margin-top: 22px;
+}
+
+.cat-blue{
+  .cke_editable, 
+  .field-name-field-generic-intro, 
+  .field-name-field-generic-body{
+    h2, 
+    h3, 
+    h4{
+      color: $cat-blue;
+    }
+  }
+}
+.cat-green{
+  .cke_editable, 
+  .field-name-field-generic-intro, 
+  .field-name-field-generic-body{
+    h2, 
+    h3, 
+    h4{
+      color: $cat-green;
+    }
+  }
+}
+.cat-orange{
+  .cke_editable, 
+  .field-name-field-generic-intro, 
+  .field-name-field-generic-body{
+    h2, 
+    h3, 
+    h4{
+      color: $cat-orange;
+    }
+  }
 }

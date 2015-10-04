@@ -25,9 +25,19 @@
     z-index: 0;
   }
   
-  .hero-icon{
+  .hero-title{
+    width: 347px;
     float: left;
-    width: 80px;
+    position: relative;
+    max-height: 63px;
+  }
+  .hero-icon{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: -10px;
+    top: 50%;
+    margin-top: -40px;
     img{
       width: 70px;
       height: 70px;
@@ -36,8 +46,7 @@
   h1{
     font-weight: 600;
     font-family: 'Omnes Semibold';
-    float: left;
-    width: 247px;
+    margin-left: 80px;
     margin-right: 20px;
     color: $cat-dark-blue;
     font-size: 36px;
