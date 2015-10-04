@@ -2,7 +2,9 @@
   .accordion-item{
     .accordion-content{
       display: none;
-      padding: 44px 0;
+      .accordion-inner{
+        padding: 44px 0;
+      }
     }
   }
   
@@ -34,6 +36,20 @@
     margin-top: -7px;
   }
   
+  .accordion-item{
+    .body{
+      font-size: 18px;
+      color: #636363;
+      line-height: 22px;
+    }
+    .body-top+.files{
+      margin-top: 30px;
+    }
+    .files + .body-bottom{
+      margin-top: 30px;
+    }
+  }
+  
   .accordion-item.first{
     .accordion-content{
       display: block;
@@ -58,17 +74,6 @@
     }
     .field-name-field-title:after{
       background-position: 0 -16px;
-    }
-    .body{
-      font-size: 18px;
-      color: #636363;
-      line-height: 22px;
-    }
-    .body-top+.files{
-      margin-top: 30px;
-    }
-    .files + .body-bottom{
-      margin-top: 30px;
     }
   }
 }
