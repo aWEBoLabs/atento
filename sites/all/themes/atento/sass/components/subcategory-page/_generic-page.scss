@@ -5,7 +5,7 @@
     font-size: 24px;
     line-height: 1.08em;
     color: $cat-dark-blue;
-    margin-bottom: 11px;
+    margin-bottom: 33px;
   }
   
   .field-name-field-generic-intro, 
@@ -17,17 +17,28 @@
   }
   
   .files{
-    margin: -44px -22px 0;
+    margin: 0 0 0;
     .file-preview{
       width: 220px;
-      margin: 44px 22px 0;
+      margin: 0 22px 56px;
       float: left;
+    }
+    .file-preview.col-1{
+      margin-left: 0;
+    }
+    .file-preview.col-3{
+      margin-right: 0;
+    }
+    .file-preview.row-last{
+      margin-bottom: 0;
     }
     .file-thumbnail{
       height: 132px;
       position: relative;
       img{
         display: block;
+        width: 100%;
+        height: auto;
       }
       .file-info{
         position: absolute;
@@ -48,6 +59,9 @@
     display: table;
     height: 0;
     clear: both;
+  }
+  > .files{
+    margin-top: 24px;
   }
   .file-info{
     background: $cat-dark-blue-trans;
@@ -92,7 +106,7 @@
   .file-title{
     font-size: 16px;
     line-height: 1em;
-    margin-top: 32px;
+    margin-top: 42px;
     color: #636363;
     strong{
       color: $cat-dark-blue;
@@ -104,6 +118,8 @@
     background-size: 220px 132px;
     width: 220px;
     height: 132px;
+    border: solid 1px #636363;
+    box-sizing: border-box;
   }
 }
 
