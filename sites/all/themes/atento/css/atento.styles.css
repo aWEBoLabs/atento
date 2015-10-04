@@ -741,11 +741,6 @@ body {
 .field-name-field-generic-body * + * {
   margin-top: 22px; }
 /* line 38, ../sass/components/ckeditor/_ckeditor-content.scss */
-.cke_editable h2 + p,
-.field-name-field-generic-intro h2 + p,
-.field-name-field-generic-body h2 + p {
-  margin-top: 0; }
-/* line 41, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable hr,
 .field-name-field-generic-intro hr,
 .field-name-field-generic-body hr {
@@ -754,7 +749,7 @@ body {
   height: 1px;
   margin: 33px 0; }
 
-/* line 49, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 46, ../sass/components/ckeditor/_ckeditor-content.scss */
 .field-name-field-generic-intro + .field-name-field-generic-body {
   margin-top: 22px; }
 
