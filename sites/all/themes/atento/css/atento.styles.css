@@ -815,10 +815,10 @@ body {
 .field-name-field-generic-intro .featured-container,
 .field-name-field-generic-body .featured-container {
   float: left;
+  width: 100%;
   clear: both;
   background: #005589;
   padding: 88px;
-  width: auto;
   text-align: center;
   min-height: 220px;
   margin: 44px 0;
