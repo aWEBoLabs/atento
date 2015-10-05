@@ -1,6 +1,9 @@
 .cke_editable, 
 .field-name-field-generic-intro, 
 .field-name-field-generic-body{
+  > *{
+    clear: both;
+  }
   h2{
     font-size: 24px;
     font-weight: 600;
@@ -46,6 +49,7 @@
     margin: 33px 0;
   }
   .color-container{
+    clear: none;
     background: $cat-dark-blue;
     padding: 30px 44px 30px 50px;
     width: 352px;
@@ -64,6 +68,20 @@
   }
   .color-container:nth-child(odd){
     margin-left: 0;
+    clear: left;
+  }
+  
+  .featured-container{
+    background: $cat-dark-blue;
+    padding: 88px;
+    width: auto;
+    text-align: center;
+    min-height: 220px;
+    margin: 44px 0;
+    color: white;
+    h1, h2, h3, h4, h5, h6, h7, h8{
+      color: white;
+    }
   }
 }
 
@@ -101,6 +119,32 @@
     h3, 
     h4{
       color: $cat-orange;
+    }
+  }
+}
+
+.cat-dark-blue, 
+.cat-blue, 
+.cat-orange, 
+.cat-green{
+  .cke_editable, 
+  .field-name-field-generic-intro, 
+  .field-name-field-generic-body{
+    .color-container.dark-blue, 
+    .featured-container.dark-blue{
+      background: $cat-dark-blue;
+    }
+    .color-container.blue, 
+    .featured-container.blue{
+      background: $cat-blue;
+    }
+    .color-container.orange, 
+    .featured-container.orange{
+      background: $cat-orange;
+    }
+    .color-container.green, 
+    .featured-container.green{
+      background: $cat-green;
     }
   }
 }
