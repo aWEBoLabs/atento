@@ -782,7 +782,7 @@ body {
   margin-top: 0;
   margin-bottom: 44px; }
   /* line 63, ../sass/components/ckeditor/_ckeditor-content.scss */
-  .cke_editable .color-container h1, .cke_editable .color-container h2, .cke_editable .color-container h3, .cke_editable .color-container h4, .cke_editable .color-container h5, .cke_editable .color-container h6, .cke_editable .color-container h7, .cke_editable .color-container h8,
+  .cke_editable .color-container h1, .cke_editable .color-container h2, .cke_editable .color-container h3, .cke_editable .color-container h4, .cke_editable .color-container h5, .cke_editable .color-container h6, .cke_editable .color-container h7, .cke_editable .color-container h8, .cke_editable .color-container p,
   .field-name-field-generic-intro .color-container h1,
   .field-name-field-generic-intro .color-container h2,
   .field-name-field-generic-intro .color-container h3,
@@ -791,6 +791,7 @@ body {
   .field-name-field-generic-intro .color-container h6,
   .field-name-field-generic-intro .color-container h7,
   .field-name-field-generic-intro .color-container h8,
+  .field-name-field-generic-intro .color-container p,
   .field-name-field-generic-body .color-container h1,
   .field-name-field-generic-body .color-container h2,
   .field-name-field-generic-body .color-container h3,
@@ -798,7 +799,8 @@ body {
   .field-name-field-generic-body .color-container h5,
   .field-name-field-generic-body .color-container h6,
   .field-name-field-generic-body .color-container h7,
-  .field-name-field-generic-body .color-container h8 {
+  .field-name-field-generic-body .color-container h8,
+  .field-name-field-generic-body .color-container p {
     color: white; }
 /* line 67, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container + .color-container,
