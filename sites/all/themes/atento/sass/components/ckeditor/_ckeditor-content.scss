@@ -29,6 +29,7 @@
   p{
     font-size: 18px;
     line-height: 1.33em;
+    color: #636363;
     a{
       font-weight: 600;
       font-family: 'Omnes Semibold';
@@ -151,6 +152,17 @@
     }
   }
 }
+.cat-dark-orange{
+  .cke_editable, 
+  .field-name-field-generic-intro, 
+  .field-name-field-generic-body{
+    h2, 
+    h3, 
+    h4{
+      color: $cat-dark-orange;
+    }
+  }
+}
 
 
 .cke_editable, 
@@ -167,6 +179,10 @@
   .color-container.orange, 
   .featured-container.orange{
     background: $cat-orange;
+  }
+  .color-container.orange, 
+  .featured-container.orange{
+    background: $cat-dark-orange;
   }
   .color-container.green, 
   .featured-container.green{
@@ -192,6 +208,10 @@
     .color-container.orange, 
     .featured-container.orange{
       background: $cat-orange;
+    }
+    .color-container.orange, 
+    .featured-container.orange{
+      background: $cat-dark-orange;
     }
     .color-container.green, 
     .featured-container.green{

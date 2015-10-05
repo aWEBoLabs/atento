@@ -39,6 +39,13 @@ if(typeof(CKEDITOR) !== 'undefined') {
       }
     }, 
     {
+      name: 'Square Container (Dark Orange)', //THESE NEXT 4 LINES I CHANGED 
+      element: 'div',
+      attributes: {
+        class: 'color-container dark-orange'
+      }
+    }, 
+    {
       name: 'Square Container (Green)', //THESE NEXT 4 LINES I CHANGED 
       element: 'div',
       attributes: {
@@ -72,6 +79,13 @@ if(typeof(CKEDITOR) !== 'undefined') {
       element: 'div',
       attributes: {
         class: 'featured-container orange'
+      }
+    }, 
+    {
+      name: 'Featured Container (Dark Orange)', //THESE NEXT 4 LINES I CHANGED 
+      element: 'div',
+      attributes: {
+        class: 'featured-container dark-orange'
       }
     }, 
     {
