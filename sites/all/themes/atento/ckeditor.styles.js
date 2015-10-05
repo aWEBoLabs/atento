@@ -52,7 +52,7 @@ if(typeof(CKEDITOR) !== 'undefined') {
         class: 'color-container green'
       }
     }, 
-    
+
     {
       name: 'Featured Container', //THESE NEXT 4 LINES I CHANGED 
       element: 'div',

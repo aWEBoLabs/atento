@@ -929,7 +929,7 @@ body {
 .cat-dark-orange .field-name-field-generic-body h2,
 .cat-dark-orange .field-name-field-generic-body h3,
 .cat-dark-orange .field-name-field-generic-body h4 {
-  color: #ff7900; }
+  color: #FF7900; }
 
 /* line 171, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container.dark-blue,
@@ -956,13 +956,13 @@ body {
 .field-name-field-generic-body .featured-container.orange {
   background: #FF8F19; }
 /* line 183, ../sass/components/ckeditor/_ckeditor-content.scss */
-.cke_editable .color-container.orange,
-.cke_editable .featured-container.orange,
-.field-name-field-generic-intro .color-container.orange,
-.field-name-field-generic-intro .featured-container.orange,
-.field-name-field-generic-body .color-container.orange,
-.field-name-field-generic-body .featured-container.orange {
-  background: #ff7900; }
+.cke_editable .color-container.dark-orange,
+.cke_editable .featured-container.dark-orange,
+.field-name-field-generic-intro .color-container.dark-orange,
+.field-name-field-generic-intro .featured-container.dark-orange,
+.field-name-field-generic-body .color-container.dark-orange,
+.field-name-field-generic-body .featured-container.dark-orange {
+  background: #FF7900; }
 /* line 187, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container.green,
 .cke_editable .featured-container.green,
@@ -1051,31 +1051,31 @@ body {
 .cat-green .field-name-field-generic-body .featured-container.orange {
   background: #FF8F19; }
 /* line 212, ../sass/components/ckeditor/_ckeditor-content.scss */
-.cat-dark-blue .cke_editable .color-container.orange,
-.cat-dark-blue .cke_editable .featured-container.orange,
-.cat-dark-blue .field-name-field-generic-intro .color-container.orange,
-.cat-dark-blue .field-name-field-generic-intro .featured-container.orange,
-.cat-dark-blue .field-name-field-generic-body .color-container.orange,
-.cat-dark-blue .field-name-field-generic-body .featured-container.orange,
-.cat-blue .cke_editable .color-container.orange,
-.cat-blue .cke_editable .featured-container.orange,
-.cat-blue .field-name-field-generic-intro .color-container.orange,
-.cat-blue .field-name-field-generic-intro .featured-container.orange,
-.cat-blue .field-name-field-generic-body .color-container.orange,
-.cat-blue .field-name-field-generic-body .featured-container.orange,
-.cat-orange .cke_editable .color-container.orange,
-.cat-orange .cke_editable .featured-container.orange,
-.cat-orange .field-name-field-generic-intro .color-container.orange,
-.cat-orange .field-name-field-generic-intro .featured-container.orange,
-.cat-orange .field-name-field-generic-body .color-container.orange,
-.cat-orange .field-name-field-generic-body .featured-container.orange,
-.cat-green .cke_editable .color-container.orange,
-.cat-green .cke_editable .featured-container.orange,
-.cat-green .field-name-field-generic-intro .color-container.orange,
-.cat-green .field-name-field-generic-intro .featured-container.orange,
-.cat-green .field-name-field-generic-body .color-container.orange,
-.cat-green .field-name-field-generic-body .featured-container.orange {
-  background: #ff7900; }
+.cat-dark-blue .cke_editable .color-container.dark-orange,
+.cat-dark-blue .cke_editable .featured-container.dark-orange,
+.cat-dark-blue .field-name-field-generic-intro .color-container.dark-orange,
+.cat-dark-blue .field-name-field-generic-intro .featured-container.dark-orange,
+.cat-dark-blue .field-name-field-generic-body .color-container.dark-orange,
+.cat-dark-blue .field-name-field-generic-body .featured-container.dark-orange,
+.cat-blue .cke_editable .color-container.dark-orange,
+.cat-blue .cke_editable .featured-container.dark-orange,
+.cat-blue .field-name-field-generic-intro .color-container.dark-orange,
+.cat-blue .field-name-field-generic-intro .featured-container.dark-orange,
+.cat-blue .field-name-field-generic-body .color-container.dark-orange,
+.cat-blue .field-name-field-generic-body .featured-container.dark-orange,
+.cat-orange .cke_editable .color-container.dark-orange,
+.cat-orange .cke_editable .featured-container.dark-orange,
+.cat-orange .field-name-field-generic-intro .color-container.dark-orange,
+.cat-orange .field-name-field-generic-intro .featured-container.dark-orange,
+.cat-orange .field-name-field-generic-body .color-container.dark-orange,
+.cat-orange .field-name-field-generic-body .featured-container.dark-orange,
+.cat-green .cke_editable .color-container.dark-orange,
+.cat-green .cke_editable .featured-container.dark-orange,
+.cat-green .field-name-field-generic-intro .color-container.dark-orange,
+.cat-green .field-name-field-generic-intro .featured-container.dark-orange,
+.cat-green .field-name-field-generic-body .color-container.dark-orange,
+.cat-green .field-name-field-generic-body .featured-container.dark-orange {
+  background: #FF7900; }
 /* line 216, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.green,
 .cat-dark-blue .cke_editable .featured-container.green,
