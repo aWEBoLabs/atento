@@ -7,6 +7,7 @@
     font-family: 'Omnes Semibold';
     line-height: 1.25em;
     color: $cat-dark-blue;
+    margin-bottom: 22px;
   }
   h3{
     font-size: 24px;
@@ -14,11 +15,13 @@
     font-family: 'Omnes Semibold';
     /*color: #636363;*/
     color: $cat-dark-blue;
+    margin-bottom: 22px;
   }
   h4{
     font-size: 14px;
     line-height: 1.33em;
     color: $cat-dark-blue;
+    margin-bottom: 22px;
   }
   p{
     font-size: 18px;
@@ -41,6 +44,26 @@
     border: 0;
     height: 1px;
     margin: 33px 0;
+  }
+  .color-container{
+    background: $cat-dark-blue;
+    padding: 30px 44px 30px 50px;
+    width: 352px;
+    min-height: 264px;
+    box-sizing: border-box;
+    float: left;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 44px;
+    h1, h2, h3, h4, h5, h6, h7, h8{
+      color: white;
+    }
+  }
+  .color-container+.color-container{
+    margin-left: 42px;
+  }
+  .color-container:nth-child(odd){
+    margin-left: 0;
   }
 }
 
