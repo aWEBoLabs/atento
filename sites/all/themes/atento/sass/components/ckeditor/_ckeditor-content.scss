@@ -79,8 +79,16 @@
     min-height: 220px;
     margin: 44px 0;
     color: white;
+    box-sizing: border-box;
     h1, h2, h3, h4, h5, h6, h7, h8{
       color: white;
+      margin: 0;
+    }
+    h2{
+      font-size: 38px;
+    }
+    *+*{
+      margin-top: 22px;
     }
   }
 }

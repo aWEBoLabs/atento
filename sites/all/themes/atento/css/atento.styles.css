@@ -820,8 +820,9 @@ body {
   text-align: center;
   min-height: 220px;
   margin: 44px 0;
-  color: white; }
-  /* line 82, ../sass/components/ckeditor/_ckeditor-content.scss */
+  color: white;
+  box-sizing: border-box; }
+  /* line 83, ../sass/components/ckeditor/_ckeditor-content.scss */
   .cke_editable .featured-container h1, .cke_editable .featured-container h2, .cke_editable .featured-container h3, .cke_editable .featured-container h4, .cke_editable .featured-container h5, .cke_editable .featured-container h6, .cke_editable .featured-container h7, .cke_editable .featured-container h8,
   .field-name-field-generic-intro .featured-container h1,
   .field-name-field-generic-intro .featured-container h2,
@@ -839,13 +840,24 @@ body {
   .field-name-field-generic-body .featured-container h6,
   .field-name-field-generic-body .featured-container h7,
   .field-name-field-generic-body .featured-container h8 {
-    color: white; }
+    color: white;
+    margin: 0; }
+  /* line 87, ../sass/components/ckeditor/_ckeditor-content.scss */
+  .cke_editable .featured-container h2,
+  .field-name-field-generic-intro .featured-container h2,
+  .field-name-field-generic-body .featured-container h2 {
+    font-size: 38px; }
+  /* line 90, ../sass/components/ckeditor/_ckeditor-content.scss */
+  .cke_editable .featured-container * + *,
+  .field-name-field-generic-intro .featured-container * + *,
+  .field-name-field-generic-body .featured-container * + * {
+    margin-top: 22px; }
 
-/* line 88, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 96, ../sass/components/ckeditor/_ckeditor-content.scss */
 .field-name-field-generic-intro + .field-name-field-generic-body {
   margin-top: 22px; }
 
-/* line 96, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 104, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-blue .cke_editable h2,
 .cat-blue .cke_editable h3,
 .cat-blue .cke_editable h4,
@@ -857,7 +869,7 @@ body {
 .cat-blue .field-name-field-generic-body h4 {
   color: #027DBA; }
 
-/* line 107, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 115, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-green .cke_editable h2,
 .cat-green .cke_editable h3,
 .cat-green .cke_editable h4,
@@ -869,7 +881,7 @@ body {
 .cat-green .field-name-field-generic-body h4 {
   color: #02AFA6; }
 
-/* line 118, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 126, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-orange .cke_editable h2,
 .cat-orange .cke_editable h3,
 .cat-orange .cke_editable h4,
@@ -881,7 +893,7 @@ body {
 .cat-orange .field-name-field-generic-body h4 {
   color: #FF8F19; }
 
-/* line 133, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 141, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.dark-blue,
 .cat-dark-blue .cke_editable .featured-container.dark-blue,
 .cat-dark-blue .field-name-field-generic-intro .color-container.dark-blue,
@@ -907,7 +919,7 @@ body {
 .cat-green .field-name-field-generic-body .color-container.dark-blue,
 .cat-green .field-name-field-generic-body .featured-container.dark-blue {
   background: #005589; }
-/* line 137, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 145, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.blue,
 .cat-dark-blue .cke_editable .featured-container.blue,
 .cat-dark-blue .field-name-field-generic-intro .color-container.blue,
@@ -933,7 +945,7 @@ body {
 .cat-green .field-name-field-generic-body .color-container.blue,
 .cat-green .field-name-field-generic-body .featured-container.blue {
   background: #027DBA; }
-/* line 141, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 149, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.orange,
 .cat-dark-blue .cke_editable .featured-container.orange,
 .cat-dark-blue .field-name-field-generic-intro .color-container.orange,
@@ -959,7 +971,7 @@ body {
 .cat-green .field-name-field-generic-body .color-container.orange,
 .cat-green .field-name-field-generic-body .featured-container.orange {
   background: #FF8F19; }
-/* line 145, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 153, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.green,
 .cat-dark-blue .cke_editable .featured-container.green,
 .cat-dark-blue .field-name-field-generic-intro .color-container.green,
