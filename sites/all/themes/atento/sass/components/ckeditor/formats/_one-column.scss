@@ -1,0 +1,39 @@
+.cke_editable{
+  position: static !important;
+  .one-column{
+    border: dashed purple 1px;
+  }
+  > span{
+    display: none !important;
+    span{
+      display: none !important;
+    }
+  }
+}
+.cke_editable, 
+.field-name-field-generic-body{
+  .one-column{
+    float: left;
+    width: 264px;
+    clear: none;
+    box-sizing: border-box;
+    margin-right: 44px;
+    margin-bottom: 44px;
+    img{
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+  
+  .one-column.width-220{
+    width: 220px;
+  }
+  
+  .one-column.width-194{
+    width: 194px;
+  }
+  
+  .one-column.width-168{
+    width: 168px;
+  }
+}

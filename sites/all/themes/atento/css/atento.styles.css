@@ -701,12 +701,16 @@ body {
   /* line 100, ../sass/components/_subcategories.scss */
   #block-menu-block-1 ul.menu {
     background-image: url("../images/menu-cross-x2.png"); } }
-/* line 4, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 2, ../sass/components/ckeditor/_ckeditor-content.scss */
+.cke_editable img {
+  border: dashed pink 1px; }
+
+/* line 9, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable > *,
 .field-name-field-generic-intro > *,
 .field-name-field-generic-body > * {
   clear: both; }
-/* line 7, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 12, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable h2,
 .field-name-field-generic-intro h2,
 .field-name-field-generic-body h2 {
@@ -716,7 +720,7 @@ body {
   line-height: 1.25em;
   color: #005589;
   margin-bottom: 22px; }
-/* line 15, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 20, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable h3,
 .field-name-field-generic-intro h3,
 .field-name-field-generic-body h3 {
@@ -726,7 +730,7 @@ body {
   line-height: 1.25;
   color: #005589;
   margin-bottom: 22px; }
-/* line 23, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 28, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable h4,
 .field-name-field-generic-intro h4,
 .field-name-field-generic-body h4 {
@@ -734,14 +738,14 @@ body {
   line-height: 1.33em;
   color: #005589;
   margin-bottom: 22px; }
-/* line 29, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 34, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable p,
 .field-name-field-generic-intro p,
 .field-name-field-generic-body p {
   font-size: 18px;
   line-height: 1.33em;
   color: #636363; }
-  /* line 33, ../sass/components/ckeditor/_ckeditor-content.scss */
+  /* line 38, ../sass/components/ckeditor/_ckeditor-content.scss */
   .cke_editable p a,
   .field-name-field-generic-intro p a,
   .field-name-field-generic-body p a {
@@ -749,17 +753,17 @@ body {
     font-family: 'Omnes Semibold';
     text-decoration: none;
     color: #FF7900; }
-/* line 40, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 45, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable *,
 .field-name-field-generic-intro *,
 .field-name-field-generic-body * {
   margin: 0; }
-/* line 43, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 48, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable * + *,
 .field-name-field-generic-intro * + *,
 .field-name-field-generic-body * + * {
   margin-top: 22px; }
-/* line 46, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 51, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable hr,
 .field-name-field-generic-intro hr,
 .field-name-field-generic-body hr {
@@ -767,7 +771,7 @@ body {
   border: 0;
   height: 1px;
   margin: 33px 0; }
-/* line 52, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 57, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container,
 .field-name-field-generic-intro .color-container,
 .field-name-field-generic-body .color-container {
@@ -781,7 +785,7 @@ body {
   color: white;
   margin-top: 0;
   margin-bottom: 44px; }
-  /* line 63, ../sass/components/ckeditor/_ckeditor-content.scss */
+  /* line 68, ../sass/components/ckeditor/_ckeditor-content.scss */
   .cke_editable .color-container h1, .cke_editable .color-container h2, .cke_editable .color-container h3, .cke_editable .color-container h4, .cke_editable .color-container h5, .cke_editable .color-container h6, .cke_editable .color-container h7, .cke_editable .color-container h8, .cke_editable .color-container p,
   .field-name-field-generic-intro .color-container h1,
   .field-name-field-generic-intro .color-container h2,
@@ -802,18 +806,18 @@ body {
   .field-name-field-generic-body .color-container h8,
   .field-name-field-generic-body .color-container p {
     color: white; }
-/* line 67, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 72, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container + .color-container,
 .field-name-field-generic-intro .color-container + .color-container,
 .field-name-field-generic-body .color-container + .color-container {
   margin-left: 42px; }
-/* line 70, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 75, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container:nth-child(odd),
 .field-name-field-generic-intro .color-container:nth-child(odd),
 .field-name-field-generic-body .color-container:nth-child(odd) {
   margin-left: 0;
   clear: left; }
-/* line 75, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 80, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .featured-container,
 .field-name-field-generic-intro .featured-container,
 .field-name-field-generic-body .featured-container {
@@ -828,7 +832,7 @@ body {
   color: white;
   box-sizing: border-box;
   max-width: 748px; }
-  /* line 87, ../sass/components/ckeditor/_ckeditor-content.scss */
+  /* line 92, ../sass/components/ckeditor/_ckeditor-content.scss */
   .cke_editable .featured-container h1, .cke_editable .featured-container h2, .cke_editable .featured-container h3, .cke_editable .featured-container h4, .cke_editable .featured-container h5, .cke_editable .featured-container h6, .cke_editable .featured-container h7, .cke_editable .featured-container h8,
   .field-name-field-generic-intro .featured-container h1,
   .field-name-field-generic-intro .featured-container h2,
@@ -848,17 +852,17 @@ body {
   .field-name-field-generic-body .featured-container h8 {
     color: white;
     margin: 0; }
-  /* line 91, ../sass/components/ckeditor/_ckeditor-content.scss */
+  /* line 96, ../sass/components/ckeditor/_ckeditor-content.scss */
   .cke_editable .featured-container h2,
   .field-name-field-generic-intro .featured-container h2,
   .field-name-field-generic-body .featured-container h2 {
     font-size: 38px; }
-  /* line 94, ../sass/components/ckeditor/_ckeditor-content.scss */
+  /* line 99, ../sass/components/ckeditor/_ckeditor-content.scss */
   .cke_editable .featured-container * + *,
   .field-name-field-generic-intro .featured-container * + *,
   .field-name-field-generic-body .featured-container * + * {
     margin-top: 22px; }
-/* line 98, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 103, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .featured-container:after,
 .field-name-field-generic-intro .featured-container:after,
 .field-name-field-generic-body .featured-container:after {
@@ -867,25 +871,25 @@ body {
   display: table;
   height: 0; }
 
-/* line 105, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 110, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable {
   position: relative; }
-  /* line 107, ../sass/components/ckeditor/_ckeditor-content.scss */
+  /* line 112, ../sass/components/ckeditor/_ckeditor-content.scss */
   .cke_editable .featured-container {
     max-width: 748px; }
 
-/* line 111, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 116, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable:after {
   clear: both;
   content: "";
   display: table;
   height: 0; }
 
-/* line 118, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 123, ../sass/components/ckeditor/_ckeditor-content.scss */
 .field-name-field-generic-intro + .field-name-field-generic-body {
   margin-top: 22px; }
 
-/* line 126, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 131, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-blue .cke_editable h2,
 .cat-blue .cke_editable h3,
 .cat-blue .cke_editable h4,
@@ -897,7 +901,7 @@ body {
 .cat-blue .field-name-field-generic-body h4 {
   color: #027DBA; }
 
-/* line 137, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 142, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-green .cke_editable h2,
 .cat-green .cke_editable h3,
 .cat-green .cke_editable h4,
@@ -909,7 +913,7 @@ body {
 .cat-green .field-name-field-generic-body h4 {
   color: #02AFA6; }
 
-/* line 148, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 153, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-orange .cke_editable h2,
 .cat-orange .cke_editable h3,
 .cat-orange .cke_editable h4,
@@ -921,7 +925,7 @@ body {
 .cat-orange .field-name-field-generic-body h4 {
   color: #FF8F19; }
 
-/* line 159, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 164, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-orange .cke_editable h2,
 .cat-dark-orange .cke_editable h3,
 .cat-dark-orange .cke_editable h4,
@@ -933,7 +937,7 @@ body {
 .cat-dark-orange .field-name-field-generic-body h4 {
   color: #FF7900; }
 
-/* line 171, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 176, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container.dark-blue,
 .cke_editable .featured-container.dark-blue,
 .field-name-field-generic-intro .color-container.dark-blue,
@@ -941,7 +945,7 @@ body {
 .field-name-field-generic-body .color-container.dark-blue,
 .field-name-field-generic-body .featured-container.dark-blue {
   background: #005589; }
-/* line 175, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 180, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container.blue,
 .cke_editable .featured-container.blue,
 .field-name-field-generic-intro .color-container.blue,
@@ -949,7 +953,7 @@ body {
 .field-name-field-generic-body .color-container.blue,
 .field-name-field-generic-body .featured-container.blue {
   background: #027DBA; }
-/* line 179, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 184, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container.orange,
 .cke_editable .featured-container.orange,
 .field-name-field-generic-intro .color-container.orange,
@@ -957,7 +961,7 @@ body {
 .field-name-field-generic-body .color-container.orange,
 .field-name-field-generic-body .featured-container.orange {
   background: #FF8F19; }
-/* line 183, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 188, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container.dark-orange,
 .cke_editable .featured-container.dark-orange,
 .field-name-field-generic-intro .color-container.dark-orange,
@@ -965,7 +969,7 @@ body {
 .field-name-field-generic-body .color-container.dark-orange,
 .field-name-field-generic-body .featured-container.dark-orange {
   background: #FF7900; }
-/* line 187, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 192, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container.green,
 .cke_editable .featured-container.green,
 .field-name-field-generic-intro .color-container.green,
@@ -974,7 +978,7 @@ body {
 .field-name-field-generic-body .featured-container.green {
   background: #02AFA6; }
 
-/* line 200, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 205, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.dark-blue,
 .cat-dark-blue .cke_editable .featured-container.dark-blue,
 .cat-dark-blue .field-name-field-generic-intro .color-container.dark-blue,
@@ -1000,7 +1004,7 @@ body {
 .cat-green .field-name-field-generic-body .color-container.dark-blue,
 .cat-green .field-name-field-generic-body .featured-container.dark-blue {
   background: #005589; }
-/* line 204, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 209, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.blue,
 .cat-dark-blue .cke_editable .featured-container.blue,
 .cat-dark-blue .field-name-field-generic-intro .color-container.blue,
@@ -1026,7 +1030,7 @@ body {
 .cat-green .field-name-field-generic-body .color-container.blue,
 .cat-green .field-name-field-generic-body .featured-container.blue {
   background: #027DBA; }
-/* line 208, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 213, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.orange,
 .cat-dark-blue .cke_editable .featured-container.orange,
 .cat-dark-blue .field-name-field-generic-intro .color-container.orange,
@@ -1052,7 +1056,7 @@ body {
 .cat-green .field-name-field-generic-body .color-container.orange,
 .cat-green .field-name-field-generic-body .featured-container.orange {
   background: #FF8F19; }
-/* line 212, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 217, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.dark-orange,
 .cat-dark-blue .cke_editable .featured-container.dark-orange,
 .cat-dark-blue .field-name-field-generic-intro .color-container.dark-orange,
@@ -1078,7 +1082,7 @@ body {
 .cat-green .field-name-field-generic-body .color-container.dark-orange,
 .cat-green .field-name-field-generic-body .featured-container.dark-orange {
   background: #FF7900; }
-/* line 216, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 221, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.green,
 .cat-dark-blue .cke_editable .featured-container.green,
 .cat-dark-blue .field-name-field-generic-intro .color-container.green,
@@ -1104,6 +1108,107 @@ body {
 .cat-green .field-name-field-generic-body .color-container.green,
 .cat-green .field-name-field-generic-body .featured-container.green {
   background: #02AFA6; }
+
+/* line 1, ../sass/components/ckeditor/formats/_one-column.scss */
+.cke_editable {
+  position: static !important; }
+  /* line 3, ../sass/components/ckeditor/formats/_one-column.scss */
+  .cke_editable .one-column {
+    border: dashed purple 1px; }
+  /* line 6, ../sass/components/ckeditor/formats/_one-column.scss */
+  .cke_editable > span {
+    display: none !important; }
+    /* line 8, ../sass/components/ckeditor/formats/_one-column.scss */
+    .cke_editable > span span {
+      display: none !important; }
+
+/* line 15, ../sass/components/ckeditor/formats/_one-column.scss */
+.cke_editable .one-column,
+.field-name-field-generic-body .one-column {
+  float: left;
+  width: 264px;
+  clear: none;
+  box-sizing: border-box;
+  margin-right: 44px;
+  margin-bottom: 44px; }
+  /* line 22, ../sass/components/ckeditor/formats/_one-column.scss */
+  .cke_editable .one-column img,
+  .field-name-field-generic-body .one-column img {
+    width: 100% !important;
+    height: auto !important; }
+/* line 28, ../sass/components/ckeditor/formats/_one-column.scss */
+.cke_editable .one-column.width-220,
+.field-name-field-generic-body .one-column.width-220 {
+  width: 220px; }
+/* line 32, ../sass/components/ckeditor/formats/_one-column.scss */
+.cke_editable .one-column.width-194,
+.field-name-field-generic-body .one-column.width-194 {
+  width: 194px; }
+/* line 36, ../sass/components/ckeditor/formats/_one-column.scss */
+.cke_editable .one-column.width-168,
+.field-name-field-generic-body .one-column.width-168 {
+  width: 168px; }
+
+/* line 2, ../sass/components/ckeditor/formats/_two-columns.image-left.scss */
+.cke_editable .two-columns-image-left,
+.cke_editable .two-columns-image-right {
+  border: dashed purple 1px; }
+
+/* line 9, ../sass/components/ckeditor/formats/_two-columns.image-left.scss */
+.cke_editable .two-columns-image-left,
+.cke_editable .two-columns-image-right,
+.field-name-field-generic-body .two-columns-image-left,
+.field-name-field-generic-body .two-columns-image-right {
+  float: left;
+  max-width: 748px; }
+  /* line 14, ../sass/components/ckeditor/formats/_two-columns.image-left.scss */
+  .cke_editable .two-columns-image-left > *,
+  .cke_editable .two-columns-image-right > *,
+  .field-name-field-generic-body .two-columns-image-left > *,
+  .field-name-field-generic-body .two-columns-image-right > * {
+    margin-left: 353px; }
+  /* line 17, ../sass/components/ckeditor/formats/_two-columns.image-left.scss */
+  .cke_editable .two-columns-image-left > *:first-child,
+  .cke_editable .two-columns-image-right > *:first-child,
+  .field-name-field-generic-body .two-columns-image-left > *:first-child,
+  .field-name-field-generic-body .two-columns-image-right > *:first-child {
+    margin: 0;
+    margin-left: 0;
+    float: left;
+    width: 311px; }
+    /* line 22, ../sass/components/ckeditor/formats/_two-columns.image-left.scss */
+    .cke_editable .two-columns-image-left > *:first-child img,
+    .cke_editable .two-columns-image-right > *:first-child img,
+    .field-name-field-generic-body .two-columns-image-left > *:first-child img,
+    .field-name-field-generic-body .two-columns-image-right > *:first-child img {
+      display: block;
+      width: 311px !important;
+      height: auto !important; }
+  /* line 28, ../sass/components/ckeditor/formats/_two-columns.image-left.scss */
+  .cke_editable .two-columns-image-left > *:first-child + *,
+  .cke_editable .two-columns-image-right > *:first-child + *,
+  .field-name-field-generic-body .two-columns-image-left > *:first-child + *,
+  .field-name-field-generic-body .two-columns-image-right > *:first-child + * {
+    margin-top: 0; }
+/* line 33, ../sass/components/ckeditor/formats/_two-columns.image-left.scss */
+.cke_editable .two-columns-image-right > *,
+.field-name-field-generic-body .two-columns-image-right > * {
+  margin-left: 0;
+  margin-right: 353px; }
+/* line 37, ../sass/components/ckeditor/formats/_two-columns.image-left.scss */
+.cke_editable .two-columns-image-right > *:first-child,
+.field-name-field-generic-body .two-columns-image-right > *:first-child {
+  margin-right: 0;
+  float: right; }
+/* line 42, ../sass/components/ckeditor/formats/_two-columns.image-left.scss */
+.cke_editable .two-columns-image-left:after,
+.cke_editable .two-columns-image-right:after,
+.field-name-field-generic-body .two-columns-image-left:after,
+.field-name-field-generic-body .two-columns-image-right:after {
+  clear: both;
+  content: "";
+  height: 0;
+  display: table; }
 
 /* line 1, ../sass/components/login/_not-logged-in.scss */
 .not-logged-in {
