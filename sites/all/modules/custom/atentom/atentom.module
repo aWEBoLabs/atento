@@ -1,6 +1,7 @@
 <?php
 include_once('inc/block.inc');
 include_once('inc/data.inc');
+include_once('inc/form-alter.field_ui_field_edit_form.inc');
 include_once('inc/form-alter.user-login.inc');
 include_once('inc/menu-alter.inc');
 include_once('inc/permission.inc');
