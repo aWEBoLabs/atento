@@ -1,6 +1,19 @@
 (function ($) {
 
   /**
+   * Behavior for Landing Pages
+   */
+  Drupal.behaviors.atentoLandingPages = {
+    attach: function (context, settings) {
+      $('.vocabulary-categories.view-mode-full > .landing-body', context).once('atentoLandingBody', function () {
+        // Get Height of Next Column
+        var secondColumnHeight = parseInt($('#block-atentom-taxonomy-children').outerHeight(true), 10) - 110;
+        $(this).height(secondColumnHeight);
+      });
+    }
+  };
+  
+  /**
    * The recommended way for producing HTML markup through JavaScript is to write
    * theming functions. These are similiar to the theming functions that you might
    * know from 'phptemplate' (the default PHP templating engine used by most
