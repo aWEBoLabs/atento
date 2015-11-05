@@ -59,6 +59,23 @@
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  #block-ds-extras-hero{
+    .hero-background{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin-left: 0;
+      z-index: 0;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
 .cat-blue{
   #block-ds-extras-hero{
     h1, 

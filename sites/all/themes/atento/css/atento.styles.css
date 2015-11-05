@@ -390,17 +390,30 @@ body {
     width: 350px;
     color: #005589; }
 
-/* line 64, ../sass/components/_hero.scss */
+@media only screen and (min-width: 1440px) {
+  /* line 64, ../sass/components/_hero.scss */
+  #block-ds-extras-hero .hero-background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-left: 0;
+    z-index: 0; }
+    /* line 71, ../sass/components/_hero.scss */
+    #block-ds-extras-hero .hero-background img {
+      width: 100%;
+      height: auto; } }
+/* line 81, ../sass/components/_hero.scss */
 .cat-blue #block-ds-extras-hero h1,
 .cat-blue #block-ds-extras-hero .hero-body {
   color: #027DBA; }
 
-/* line 72, ../sass/components/_hero.scss */
+/* line 89, ../sass/components/_hero.scss */
 .cat-green #block-ds-extras-hero h1,
 .cat-green #block-ds-extras-hero .hero-body {
   color: #02AFA6; }
 
-/* line 80, ../sass/components/_hero.scss */
+/* line 97, ../sass/components/_hero.scss */
 .cat-orange #block-ds-extras-hero h1,
 .cat-orange #block-ds-extras-hero .hero-body {
   color: #FF8F19; }
@@ -1405,23 +1418,23 @@ body {
   /* line 49, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .accordion-item .files + .body-bottom {
     margin-top: 40px; }
-  /* line 58, ../sass/components/subcategory-page/_accordion.scss */
+  /* line 56, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .accordion-item.off .accordion-content,
   .accordion .accordion-item.off.first .accordion-content {
     display: none; }
-  /* line 61, ../sass/components/subcategory-page/_accordion.scss */
+  /* line 59, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .accordion-item.off .field-name-field-title:after,
   .accordion .accordion-item.off.first .field-name-field-title:after {
     background-position: 0 0; }
-  /* line 66, ../sass/components/subcategory-page/_accordion.scss */
+  /* line 64, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .accordion-item.on .accordion-content {
     display: block; }
-  /* line 69, ../sass/components/subcategory-page/_accordion.scss */
+  /* line 67, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .accordion-item.on .field-name-field-title:after {
     background-position: 0 -16px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 77, ../sass/components/subcategory-page/_accordion.scss */
+  /* line 75, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .field-name-field-title:after {
     background-image: url("../images/accordion-icons/opener-x2.png"); } }
 /* line 2, ../sass/components/subcategory-page/_generic-page.scss */
