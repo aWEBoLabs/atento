@@ -1,6 +1,4 @@
 <?php
-$i = atento_get_counter('generic-files');
-$col = ($i)%3 + 1;
 if ( isset($_GET['test-files']) ) {
   print_r(get_defined_vars());exit;
 }
@@ -40,7 +38,7 @@ if ( isset($file->description) && !empty($file->description) ) {
 }
 
 ?>
-<div class="file-preview col-<?php print $col;?>">
+<div class="file-preview">
   <div class="file-inner-wrapper">
     <div class="file-thumbnail">
       <div class="file-thumbnail-inner">

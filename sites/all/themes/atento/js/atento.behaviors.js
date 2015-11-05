@@ -47,8 +47,14 @@
   Drupal.behaviors.atentoFilesRows = {
     attach: function (context, settings) {
       $('.files.photoswipe-gallery', context).once('filesRows', function () {
-        // Open First by Default
         var items = $(this).find('.file-preview');
+        // Set columns
+        $(items).each(function(index){
+          col = index%3 + 1;
+          $(this).addClass('col-' + col);
+        });
+        
+        // Open First by Default
         var count = items.length;
         var rows = Math.ceil(count/3);
         for(i=0; i<rows; i++) {
