@@ -6,4 +6,5 @@ include_once('inc/form-alter.user-login.inc');
 include_once('inc/menu-alter.inc');
 include_once('inc/permission.inc');
 include_once('inc/taxonomy.form-alter.inc');
+include_once('inc/taxonomy.term-presave.inc');
 include_once('inc/theme.inc');
