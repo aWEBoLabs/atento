@@ -48,7 +48,7 @@
     attach: function (context, settings) {
       $('.accordion', context).once('atento', function () {
         // Open First by Default
-        $(this).find('.accordion-item.first').addClass('on');
+        //$(this).find('.accordion-item.first').addClass('on');
         
         // Add Click Event
         $(this).find('.accordion-item .field-name-field-title').click(atentoAccordionClick);
@@ -56,6 +56,14 @@
       });
     }
   };
+  
+  function scrollSmooth(obj) {
+    var postop = parseInt($(obj).offset().top, 10) - parseInt($('body').css('padding-top'), 10);
+    postop = postop + 'px';
+    $('html, body').animate({
+      scrollTop: postop
+    }, 500);
+  }
   
   function atentoAccordionClick(e) {
     btn = $(this);
@@ -76,6 +84,7 @@
     // Open This One
     $(btn).parent().find('.accordion-content').slideDown(300, function(){
       $(this).parent().removeClass('off').addClass('on');
+      scrollSmooth(btn);
     });
     
     e.preventDefault();

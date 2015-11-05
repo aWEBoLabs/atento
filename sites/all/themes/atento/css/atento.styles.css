@@ -1405,29 +1405,23 @@ body {
   /* line 49, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .accordion-item .files + .body-bottom {
     margin-top: 40px; }
-  /* line 55, ../sass/components/subcategory-page/_accordion.scss */
-  .accordion .accordion-item.first .accordion-content {
-    display: block; }
   /* line 58, ../sass/components/subcategory-page/_accordion.scss */
-  .accordion .accordion-item.first .field-name-field-title:after {
-    background-position: 0 -16px; }
-  /* line 65, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .accordion-item.off .accordion-content,
   .accordion .accordion-item.off.first .accordion-content {
     display: none; }
-  /* line 68, ../sass/components/subcategory-page/_accordion.scss */
+  /* line 61, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .accordion-item.off .field-name-field-title:after,
   .accordion .accordion-item.off.first .field-name-field-title:after {
     background-position: 0 0; }
-  /* line 73, ../sass/components/subcategory-page/_accordion.scss */
+  /* line 66, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .accordion-item.on .accordion-content {
     display: block; }
-  /* line 76, ../sass/components/subcategory-page/_accordion.scss */
+  /* line 69, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .accordion-item.on .field-name-field-title:after {
     background-position: 0 -16px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 84, ../sass/components/subcategory-page/_accordion.scss */
+  /* line 77, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .field-name-field-title:after {
     background-image: url("../images/accordion-icons/opener-x2.png"); } }
 /* line 2, ../sass/components/subcategory-page/_generic-page.scss */

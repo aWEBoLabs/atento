@@ -51,15 +51,6 @@
     }
   }
   
-  .accordion-item.first{
-    .accordion-content{
-      display: block;
-    }
-    .field-name-field-title:after{
-      background-position: 0 -16px;
-    }
-  }
-  
   .accordion-item.off, 
   .accordion-item.off.first{
     .accordion-content{
