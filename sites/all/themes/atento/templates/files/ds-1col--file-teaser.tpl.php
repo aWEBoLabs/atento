@@ -1,6 +1,6 @@
 <?php
 $i = atento_get_counter('generic-files');
-$col = ($i-1)%3 + 1;
+$col = ($i)%3 + 1;
 if ( isset($_GET['test-files']) ) {
   print_r(get_defined_vars());exit;
 }
