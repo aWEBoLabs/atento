@@ -58,7 +58,7 @@ if ( isset($file->description) && !empty($file->description) ) {
           </div>
           
           <div class="data">
-            <a class="download" target="_blank" href="<?php print $download;?>"><?php print t('Download');?></a>
+            <a class="download file-download" target="_blank" href="<?php print $download;?>"><?php print t('Download');?></a>
           </div>
           
           <div class="data">

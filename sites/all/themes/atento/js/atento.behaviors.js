@@ -12,6 +12,19 @@
       });
     }
   };
+
+  /**
+   * Behavior for Landing Pages
+   */
+  Drupal.behaviors.atentoFileDownload = {
+    attach: function (context, settings) {
+      $('.file-download', context).once('atentoFileDownload', function () {
+        $(this).click(function(e){
+          window.location = $(this).attr('href');
+        });
+      });
+    }
+  };
   
   /**
    * The recommended way for producing HTML markup through JavaScript is to write

@@ -1550,49 +1550,50 @@ body {
   width: 220px;
   height: 132px;
   border: solid 1px #636363;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
 
-/* line 128, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 129, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-blue .group-generic-page h1,
 .cat-blue .group-generic-page .field-name-field-generic-intro {
   color: #027DBA; }
-/* line 133, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 134, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-blue .file-info {
   background: rgba(2, 125, 186, 0.7); }
-/* line 136, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 137, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-blue .file-title strong {
   color: #027DBA; }
 
-/* line 142, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 143, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-green .group-generic-page h1,
 .cat-green .group-generic-page .field-name-field-generic-intro {
   color: #02AFA6; }
-/* line 147, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 148, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-green .file-info {
   background: rgba(2, 175, 166, 0.7); }
-/* line 150, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 151, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-green .file-title strong {
   color: #02AFA6; }
 
-/* line 156, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 157, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-orange .group-generic-page h1,
 .cat-orange .group-generic-page .field-name-field-generic-intro {
   color: #FF8F19; }
-/* line 161, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 162, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-orange .file-info {
   background: rgba(255, 143, 25, 0.7); }
-/* line 164, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 165, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-orange .file-title strong {
   color: #FF8F19; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 172, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 173, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a.view {
     background-image: url("../images/file-icons/view-x2.png"); }
-  /* line 175, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 176, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a.download {
     background-image: url("../images/file-icons/download-x2.png"); }
-  /* line 179, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 180, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-thumbnail-inner {
     background-image: url("../images/file-icons/generic-file-x2.png"); } }
 /* line 2, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
