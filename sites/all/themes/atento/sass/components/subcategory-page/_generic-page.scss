@@ -168,6 +168,22 @@
   }
 }
 
+.disable-download{
+  .download-option{
+    display: none;
+  }
+}
+.disable-view{
+  .view-option{
+    display: none;
+  }
+}
+.disable-download.disable-view{
+  .data-option{
+    display: none;
+  }
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .group-generic-page{
     .file-info{

@@ -1587,14 +1587,26 @@ body {
 .cat-orange .file-title strong {
   color: #FF8F19; }
 
+/* line 172, ../sass/components/subcategory-page/_generic-page.scss */
+.disable-download .download-option {
+  display: none; }
+
+/* line 177, ../sass/components/subcategory-page/_generic-page.scss */
+.disable-view .view-option {
+  display: none; }
+
+/* line 182, ../sass/components/subcategory-page/_generic-page.scss */
+.disable-download.disable-view .data-option {
+  display: none; }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 174, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 190, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a.view {
     background-image: url("../images/file-icons/view-x2.png"); }
-  /* line 177, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 193, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a.download {
     background-image: url("../images/file-icons/download-x2.png"); }
-  /* line 181, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 197, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-thumbnail-inner {
     background-image: url("../images/file-icons/generic-file-x2.png"); } }
 /* line 2, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */

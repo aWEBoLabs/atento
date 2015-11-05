@@ -47,7 +47,7 @@ if ( isset($file->description) && !empty($file->description) ) {
   
       <div class="file-info">
         <div class="file-info-inner">
-          <div class="data">
+          <div class="data view-option">
           <?php if ( $type == 'image'): ?>
             <a class="view photoswipe" href="<?php print $vars2['path'];?>" data-size="<?php print $data_size; ?>" data-overlay-title="<?php print $filename_print;?>"><?php print t('View');?></a>
           <?php else: ?>
@@ -55,11 +55,11 @@ if ( isset($file->description) && !empty($file->description) ) {
           <?php endif;?>
           </div>
           
-          <div class="data">
+          <div class="data download-option">
             <a class="download file-download" target="_blank" href="<?php print $download;?>"><?php print t('Download');?></a>
           </div>
           
-          <div class="data">
+          <div class="data data-option">
             <span class="extension"><?php print $extension;?></span> - <span class="filesize"><?php print $hfilesize;?></span>
           </div>
         </div>
