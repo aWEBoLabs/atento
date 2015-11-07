@@ -1,4 +1,36 @@
 (function ($) {
+  var search_link = 0;
+  var search_box = 0;
+
+  /**
+   * Behavior for Search Box
+   */
+  Drupal.behaviors.atentoSearchBox = {
+    attach: function (context, settings) {
+      $('#menu-search-link', context).once('atentoSearchBox', function () {
+        $('#menu-search-link').click(function(e){
+          if ( search_link == 1 ) {
+            return false;
+          }
+          
+          search_link = 1;
+          if ( search_box == 0 ) {
+            $('#block-search-form').fadeIn(100, function(){
+              search_box = 1;
+              search_link = 0;
+              $('#block-search-form .form-item-search-block-form input').focus();
+            });
+          } else {
+            $('#block-search-form').fadeOut(100, function(){
+              search_box = 0;
+              search_link = 0;
+            });
+          }
+          e.preventDefault();
+        });
+      });
+    }
+  };
 
   /**
    * Behavior for Landing Pages

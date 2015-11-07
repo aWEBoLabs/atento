@@ -14,6 +14,7 @@ input:-moz-placeholder{color: #0B436A; text-transform: lowercase;}
     border-radius: 2px 2px 2px 2px;
     padding: 4px 8px;
     outline: none;
+    box-sizing: border-box;
   }
 }
 .form-submit{
