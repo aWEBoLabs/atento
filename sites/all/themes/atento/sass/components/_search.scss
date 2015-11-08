@@ -1,4 +1,4 @@
-.l-main{
+.page-search .l-main{
   #search-form{
     display: none;
   }
@@ -62,7 +62,7 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  .l-main{
+  .page-search .l-main{
     .l-content-inner-inner > h2{
       background-image: url('../images/searchx2.png');
       background-size: 25px 25px;
