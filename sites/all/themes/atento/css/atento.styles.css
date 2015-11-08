@@ -401,14 +401,12 @@ body {
     color: #005589; }
 
 /* line 64, ../sass/components/_hero.scss */
-#block-ds-extras-hero-webform h1 {
-  color: #005589; }
-/* line 67, ../sass/components/_hero.scss */
+#block-ds-extras-hero-webform h1,
 #block-ds-extras-hero-webform .hero-body {
-  color: #005589; }
+  color: #FF8F19; }
 
 @media only screen and (min-width: 1440px) {
-  /* line 75, ../sass/components/_hero.scss */
+  /* line 73, ../sass/components/_hero.scss */
   #block-ds-extras-hero .hero-background,
   #block-ds-extras-hero-webform .hero-background {
     position: absolute;
@@ -417,33 +415,33 @@ body {
     top: 0;
     margin-left: 0;
     z-index: 0; }
-    /* line 82, ../sass/components/_hero.scss */
+    /* line 80, ../sass/components/_hero.scss */
     #block-ds-extras-hero .hero-background img,
     #block-ds-extras-hero-webform .hero-background img {
       width: 100%;
       height: auto; } }
-/* line 93, ../sass/components/_hero.scss */
+/* line 91, ../sass/components/_hero.scss */
 .cat-dark-blue #block-ds-extras-hero h1,
 .cat-dark-blue #block-ds-extras-hero .hero-body,
 .cat-dark-blue #block-ds-extras-hero-webform h1,
 .cat-dark-blue #block-ds-extras-hero-webform .hero-body {
   color: #005589; }
 
-/* line 102, ../sass/components/_hero.scss */
+/* line 100, ../sass/components/_hero.scss */
 .cat-blue #block-ds-extras-hero h1,
 .cat-blue #block-ds-extras-hero .hero-body,
 .cat-blue #block-ds-extras-hero-webform h1,
 .cat-blue #block-ds-extras-hero-webform .hero-body {
   color: #027DBA; }
 
-/* line 111, ../sass/components/_hero.scss */
+/* line 109, ../sass/components/_hero.scss */
 .cat-green #block-ds-extras-hero h1,
 .cat-green #block-ds-extras-hero .hero-body,
 .cat-green #block-ds-extras-hero-webform h1,
 .cat-green #block-ds-extras-hero-webform .hero-body {
   color: #02AFA6; }
 
-/* line 120, ../sass/components/_hero.scss */
+/* line 118, ../sass/components/_hero.scss */
 .cat-orange #block-ds-extras-hero h1,
 .cat-orange #block-ds-extras-hero .hero-body,
 .cat-orange #block-ds-extras-hero-webform h1,
