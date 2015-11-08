@@ -1,4 +1,5 @@
-#block-ds-extras-hero{
+#block-ds-extras-hero, 
+#block-ds-extras-hero-webform{
   min-width: $desktop-width;
   height: 198px;
   overflow: hidden;
@@ -59,8 +60,18 @@
   }
 }
 
+#block-ds-extras-hero-webform{
+  h1{
+    color: $cat-dark-blue;
+  }
+  .hero-body{
+    color: $cat-dark-blue;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
-  #block-ds-extras-hero{
+  #block-ds-extras-hero, 
+  #block-ds-extras-hero-webform{
     .hero-background{
       position: absolute;
       left: 0;
@@ -76,8 +87,18 @@
   }
 }
 
+.cat-dark-blue{
+  #block-ds-extras-hero, 
+  #block-ds-extras-hero-webform{
+    h1, 
+    .hero-body{
+      color: $cat-dark-blue;
+    }
+  }
+}
 .cat-blue{
-  #block-ds-extras-hero{
+  #block-ds-extras-hero, 
+  #block-ds-extras-hero-webform{
     h1, 
     .hero-body{
       color: $cat-blue;
@@ -85,7 +106,8 @@
   }
 }
 .cat-green{
-  #block-ds-extras-hero{
+  #block-ds-extras-hero, 
+  #block-ds-extras-hero-webform{
     h1, 
     .hero-body{
       color: $cat-green;
@@ -93,7 +115,8 @@
   }
 }
 .cat-orange{
-  #block-ds-extras-hero{
+  #block-ds-extras-hero, 
+  #block-ds-extras-hero-webform{
     h1, 
     .hero-body{
       color: $cat-orange;
