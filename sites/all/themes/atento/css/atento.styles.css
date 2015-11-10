@@ -104,12 +104,6 @@ input:-moz-placeholder {
 .controls .messages {
   margin: 0 0 11px 0; }
 
-/* line 1, ../sass/components/_ field-collection-view.scss */
-.field-collection-view {
-  padding: 0;
-  margin: 0;
-  border-bottom: none; }
-
 /* line 1, ../sass/components/_body.scss */
 body {
   min-width: 1020px;
@@ -167,6 +161,51 @@ body {
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box; }
+
+/* line 1, ../sass/components/_field-collection-view.scss */
+.field-collection-view {
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+  position: relative; }
+  /* line 6, ../sass/components/_field-collection-view.scss */
+  .field-collection-view ul.field-collection-view-links {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    margin: 0 0 0 0; }
+    /* line 11, ../sass/components/_field-collection-view.scss */
+    .field-collection-view ul.field-collection-view-links a {
+      color: #FF7900;
+      font-weight: 400;
+      font-family: 'Omnes Semibold';
+      font-size: 14px;
+      line-height: 1.14em;
+      text-decoration: none; }
+    /* line 19, ../sass/components/_field-collection-view.scss */
+    .field-collection-view ul.field-collection-view-links a:hover {
+      color: #db5e12; }
+
+/* line 25, ../sass/components/_field-collection-view.scss */
+.field-collection-container {
+  border-bottom: none;
+  margin-bottom: 0; }
+
+/* line 30, ../sass/components/_field-collection-view.scss */
+.field-collection-container ul.action-links-field-collection-add {
+  padding: 0;
+  margin: 10px 33px 0 0; }
+  /* line 33, ../sass/components/_field-collection-view.scss */
+  .field-collection-container ul.action-links-field-collection-add a {
+    color: #FF7900;
+    font-weight: 400;
+    font-family: 'Omnes Semibold';
+    font-size: 14px;
+    line-height: 1.14em;
+    text-decoration: none; }
+  /* line 41, ../sass/components/_field-collection-view.scss */
+  .field-collection-container ul.action-links-field-collection-add a:hover {
+    color: #db5e12; }
 
 /* line 1, ../sass/components/_footer.scss */
 .l-footer {

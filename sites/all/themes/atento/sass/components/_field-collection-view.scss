@@ -1,0 +1,44 @@
+.field-collection-view{
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+  position: relative;
+  ul.field-collection-view-links{
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    margin: 0 0 0 0;
+    a{
+      color: #FF7900;
+      font-weight: 400;
+      font-family: 'Omnes Semibold';
+      font-size: 14px;
+      line-height: 1.14em;
+      text-decoration: none;
+    }
+    a:hover{
+      color: #db5e12;
+    }
+  }
+}
+
+.field-collection-container{
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.field-collection-container ul.action-links-field-collection-add{
+  padding: 0;
+  margin: 10px 33px 0 0;
+  a{
+    color: #FF7900;
+    font-weight: 400;
+    font-family: 'Omnes Semibold';
+    font-size: 14px;
+    line-height: 1.14em;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #db5e12;
+  }
+}
