@@ -141,13 +141,13 @@
     }
     
     // Close Previous
-    $(btn).parent().parent().find('.accordion-item.on .accordion-content').slideUp(300, function(){
+    $(btn).parent().parent().parent().find('.accordion-item.on .accordion-content').slideUp(300, function(){
       $(this).parent().removeClass('on').addClass('off');
     });
     
     // Open This One
     $(btn).parent().find('.accordion-content').slideDown(300, function(){
-      $(this).parent().removeClass('off').addClass('on');
+      $(this).parent().parent().removeClass('off').addClass('on');
       scrollSmooth(btn);
     });
     

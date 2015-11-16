@@ -30,6 +30,9 @@ if ( $type == 'image' ) {
   $vars2['path'] = image_style_url($vars2['style_name'], $vars2['path']);
   $view = $vars2['path'];
   $data_size = "{$vars2['width']}x{$vars2['height']}";
+} else {
+  // Get Image for Extension
+  $file_thumbnail = atento_get_extension_image($extension);
 }
 $filename_print = check_plain($filename);
 
@@ -52,7 +55,7 @@ if ( isset($file->description) && !empty($file->description) ) {
             <a class="view photoswipe" href="<?php print $vars2['path'];?>" data-size="<?php print $data_size; ?>" data-overlay-title="<?php print $filename_print;?>"><?php print t('View');?></a>
           <?php else: ?>
             <a class="view" target="_blank" href="<?php print $view;?>"><?php print t('View');?></a>
-          <?php endif;?>
+          <?php endif;?> 
           </div>
           
           <div class="data download-option">

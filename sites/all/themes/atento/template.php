@@ -113,3 +113,84 @@ function atento_get_counter($hash) {
   
   return $i[$hash];
 }
+
+/**
+ * Get Extension Image.
+ */
+function atento_get_extension_image($extension) {
+  // Load Extension Node
+  if ( !($node = node_load(4)) ) {
+    return false;
+  }
+  
+  // Load Extensions
+  if ( isset($node->field_extension_icon[LANGUAGE_NONE][0]['value']) ) {
+    foreach($node->field_extension_icon[LANGUAGE_NONE] as $fc_item) {
+      $fcid = $fc_item['value'];
+      if ( ($image_loaded = atento_get_extension_image_item($fcid, $extension)) ) {
+        return $image_loaded;
+        break;
+      }
+    }
+  }
+  
+  // Load Default
+  if ( !isset($node->field_extension_icon_default[LANGUAGE_NONE][0]['uri']) ) {
+    return false;
+  }
+  
+  $image_item = $node->field_extension_icon_default[LANGUAGE_NONE][0];
+  $vars = array(
+    'style_name' => 'file_cover', 
+    'path' => $image_item['uri'], 
+    'width' => $image_item['width'], 
+    'height' => $image_item['height'], 
+  );
+  return theme_image_style($vars);
+}
+
+/**
+ * Detects if the given extension is located in the 
+ */
+function atento_get_extension_image_item($fcid, $extension) {
+  if ( !($fc = entity_load('field_collection_item', array($fcid))) ) {
+    return false;
+  }
+  $fc = $fc[$fcid];
+  if ( !(isset($fc->field_extension_icon_ext[LANGUAGE_NONE][0]['value']) && !empty($fc->field_extension_icon_ext[LANGUAGE_NONE][0]['value'])) ) {
+    return false;
+  }
+  
+  $fc_exts = str_replace(' ', ',', $fc->field_extension_icon_ext[LANGUAGE_NONE][0]['value']);
+  $fc_exts = explode(',', $fc_exts);
+
+  // Clean Extensions.
+  foreach($fc_exts as $fc_ext) {
+    $fc_ext = trim($fc_ext, ' ,.');
+    $fc_ext = strtolower($fc_ext);
+    if ( $fc_ext == $extension ) {
+      $image_item = $fc->field_extension_icon_image[LANGUAGE_NONE][0];
+      $vars = array(
+        'style_name' => 'file_cover', 
+        'path' => $image_item['uri'], 
+        'width' => $image_item['width'], 
+        'height' => $image_item['height'], 
+      );
+      return theme_image_style($vars);
+    }
+  }
+  
+  return false;
+}
+
+
+
+
+
+
+
+
+
+
+
+

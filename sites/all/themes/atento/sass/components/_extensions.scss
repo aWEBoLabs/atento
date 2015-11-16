@@ -1,0 +1,45 @@
+.field--name-field-extension-icon{
+  table{
+    width: 100%;
+    border-collapse: separate;
+    thead tr th{
+      background: #464646 url("../images/table-th.png") repeat-x;
+      color: white;
+      height: 26px;
+      border-top: solid 1px #7B7B7B;
+      border-right: solid 1px #515151;
+      border-bottom: solid 1px #444444;
+      border-left: solid 1px #696969;
+      vertical-align: middle;
+      padding: 0 20px;
+      font-size: 14px;
+    }
+    tbody tr td{
+      background: #EEEEEE;
+      border-top: solid 1px #F8F8F8;
+      border-right: solid 1px #F7F7F7;
+      border-bottom: solid 1px #ECECEC;
+      border-left: solid 1px #EAEAEA;
+      padding: 20px;
+      vertical-align: top;
+      color: #4A4240;
+      font-size: 12px;
+      a{
+        font-size: 14px;
+      }
+    }
+    .field_collection_item_operations{
+      ul{
+        display: table;
+        width: 100%;
+        li{
+          display: inline-block;
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+  }
+}
+.field--name-field-extension-icon-default{
+  margin-top: 44px;
+}
