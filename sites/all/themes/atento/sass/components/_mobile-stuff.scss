@@ -1,0 +1,12 @@
+@media only screen and (max-width: $tablet-width){
+  html.js .contextual-links-wrapper, 
+  .contextual-links-region:hover 
+  .contextual-links-trigger, 
+  .contextual-links-active .contextual-links-trigger, 
+  .contextual-links-active .contextual-links{
+    display: none !important;
+  }
+  .tabs--primary{
+    display: none;
+  }
+}

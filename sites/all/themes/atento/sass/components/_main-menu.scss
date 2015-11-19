@@ -98,3 +98,9 @@
     }
   }
 }
+
+@media only screen and (max-width: $tablet-width){
+  #block-system-main-menu{
+    display: none;
+  }
+}

@@ -209,7 +209,8 @@ body {
 @media only screen and (max-width: 750px) {
   /* line 7, ../sass/components/_body.scss */
   body {
-    min-width: 0; } }
+    min-width: 0;
+    padding: 20px; } }
 /* line 1, ../sass/components/_breadcrumb.scss */
 .breadcrumbs {
   list-style: none;
@@ -250,6 +251,10 @@ body {
 .cat-orange .breadcrumbs li.last a {
   color: #FF8F19; }
 
+@media only screen and (max-width: 750px) {
+  /* line 53, ../sass/components/_breadcrumb.scss */
+  .breadcrumbs li {
+    font-size: 11px; } }
 /* line 2, ../sass/components/_contact-us.scss */
 .node-type-webform.section-contact-us .group-left-sidebar {
   float: left;
@@ -281,7 +286,9 @@ body {
 @media only screen and (max-width: 750px) {
   /* line 14, ../sass/components/_content.scss */
   .controls {
-    width: auto; } }
+    width: auto;
+    padding-left: 0;
+    padding-right: 0; } }
 /* line 2, ../sass/components/_extensions.scss */
 .field--name-field-extension-icon table {
   width: 100%;
@@ -511,7 +518,8 @@ body {
 @media only screen and (max-width: 750px) {
   /* line 148, ../sass/components/_footer.scss */
   .l-footer {
-    width: auto; } }
+    width: auto;
+    display: none; } }
 /* line 1, ../sass/components/_header.scss */
 .l-branding {
   width: 1020px;
@@ -538,6 +546,13 @@ body {
     width: 100%;
     height: auto; }
 
+@media only screen and (max-width: 750px) {
+  /* line 26, ../sass/components/_header.scss */
+  .site-logo {
+    width: 70px;
+    height: 14px;
+    margin-top: 0;
+    margin-bottom: 0; } }
 /* line 1, ../sass/components/_hero.scss */
 #block-ds-extras-hero,
 #block-ds-extras-hero-webform {
@@ -757,7 +772,11 @@ body {
   /* line 223, ../sass/components/_hero.scss */
   #block-ds-extras-hero,
   #block-ds-extras-hero-webform {
-    min-width: 0; } }
+    min-width: 0; }
+    /* line 226, ../sass/components/_hero.scss */
+    #block-ds-extras-hero .info,
+    #block-ds-extras-hero-webform .info {
+      display: none; } }
 /* line 1, ../sass/components/_main-menu.scss */
 .l-region--branding {
   float: right; }
@@ -847,15 +866,19 @@ body {
 .cat-orange #block-system-main-menu > ul.menu > li.active-trail > a {
   background: #FF8F19; }
 
+@media only screen and (max-width: 750px) {
+  /* line 103, ../sass/components/_main-menu.scss */
+  #block-system-main-menu {
+    display: none; } }
 /* line 1, ../sass/components/_mobile-menu.scss */
 #menu-opener {
   display: none;
   text-align: left;
-  width: 21px;
-  height: 20px;
+  width: 26px;
+  height: 24px;
   overflow: hidden;
   background: url("../images/menu-opener.png") no-repeat;
-  background-size: 21px 40px;
+  background-size: 26px 49px;
   text-indent: -9999px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -866,6 +889,18 @@ body {
   /* line 19, ../sass/components/_mobile-menu.scss */
   #menu-opener {
     display: block; } }
+@media only screen and (max-width: 750px) {
+  /* line 2, ../sass/components/_mobile-stuff.scss */
+  html.js .contextual-links-wrapper,
+  .contextual-links-region:hover
+  .contextual-links-trigger,
+  .contextual-links-active .contextual-links-trigger,
+  .contextual-links-active .contextual-links {
+    display: none !important; }
+
+  /* line 9, ../sass/components/_mobile-stuff.scss */
+  .tabs--primary {
+    display: none; } }
 /* line 1, ../sass/components/_regions.scss */
 .l-branding {
   width: 1020px;
@@ -883,7 +918,11 @@ body {
 @media only screen and (max-width: 750px) {
   /* line 15, ../sass/components/_regions.scss */
   .l-branding {
-    width: auto; } }
+    width: auto;
+    min-height: 42px;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0; } }
 /* line 2, ../sass/components/_search.scss */
 .page-search .l-main #search-form {
   display: none; }
@@ -1048,6 +1087,10 @@ body {
   /* line 61, ../sass/components/_side-menu.scss */
   #menu-contact-link {
     background-image: url("../images/menu-side-icons/mail-x2.png"); } }
+@media only screen and (max-width: 750px) {
+  /* line 67, ../sass/components/_side-menu.scss */
+  #block-menu-menu-side-menu {
+    display: none; } }
 /* line 1, ../sass/components/_sidebar-block.scss */
 .sidebar-block {
   padding-bottom: 10px;
@@ -1174,14 +1217,17 @@ body {
   #block-menu-block-1 ul.menu {
     background-image: url("../images/menu-cross-x2.png"); } }
 @media only screen and (max-width: 750px) {
-  /* line 108, ../sass/components/_subcategories.scss */
-  #block-menu-block-1 .menu-block-wrapper {
-    width: auto; } }
+  /* line 107, ../sass/components/_subcategories.scss */
+  #block-menu-block-1 {
+    display: none; }
+    /* line 109, ../sass/components/_subcategories.scss */
+    #block-menu-block-1 .menu-block-wrapper {
+      width: auto; } }
 @media only screen and (max-width: 750px) {
   /* line 2, ../sass/components/_toolbar.scss */
   body.toolbar,
   body.toolbar-drawer {
-    padding-top: 0 !important; }
+    padding-top: 20px !important; }
 
   /* line 6, ../sass/components/_toolbar.scss */
   #toolbar {
@@ -1897,9 +1943,14 @@ body {
 @media only screen and (max-width: 750px) {
   /* line 57, ../sass/components/multicolumn-layout/_two-columns.scss */
   .l-main-inner {
-    width: auto; }
+    width: auto;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 28px;
+    margin-bottom: 32px; }
 
-  /* line 61, ../sass/components/multicolumn-layout/_two-columns.scss */
+  /* line 66, ../sass/components/multicolumn-layout/_two-columns.scss */
   .two-columns .colmask,
   .two-columns .colleft,
   .two-columns .col1wrap {
@@ -2298,10 +2349,58 @@ body {
   .taxonomy-term.vocabulary-categories .landing-body {
     width: auto;
     height: auto !important;
-    float: none; }
-  /* line 208, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+    min-height: 0;
+    float: none;
+    font-size: 13px;
+    padding: 15px 15px 30px;
+    margin-bottom: 15px; }
+  /* line 213, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
   .taxonomy-term.vocabulary-categories #block-atentom-taxonomy-children {
-    margin-left: 0;
-    margin-right: 0; } }
+    margin-left: -3px;
+    margin-right: -3px; }
+
+  /* line 218, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+  #block-atentom-taxonomy-children ul.taxonomy-children {
+    display: block;
+    background-image: url("../images/mobile-cross/cross-dark-blue.png"), url("../images/mobile-cross/cross-dark-blue.png");
+    background-position: left top, right top;
+    background-repeat: no-repeat;
+    background-size: 6px 6px;
+    padding: 6px 0 0;
+    /*li:first-child{
+      margin-top: 0;
+    }*/ }
+    /* line 226, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+    #block-atentom-taxonomy-children ul.taxonomy-children li {
+      padding: 3px;
+      display: block;
+      background-image: url("../images/mobile-cross/cross-dark-blue.png"), url("../images/mobile-cross/cross-dark-blue.png");
+      background-position: left bottom, right bottom;
+      background-repeat: no-repeat;
+      background-size: 6px 6px;
+      margin-top: -6px; }
+      /* line 235, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+      #block-atentom-taxonomy-children ul.taxonomy-children li a {
+        width: auto;
+        min-height: 70px;
+        padding: 17px 14px 17px 70px; }
+        /* line 240, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+        #block-atentom-taxonomy-children ul.taxonomy-children li a .icon,
+        #block-atentom-taxonomy-children ul.taxonomy-children li a .icon img {
+          width: 35px;
+          height: 35px; }
+        /* line 246, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+        #block-atentom-taxonomy-children ul.taxonomy-children li a .title {
+          width: auto;
+          font-size: 9px;
+          margin-top: 0;
+          margin-left: 50px; } }
+@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 260, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+  #block-atentom-taxonomy-children ul.taxonomy-children {
+    background-image: url("../images/mobile-cross/cross-dark-bluex2.png"), url("../images/mobile-cross/cross-dark-bluex2.png"); }
+    /* line 262, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
+    #block-atentom-taxonomy-children ul.taxonomy-children li {
+      background-image: url("../images/mobile-cross/cross-dark-bluex2.png"), url("../images/mobile-cross/cross-dark-bluex2.png"); } }
 
 /*# sourceMappingURL=atento.styles.css.map */

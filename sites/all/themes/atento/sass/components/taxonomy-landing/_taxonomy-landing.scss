@@ -203,11 +203,65 @@
     .landing-body{
       width: auto;
       height: auto !important;
+      min-height: 0;
       float: none;
+      font-size: 13px;
+      padding: 15px 15px 30px;
+      margin-bottom: 15px;
     }
+    
     #block-atentom-taxonomy-children{
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: -3px;
+      margin-right: -3px;
+    }
+  }
+  #block-atentom-taxonomy-children ul.taxonomy-children{
+    display: block;
+    background-image: url("../images/mobile-cross/cross-dark-blue.png"), url("../images/mobile-cross/cross-dark-blue.png");
+    background-position: left top, right top; 
+    background-repeat: no-repeat;
+    background-size: 6px 6px;
+    padding: 6px 0 0;
+    
+    li{
+      padding: 3px;
+      display: block;
+      background-image: url("../images/mobile-cross/cross-dark-blue.png"), url("../images/mobile-cross/cross-dark-blue.png");
+      background-position: left bottom, right bottom;
+      background-repeat: no-repeat;
+      background-size: 6px 6px;
+      margin-top: -6px;
+      
+      a{
+        width: auto;
+        min-height: 70px;
+        padding: 17px 14px 17px 70px;
+        
+        .icon, 
+        .icon img{
+          width: 35px;
+          height: 35px;
+        }
+        
+        .title{
+          width: auto;
+          font-size: 9px;
+          margin-top: 0;
+          margin-left: 50px
+        }
+      }
+    }
+    /*li:first-child{
+      margin-top: 0;
+    }*/
+  }
+  
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    #block-atentom-taxonomy-children ul.taxonomy-children{
+      background-image: url("../images/mobile-cross/cross-dark-bluex2.png"), url("../images/mobile-cross/cross-dark-bluex2.png");
+      li{
+        background-image: url("../images/mobile-cross/cross-dark-bluex2.png"), url("../images/mobile-cross/cross-dark-bluex2.png");
+      }
     }
   }
 }

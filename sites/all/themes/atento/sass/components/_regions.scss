@@ -14,5 +14,9 @@
 @media only screen and (max-width: $tablet-width){
   .l-branding{
     width: auto;
+    min-height: 42px;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

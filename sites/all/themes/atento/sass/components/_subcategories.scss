@@ -105,6 +105,7 @@
 
 @media only screen and (max-width: $tablet-width){
   #block-menu-block-1{
+    display: none;
     .menu-block-wrapper{
       width: auto;
     }

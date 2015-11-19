@@ -21,3 +21,12 @@
     height: auto;
   }
 }
+
+@media only screen and (max-width: $tablet-width){
+  .site-logo{
+    width: 70px;
+    height: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
