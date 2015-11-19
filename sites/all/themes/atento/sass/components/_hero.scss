@@ -218,3 +218,10 @@
     }
   }
 }
+
+@media only screen and (max-width: $tablet-width){
+  #block-ds-extras-hero, 
+  #block-ds-extras-hero-webform{
+    min-width: 0;
+  }
+}

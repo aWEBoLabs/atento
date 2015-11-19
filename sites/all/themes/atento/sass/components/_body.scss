@@ -2,3 +2,9 @@ body{
   min-width: $desktop-width;
   font-family: 'Omnes Regular';
 }
+
+@media only screen and (max-width: $tablet-width){
+  body{
+    min-width: 0;
+  }
+}

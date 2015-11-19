@@ -1,0 +1,22 @@
+#menu-opener{
+  display: none;
+  text-align: left;
+  width: 21px;
+  height: 20px;
+  overflow: hidden;
+  background: url('../images/menu-opener.png') no-repeat;
+  background-size: 21px 40px;
+  text-indent: -9999px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #menu-opener{
+    background-image: url('../images/menu-openerx2.png');
+  }
+}
+
+@media only screen and (max-width: $tablet-width){
+  #menu-opener{
+    display: block;
+  }
+}

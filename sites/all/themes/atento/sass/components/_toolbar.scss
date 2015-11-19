@@ -1,0 +1,9 @@
+@media only screen and (max-width: $tablet-width){
+  body.toolbar, 
+  body.toolbar-drawer{
+    padding-top: 0 !important;
+  }
+  #toolbar{
+    display: none;
+  }
+}

@@ -52,3 +52,22 @@ $column-space: 40px;
     left: $sidebar-width + $column-space;
   }
 }
+
+@media only screen and (max-width: $tablet-width){
+  .l-main-inner{
+    width: auto;
+  }
+  .two-columns{
+    .colmask, 
+    .colleft, 
+    .col1wrap{
+      position: static;
+      float: none;
+      width: auto;
+      margin-left: 0;
+      margin: 0;
+      right: auto;
+      left: auto;
+    }
+  }
+}

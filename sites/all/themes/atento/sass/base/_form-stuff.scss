@@ -111,7 +111,7 @@ input:-moz-placeholder{color: #0B436A; text-transform: lowercase;}
     background: #FF7900;
     border: none;
     border-radius: 2px 2px 2px 2px;
-    font-family: Omnes Semibold;
+    font-family: "Omnes Semibold";
     font-weight: 600;
     font-size: 13px;
     color: white;
@@ -119,5 +119,25 @@ input:-moz-placeholder{color: #0B436A; text-transform: lowercase;}
     min-width: 80px;
     cursor: pointer;
     outline: none;
+  }
+}
+
+@media only screen and (max-width: $tablet-width){
+  .page-toboggan{
+    .form-item{
+      input.form-text{
+        background: white;
+        color: #0B436A;
+        font-size: 9px;
+        padding: 5px 8px 5px;
+        max-width: 150px;
+        font-family: "Omnes Regular";
+      }
+    }
+    .form-submit{
+      font-size: 9px;
+      padding: 4px 3px 4px;
+      min-width: 50px;
+    }
   }
 }

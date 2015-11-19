@@ -197,3 +197,17 @@
     }
   }
 }
+
+@media only screen and (max-width: $tablet-width){
+  .taxonomy-term.vocabulary-categories{
+    .landing-body{
+      width: auto;
+      height: auto !important;
+      float: none;
+    }
+    #block-atentom-taxonomy-children{
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

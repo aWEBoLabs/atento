@@ -102,3 +102,11 @@
     }
   }
 }
+
+@media only screen and (max-width: $tablet-width){
+  #block-menu-block-1{
+    .menu-block-wrapper{
+      width: auto;
+    }
+  }
+}
