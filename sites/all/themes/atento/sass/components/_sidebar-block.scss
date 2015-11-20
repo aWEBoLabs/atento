@@ -33,3 +33,18 @@
   border-bottom: none;
   margin-bottom: 0;
 }
+
+@media only screen and (max-width: $tablet-width){
+  .sidebar-block{
+    border-bottom-color: #CDCDCD;
+    h3 a{
+      font-size: 15px;
+    }
+    .body{
+      font-size: 11px;
+    }
+    .cta a{
+      font-size: 11px;
+    }
+  }
+}

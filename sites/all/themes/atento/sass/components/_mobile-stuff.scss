@@ -3,10 +3,17 @@
   .contextual-links-region:hover 
   .contextual-links-trigger, 
   .contextual-links-active .contextual-links-trigger, 
-  .contextual-links-active .contextual-links{
+  .contextual-links-active .contextual-links, 
+  .field-collection-container .action-links, 
+  .field-collection-view ul.field-collection-view-links a{
     display: none !important;
   }
   .tabs--primary{
     display: none;
+  }
+  .l-region--sidebar-second{
+    margin-top: 30px;
+
+    padding-top: 30px;
   }
 }

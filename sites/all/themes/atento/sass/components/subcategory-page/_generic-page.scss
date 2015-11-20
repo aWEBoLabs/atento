@@ -1,13 +1,24 @@
-.group-generic-page{
+.taxonomy-term.vocabulary-categories.view-mode-full{
+  .title-wrapper{
+    margin-bottom: 33px;
+    .field--name-field-hero-icon{
+      display: none;
+    }
+  }
   h1{
     font-weight: 600;
     font-family: 'Omnes Semibold';
     font-size: 24px;
     line-height: 1.08em;
     color: $cat-dark-blue;
-    margin-bottom: 33px;
+    margin-bottom: 0;
   }
-  
+}
+.landing-page .title-wrapper{
+  display: none;
+}
+
+.group-generic-page{
   .field-name-field-generic-intro, 
   .field-name-field-generic-body{
     color: #636363;
@@ -197,5 +208,38 @@
     .file-thumbnail-inner{
       background-image: url("../images/file-icons/generic-file-x2.png");
     }
+  }
+}
+
+@media only screen and (max-width: $tablet-width){
+  .taxonomy-term.vocabulary-categories.view-mode-full{
+    .title-wrapper{
+      min-height: 35px;
+      margin-bottom: 5px;
+      display: table;
+      .field--name-field-hero-icon{
+        display: table-cell;
+        width: 35px;
+        height: 35px;
+        vertical-align: middle;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    h1{
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 20px;
+      padding-left: 5px;
+    }
+  }
+  .landing-page .title-wrapper{
+    display: block;
+  }
+  .group-generic-page .file-title{
+    margin-top: 21px;
+    font-size: 11px;
   }
 }

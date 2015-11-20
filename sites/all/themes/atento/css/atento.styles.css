@@ -895,12 +895,19 @@ body {
   .contextual-links-region:hover
   .contextual-links-trigger,
   .contextual-links-active .contextual-links-trigger,
-  .contextual-links-active .contextual-links {
+  .contextual-links-active .contextual-links,
+  .field-collection-container .action-links,
+  .field-collection-view ul.field-collection-view-links a {
     display: none !important; }
 
-  /* line 9, ../sass/components/_mobile-stuff.scss */
+  /* line 11, ../sass/components/_mobile-stuff.scss */
   .tabs--primary {
-    display: none; } }
+    display: none; }
+
+  /* line 14, ../sass/components/_mobile-stuff.scss */
+  .l-region--sidebar-second {
+    margin-top: 30px;
+    padding-top: 30px; } }
 /* line 1, ../sass/components/_regions.scss */
 .l-branding {
   width: 1020px;
@@ -1126,6 +1133,19 @@ body {
   border-bottom: none;
   margin-bottom: 0; }
 
+@media only screen and (max-width: 750px) {
+  /* line 38, ../sass/components/_sidebar-block.scss */
+  .sidebar-block {
+    border-bottom-color: #CDCDCD; }
+    /* line 40, ../sass/components/_sidebar-block.scss */
+    .sidebar-block h3 a {
+      font-size: 15px; }
+    /* line 43, ../sass/components/_sidebar-block.scss */
+    .sidebar-block .body {
+      font-size: 11px; }
+    /* line 46, ../sass/components/_sidebar-block.scss */
+    .sidebar-block .cta a {
+      font-size: 11px; } }
 /* line 1, ../sass/components/_subcategories.scss */
 #block-menu-block-1 {
   background: #005589;
@@ -1401,26 +1421,43 @@ body {
   clear: both;
   display: table;
   height: 0; }
-
 /* line 110, ../sass/components/ckeditor/_ckeditor-content.scss */
+.cke_editable ul,
+.field-name-field-generic-intro ul,
+.field-name-field-generic-body ul {
+  list-style: disc; }
+  /* line 112, ../sass/components/ckeditor/_ckeditor-content.scss */
+  .cke_editable ul li,
+  .field-name-field-generic-intro ul li,
+  .field-name-field-generic-body ul li {
+    list-style: disc;
+    margin-left: 1em;
+    line-height: 1.33em; }
+  /* line 117, ../sass/components/ckeditor/_ckeditor-content.scss */
+  .cke_editable ul li + li,
+  .field-name-field-generic-intro ul li + li,
+  .field-name-field-generic-body ul li + li {
+    margin-top: 11px; }
+
+/* line 122, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable {
   position: relative; }
-  /* line 112, ../sass/components/ckeditor/_ckeditor-content.scss */
+  /* line 124, ../sass/components/ckeditor/_ckeditor-content.scss */
   .cke_editable .featured-container {
     max-width: 748px; }
 
-/* line 116, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 128, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable:after {
   clear: both;
   content: "";
   display: table;
   height: 0; }
 
-/* line 123, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 135, ../sass/components/ckeditor/_ckeditor-content.scss */
 .field-name-field-generic-intro + .field-name-field-generic-body {
   margin-top: 22px; }
 
-/* line 131, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 143, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-blue .cke_editable h2,
 .cat-blue .cke_editable h3,
 .cat-blue .cke_editable h4,
@@ -1432,7 +1469,7 @@ body {
 .cat-blue .field-name-field-generic-body h4 {
   color: #027DBA; }
 
-/* line 142, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 154, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-green .cke_editable h2,
 .cat-green .cke_editable h3,
 .cat-green .cke_editable h4,
@@ -1444,7 +1481,7 @@ body {
 .cat-green .field-name-field-generic-body h4 {
   color: #02AFA6; }
 
-/* line 153, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 165, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-orange .cke_editable h2,
 .cat-orange .cke_editable h3,
 .cat-orange .cke_editable h4,
@@ -1456,7 +1493,7 @@ body {
 .cat-orange .field-name-field-generic-body h4 {
   color: #FF8F19; }
 
-/* line 164, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 176, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-orange .cke_editable h2,
 .cat-dark-orange .cke_editable h3,
 .cat-dark-orange .cke_editable h4,
@@ -1468,7 +1505,7 @@ body {
 .cat-dark-orange .field-name-field-generic-body h4 {
   color: #FF7900; }
 
-/* line 176, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 188, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container.dark-blue,
 .cke_editable .featured-container.dark-blue,
 .field-name-field-generic-intro .color-container.dark-blue,
@@ -1476,7 +1513,7 @@ body {
 .field-name-field-generic-body .color-container.dark-blue,
 .field-name-field-generic-body .featured-container.dark-blue {
   background: #005589; }
-/* line 180, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 192, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container.blue,
 .cke_editable .featured-container.blue,
 .field-name-field-generic-intro .color-container.blue,
@@ -1484,7 +1521,7 @@ body {
 .field-name-field-generic-body .color-container.blue,
 .field-name-field-generic-body .featured-container.blue {
   background: #027DBA; }
-/* line 184, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 196, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container.orange,
 .cke_editable .featured-container.orange,
 .field-name-field-generic-intro .color-container.orange,
@@ -1492,7 +1529,7 @@ body {
 .field-name-field-generic-body .color-container.orange,
 .field-name-field-generic-body .featured-container.orange {
   background: #FF8F19; }
-/* line 188, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 200, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container.dark-orange,
 .cke_editable .featured-container.dark-orange,
 .field-name-field-generic-intro .color-container.dark-orange,
@@ -1500,7 +1537,7 @@ body {
 .field-name-field-generic-body .color-container.dark-orange,
 .field-name-field-generic-body .featured-container.dark-orange {
   background: #FF7900; }
-/* line 192, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 204, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cke_editable .color-container.green,
 .cke_editable .featured-container.green,
 .field-name-field-generic-intro .color-container.green,
@@ -1509,7 +1546,7 @@ body {
 .field-name-field-generic-body .featured-container.green {
   background: #02AFA6; }
 
-/* line 205, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 217, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.dark-blue,
 .cat-dark-blue .cke_editable .featured-container.dark-blue,
 .cat-dark-blue .field-name-field-generic-intro .color-container.dark-blue,
@@ -1535,7 +1572,7 @@ body {
 .cat-green .field-name-field-generic-body .color-container.dark-blue,
 .cat-green .field-name-field-generic-body .featured-container.dark-blue {
   background: #005589; }
-/* line 209, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 221, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.blue,
 .cat-dark-blue .cke_editable .featured-container.blue,
 .cat-dark-blue .field-name-field-generic-intro .color-container.blue,
@@ -1561,7 +1598,7 @@ body {
 .cat-green .field-name-field-generic-body .color-container.blue,
 .cat-green .field-name-field-generic-body .featured-container.blue {
   background: #027DBA; }
-/* line 213, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 225, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.orange,
 .cat-dark-blue .cke_editable .featured-container.orange,
 .cat-dark-blue .field-name-field-generic-intro .color-container.orange,
@@ -1587,7 +1624,7 @@ body {
 .cat-green .field-name-field-generic-body .color-container.orange,
 .cat-green .field-name-field-generic-body .featured-container.orange {
   background: #FF8F19; }
-/* line 217, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 229, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.dark-orange,
 .cat-dark-blue .cke_editable .featured-container.dark-orange,
 .cat-dark-blue .field-name-field-generic-intro .color-container.dark-orange,
@@ -1613,7 +1650,7 @@ body {
 .cat-green .field-name-field-generic-body .color-container.dark-orange,
 .cat-green .field-name-field-generic-body .featured-container.dark-orange {
   background: #FF7900; }
-/* line 221, ../sass/components/ckeditor/_ckeditor-content.scss */
+/* line 233, ../sass/components/ckeditor/_ckeditor-content.scss */
 .cat-dark-blue .cke_editable .color-container.green,
 .cat-dark-blue .cke_editable .featured-container.green,
 .cat-dark-blue .field-name-field-generic-intro .color-container.green,
@@ -1640,6 +1677,58 @@ body {
 .cat-green .field-name-field-generic-body .featured-container.green {
   background: #02AFA6; }
 
+@media only screen and (max-width: 750px) {
+  /* line 243, ../sass/components/ckeditor/_ckeditor-content.scss */
+  .field-name-field-generic-intro .featured-container,
+  .field-name-field-generic-body .featured-container {
+    width: auto;
+    padding: 15px 15px 30px;
+    min-height: 0;
+    margin: 11px 0;
+    float: none; }
+    /* line 249, ../sass/components/ckeditor/_ckeditor-content.scss */
+    .field-name-field-generic-intro .featured-container h2,
+    .field-name-field-generic-body .featured-container h2 {
+      font-size: 15px; }
+  /* line 253, ../sass/components/ckeditor/_ckeditor-content.scss */
+  .field-name-field-generic-intro .color-container,
+  .field-name-field-generic-body .color-container {
+    width: auto;
+    float: none;
+    padding: 15px 15px 30px;
+    min-height: 0; }
+  /* line 259, ../sass/components/ckeditor/_ckeditor-content.scss */
+  .field-name-field-generic-intro .color-container + .color-container,
+  .field-name-field-generic-body .color-container + .color-container {
+    margin-left: 0; }
+  /* line 262, ../sass/components/ckeditor/_ckeditor-content.scss */
+  .field-name-field-generic-intro h3,
+  .field-name-field-generic-body h3 {
+    font-size: 15px;
+    margin-bottom: 11px; }
+  /* line 266, ../sass/components/ckeditor/_ckeditor-content.scss */
+  .field-name-field-generic-intro li,
+  .field-name-field-generic-intro p,
+  .field-name-field-generic-body li,
+  .field-name-field-generic-body p {
+    font-size: 11px; }
+  /* line 270, ../sass/components/ckeditor/_ckeditor-content.scss */
+  .field-name-field-generic-intro h2 + *,
+  .field-name-field-generic-intro h3 + *,
+  .field-name-field-generic-intro h4 + *,
+  .field-name-field-generic-intro h5 + *,
+  .field-name-field-generic-intro h6 + *,
+  .field-name-field-generic-body h2 + *,
+  .field-name-field-generic-body h3 + *,
+  .field-name-field-generic-body h4 + *,
+  .field-name-field-generic-body h5 + *,
+  .field-name-field-generic-body h6 + * {
+    margin-top: 11px; }
+  /* line 277, ../sass/components/ckeditor/_ckeditor-content.scss */
+  .field-name-field-generic-intro img,
+  .field-name-field-generic-body img {
+    max-width: 100%;
+    height: auto !important; } }
 /* line 1, ../sass/components/ckeditor/formats/_one-column.scss */
 .cke_editable {
   position: static !important; }
@@ -1951,16 +2040,23 @@ body {
     margin-bottom: 32px; }
 
   /* line 66, ../sass/components/multicolumn-layout/_two-columns.scss */
+  .two-columns .l-content {
+    margin: 0; }
+  /* line 69, ../sass/components/multicolumn-layout/_two-columns.scss */
   .two-columns .colmask,
   .two-columns .colleft,
-  .two-columns .col1wrap {
+  .two-columns .col1wrap,
+  .two-columns .l-region--sidebar-second {
     position: static;
     float: none;
     width: auto;
     margin-left: 0;
     margin: 0;
     right: auto;
-    left: auto; } }
+    left: auto; }
+  /* line 81, ../sass/components/multicolumn-layout/_two-columns.scss */
+  .two-columns .l-region--sidebar-second {
+    margin-top: 30px; } }
 /* line 1, ../sass/components/subcategory-page/_accordion.scss */
 .accordion {
   margin-top: 24px; }
@@ -2025,71 +2121,85 @@ body {
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   /* line 75, ../sass/components/subcategory-page/_accordion.scss */
   .accordion .field-name-field-title:after {
-    background-image: url("../images/accordion-icons/opener-x2.png"); } }
+    background-image: url("../images/accordion-icons/opener-x2.png"); }
+  /* line 78, ../sass/components/subcategory-page/_accordion.scss */
+  .accordion .field-name-field-title {
+    font-size: 15px; } }
 /* line 2, ../sass/components/subcategory-page/_generic-page.scss */
-.group-generic-page h1 {
+.taxonomy-term.vocabulary-categories.view-mode-full .title-wrapper {
+  margin-bottom: 33px; }
+  /* line 4, ../sass/components/subcategory-page/_generic-page.scss */
+  .taxonomy-term.vocabulary-categories.view-mode-full .title-wrapper .field--name-field-hero-icon {
+    display: none; }
+/* line 8, ../sass/components/subcategory-page/_generic-page.scss */
+.taxonomy-term.vocabulary-categories.view-mode-full h1 {
   font-weight: 600;
   font-family: 'Omnes Semibold';
   font-size: 24px;
   line-height: 1.08em;
   color: #005589;
-  margin-bottom: 33px; }
-/* line 11, ../sass/components/subcategory-page/_generic-page.scss */
+  margin-bottom: 0; }
+
+/* line 17, ../sass/components/subcategory-page/_generic-page.scss */
+.landing-page .title-wrapper {
+  display: none; }
+
+/* line 22, ../sass/components/subcategory-page/_generic-page.scss */
 .group-generic-page .field-name-field-generic-intro,
 .group-generic-page .field-name-field-generic-body {
   color: #636363; }
-/* line 15, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 26, ../sass/components/subcategory-page/_generic-page.scss */
 .group-generic-page .field-name-field-generic-intro {
   color: #005589; }
-/* line 19, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 30, ../sass/components/subcategory-page/_generic-page.scss */
 .group-generic-page .files {
   margin: 0 0 0; }
-  /* line 21, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 32, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .files .file-preview {
     width: 220px;
     margin: 0 22px 56px;
     float: left; }
-  /* line 26, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 37, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .files .file-preview.col-1 {
     margin-left: 0;
     clear: left; }
-  /* line 30, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 41, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .files .file-preview.col-3 {
     margin-right: 0; }
-  /* line 33, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 44, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .files .file-preview.row-last {
     margin-bottom: 0; }
-  /* line 36, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 47, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .files .file-thumbnail {
     height: 132px;
     position: relative; }
-    /* line 39, ../sass/components/subcategory-page/_generic-page.scss */
+    /* line 50, ../sass/components/subcategory-page/_generic-page.scss */
     .group-generic-page .files .file-thumbnail img {
       display: block;
       width: 100%;
       height: auto; }
-    /* line 44, ../sass/components/subcategory-page/_generic-page.scss */
+    /* line 55, ../sass/components/subcategory-page/_generic-page.scss */
     .group-generic-page .files .file-thumbnail .file-info {
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0; }
-      /* line 50, ../sass/components/subcategory-page/_generic-page.scss */
+      /* line 61, ../sass/components/subcategory-page/_generic-page.scss */
       .group-generic-page .files .file-thumbnail .file-info .file-info-inner {
         position: absolute;
         bottom: 0;
         padding: 12px; }
-/* line 58, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 69, ../sass/components/subcategory-page/_generic-page.scss */
 .group-generic-page .files:after {
   content: "";
   display: table;
   height: 0;
   clear: both; }
-/* line 64, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 75, ../sass/components/subcategory-page/_generic-page.scss */
 .group-generic-page > .files {
   margin-top: 24px; }
-/* line 67, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 78, ../sass/components/subcategory-page/_generic-page.scss */
 .group-generic-page .file-info {
   background: rgba(0, 84, 138, 0.7);
   color: white;
@@ -2100,40 +2210,40 @@ body {
   -o-transition: opacity 0.3s ease;
   -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease; }
-  /* line 79, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 90, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info .data + .data {
     margin-top: 1em; }
-  /* line 82, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 93, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a {
     font-weight: 600;
     font-family: 'Omnes Semibold';
     color: white;
     text-decoration: none; }
-  /* line 88, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 99, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a.view,
   .group-generic-page .file-info a.download {
     padding-left: 25px;
     background: url("../images/file-icons/view.png") no-repeat left center;
     background-size: 11px 11px; }
-  /* line 94, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 105, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a.download {
     background-image: url("../images/file-icons/download.png"); }
-  /* line 97, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 108, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info .extension {
     text-transform: uppercase; }
-/* line 102, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 113, ../sass/components/subcategory-page/_generic-page.scss */
 .group-generic-page .file-preview:hover .file-info {
   opacity: 1; }
-/* line 107, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 118, ../sass/components/subcategory-page/_generic-page.scss */
 .group-generic-page .file-title {
   font-size: 16px;
   line-height: 1em;
   margin-top: 42px;
   color: #636363; }
-  /* line 112, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 123, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-title strong {
     color: #005589; }
-/* line 117, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 128, ../sass/components/subcategory-page/_generic-page.scss */
 .group-generic-page .file-thumbnail-inner {
   background: url("../images/file-icons/generic-file.png") no-repeat;
   background-size: 220px 132px;
@@ -2143,61 +2253,92 @@ body {
   box-sizing: border-box;
   overflow: hidden; }
 
-/* line 130, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 141, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-blue .group-generic-page h1,
 .cat-blue .group-generic-page .field-name-field-generic-intro {
   color: #027DBA; }
-/* line 135, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 146, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-blue .file-info {
   background: rgba(2, 125, 186, 0.7); }
-/* line 138, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 149, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-blue .file-title strong {
   color: #027DBA; }
 
-/* line 144, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 155, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-green .group-generic-page h1,
 .cat-green .group-generic-page .field-name-field-generic-intro {
   color: #02AFA6; }
-/* line 149, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 160, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-green .file-info {
   background: rgba(2, 175, 166, 0.7); }
-/* line 152, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 163, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-green .file-title strong {
   color: #02AFA6; }
 
-/* line 158, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 169, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-orange .group-generic-page h1,
 .cat-orange .group-generic-page .field-name-field-generic-intro {
   color: #FF8F19; }
-/* line 163, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 174, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-orange .file-info {
   background: rgba(255, 143, 25, 0.7); }
-/* line 166, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 177, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-orange .file-title strong {
   color: #FF8F19; }
 
-/* line 172, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 183, ../sass/components/subcategory-page/_generic-page.scss */
 .disable-download .download-option {
   display: none; }
 
-/* line 177, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 188, ../sass/components/subcategory-page/_generic-page.scss */
 .disable-view .view-option {
   display: none; }
 
-/* line 182, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 193, ../sass/components/subcategory-page/_generic-page.scss */
 .disable-download.disable-view .data-option {
   display: none; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 190, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 201, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a.view {
     background-image: url("../images/file-icons/view-x2.png"); }
-  /* line 193, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 204, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a.download {
     background-image: url("../images/file-icons/download-x2.png"); }
-  /* line 197, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 208, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-thumbnail-inner {
     background-image: url("../images/file-icons/generic-file-x2.png"); } }
+@media only screen and (max-width: 750px) {
+  /* line 216, ../sass/components/subcategory-page/_generic-page.scss */
+  .taxonomy-term.vocabulary-categories.view-mode-full .title-wrapper {
+    min-height: 35px;
+    margin-bottom: 5px;
+    display: table; }
+    /* line 220, ../sass/components/subcategory-page/_generic-page.scss */
+    .taxonomy-term.vocabulary-categories.view-mode-full .title-wrapper .field--name-field-hero-icon {
+      display: table-cell;
+      width: 35px;
+      height: 35px;
+      vertical-align: middle; }
+      /* line 225, ../sass/components/subcategory-page/_generic-page.scss */
+      .taxonomy-term.vocabulary-categories.view-mode-full .title-wrapper .field--name-field-hero-icon img {
+        width: 100%;
+        height: auto; }
+  /* line 231, ../sass/components/subcategory-page/_generic-page.scss */
+  .taxonomy-term.vocabulary-categories.view-mode-full h1 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    padding-left: 5px; }
+
+  /* line 238, ../sass/components/subcategory-page/_generic-page.scss */
+  .landing-page .title-wrapper {
+    display: block; }
+
+  /* line 241, ../sass/components/subcategory-page/_generic-page.scss */
+  .group-generic-page .file-title {
+    margin-top: 21px;
+    font-size: 11px; } }
 /* line 2, ../sass/components/taxonomy-landing/_taxonomy-landing.scss */
 .taxonomy-term.vocabulary-categories .landing-body {
   width: 304px;

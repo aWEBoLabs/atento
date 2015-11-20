@@ -106,6 +106,18 @@
     display: table;
     height: 0;
   }
+  
+  ul{
+    list-style: disc;
+    li{
+      list-style: disc;
+      margin-left: 1em;
+      line-height: 1.33em;
+    }
+    li+li{
+      margin-top: 11px;
+    }
+  }
 }
 .cke_editable{
   position: relative;
@@ -221,6 +233,50 @@
     .color-container.green, 
     .featured-container.green{
       background: $cat-green;
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet-width){
+  .field-name-field-generic-intro, 
+  .field-name-field-generic-body{
+    .featured-container{
+      width: auto;
+      padding: 15px 15px 30px;
+      min-height: 0;
+      margin: 11px 0;
+      float: none;
+      h2{
+        font-size: 15px;
+      }
+    }
+    .color-container{
+      width: auto;
+      float: none;
+      padding: 15px 15px 30px;
+      min-height: 0;
+    }
+    .color-container + .color-container{
+      margin-left: 0;
+    }
+    h3{
+      font-size: 15px;
+      margin-bottom: 11px;
+    }
+    li, 
+    p{
+      font-size: 11px;
+    }
+    h2+*, 
+    h3+*, 
+    h4+*, 
+    h5+*, 
+    h6+*{
+      margin-top: 11px;
+    }
+    img{
+      max-width: 100%;
+      height: auto !important;
     }
   }
 }

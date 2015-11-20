@@ -63,9 +63,13 @@ $column-space: 40px;
     margin-bottom: 32px;
   }
   .two-columns{
+    .l-content{
+      margin: 0;
+    }
     .colmask, 
     .colleft, 
-    .col1wrap{
+    .col1wrap, 
+    .l-region--sidebar-second{
       position: static;
       float: none;
       width: auto;
@@ -73,6 +77,9 @@ $column-space: 40px;
       margin: 0;
       right: auto;
       left: auto;
+    }
+    .l-region--sidebar-second{
+      margin-top: 30px;
     }
   }
 }
