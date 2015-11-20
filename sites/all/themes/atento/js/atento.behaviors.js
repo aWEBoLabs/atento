@@ -1,6 +1,26 @@
 (function ($) {
   var search_link = 0;
   var search_box = 0;
+  
+  Drupal.behaviors.mmenuSettings = {
+    attach: function (context, settings) {
+      $('#menu-closer', context).once('mmenu', function () {
+        // Open by Default First Menu Item
+        $('a.mm-subopen.mm-fullsubopen').click();
+        
+        // Code Close Menu.
+        var API = $("#mmenu_left").data("mmenu");
+        $(this).click(function(e){
+          API.close();
+          e.preventDefault();
+        });
+        
+        // Add Search to Mobile Menu
+        $('#msearch-form').appendTo('#mheader');
+      });
+    }
+  };
+        
 
   /**
    * Behavior for Search Box

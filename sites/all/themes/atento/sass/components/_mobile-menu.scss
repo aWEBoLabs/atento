@@ -1,4 +1,5 @@
-#menu-opener{
+#menu-opener, 
+#menu-closer{
   display: none;
   text-align: left;
   width: 26px;
@@ -7,6 +8,118 @@
   background: url('../images/menu-opener.png') no-repeat;
   background-size: 26px 49px;
   text-indent: -9999px;
+}
+#menu-closer{
+  background-position: 0 -25px;
+}
+#top-header:after{
+  content: "";
+  display: table;
+  height: 0;
+  clear: both;
+}
+.mmenu-nav.mm-basic .mmenu-block-title{
+  font-size: 18px;
+  color: white;
+  text-shadow: none;
+}
+.mmenu-nav.mm-basic.mm-hasheader > .mm-panel{
+  padding-top: 123px;
+}
+.mm-menu.mm-hasheader li.mm-subtitle{
+  display: block;
+}
+.mmenu-nav.mm-basic{
+  background: $cat-dark-blue;
+  > .mm-header{
+    background: white;
+    padding: 20px;
+    height: 123px;
+    border: none;
+    #menu-closer{
+      float: right;
+      display: block;
+    }
+  }
+}
+.mm-menu .mm-list > li > a.mm-subclose{
+  margin-top: 0;
+  padding-top: 12px;
+  background: white;
+  color: $cat-dark-blue;
+  font-size: 18px;
+  text-shadow: none;
+  text-indent: 29px;
+  padding-left: 20px;
+  border-top: solid 1px $cat-dark-blue;
+}
+.mm-menu .mm-list > li > a.mm-subclose:before{
+  background: url('../images/mobile-menu-backx2.png') no-repeat;
+  background-size: 6px 8px;
+  width: 6px;
+  height: 8px;
+  position: absolute;
+  top: auto;
+  bottom: 32px;
+  transform: none;
+}
+.mmenu-mm-list-level-1 > .mm-subtitle{
+  display: none !important;
+}
+.mmenu-mm-list-level-1 > .mm-subtitle > .mm-subclose:before{
+  display: none;
+}
+.mmenu-nav.mm-basic > .mm-list li{
+  border-top: none;
+  border-bottom-color: white;
+  
+  > a:not(.mm-subopen):not(.mm-subclose):not(.mm-fullsubopen){
+    padding: 11px 20px;
+  }
+}
+.mmenu-nav.mm-basic .mm-subopen:after, 
+.mmenu-nav.mm-basic .mm-subclose:after{
+  width: 6px;
+  height: 8px;
+  background: url('../images/mobile-menu-openx2.png') no-repeat;
+  background-size: 6px 8px;
+  border: none;
+  transform: none;
+}
+
+#mheader{
+  clear: both;
+  margin-top: 20px;
+}
+#msearch-form form{
+  position: relative;
+  #msearch-input{
+    background: white;
+    color: #06426B;
+    width: 100%;
+    border-radius: 19px 19px 19px 19px;
+    border: solid 1px #A6A8AB;
+    box-sizing: border-box;
+    height: 38px;
+    display: block;
+    outline: none !important;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #msearch-submit{
+    text-indent: -9999px;
+    border: none;
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+    background: url('../images/mobile-searchx2.png') no-repeat right center;
+    background-size: 21px 21px;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
