@@ -2,6 +2,25 @@
   var search_link = 0;
   var search_box = 0;
   
+  Drupal.behaviors.mobileHeroResize = {
+    attach: function (context, settings) {
+      $(window).load(mobileHeroResizeAdjust);
+      $(window).resize(mobileHeroResizeAdjust);
+    }
+  };
+  
+  function mobileHeroResizeAdjust() {
+    width = parseInt($(window).width(), 10);
+    if ( width <= 540 || width >= 750 ) {
+      $('.mobile-hero-background img').removeAttr('style');
+      return;
+    }
+    
+    
+    hero_margin = -((((width-40)/500*196)-196)/2);
+    $('.mobile-hero-background img').css('margin-top', hero_margin + 'px');
+  }
+  
   Drupal.behaviors.mmenuSettings = {
     attach: function (context, settings) {
       $('#menu-closer', context).once('mmenu', function () {

@@ -576,6 +576,10 @@ body {
     top: 0;
     margin-top: 40px; }
   /* line 21, ../sass/components/_hero.scss */
+  #block-ds-extras-hero .mobile-hero-background,
+  #block-ds-extras-hero-webform .mobile-hero-background {
+    display: none; }
+  /* line 24, ../sass/components/_hero.scss */
   #block-ds-extras-hero .hero-background,
   #block-ds-extras-hero-webform .hero-background {
     position: absolute;
@@ -583,18 +587,18 @@ body {
     top: 0;
     margin-left: -720px;
     z-index: 0; }
-  /* line 28, ../sass/components/_hero.scss */
+  /* line 31, ../sass/components/_hero.scss */
   #block-ds-extras-hero .new-hero-background,
   #block-ds-extras-hero-webform .new-hero-background {
     display: none; }
-  /* line 32, ../sass/components/_hero.scss */
+  /* line 35, ../sass/components/_hero.scss */
   #block-ds-extras-hero .hero-title,
   #block-ds-extras-hero-webform .hero-title {
     width: 347px;
     float: left;
     position: relative;
     max-height: 63px; }
-  /* line 38, ../sass/components/_hero.scss */
+  /* line 41, ../sass/components/_hero.scss */
   #block-ds-extras-hero .hero-icon,
   #block-ds-extras-hero-webform .hero-icon {
     position: absolute;
@@ -603,12 +607,12 @@ body {
     left: -10px;
     top: 50%;
     margin-top: -40px; }
-    /* line 45, ../sass/components/_hero.scss */
+    /* line 48, ../sass/components/_hero.scss */
     #block-ds-extras-hero .hero-icon img,
     #block-ds-extras-hero-webform .hero-icon img {
       width: 70px;
       height: 70px; }
-  /* line 50, ../sass/components/_hero.scss */
+  /* line 53, ../sass/components/_hero.scss */
   #block-ds-extras-hero h1,
   #block-ds-extras-hero-webform h1 {
     font-weight: 600;
@@ -617,11 +621,11 @@ body {
     margin-right: 20px;
     color: #005589;
     font-size: 36px; }
-  /* line 58, ../sass/components/_hero.scss */
+  /* line 61, ../sass/components/_hero.scss */
   #block-ds-extras-hero .custom-title,
   #block-ds-extras-hero-webform .custom-title {
     display: none; }
-  /* line 61, ../sass/components/_hero.scss */
+  /* line 64, ../sass/components/_hero.scss */
   #block-ds-extras-hero .hero-body,
   #block-ds-extras-hero-webform .hero-body {
     font-size: 18px;
@@ -629,13 +633,13 @@ body {
     width: 350px;
     color: #005589; }
 
-/* line 70, ../sass/components/_hero.scss */
+/* line 73, ../sass/components/_hero.scss */
 #block-ds-extras-hero-webform h1,
 #block-ds-extras-hero-webform .hero-body {
   color: #FF8F19; }
 
 @media only screen and (min-width: 1440px) {
-  /* line 79, ../sass/components/_hero.scss */
+  /* line 82, ../sass/components/_hero.scss */
   #block-ds-extras-hero .hero-background,
   #block-ds-extras-hero-webform .hero-background {
     position: absolute;
@@ -644,60 +648,60 @@ body {
     top: 0;
     margin-left: 0;
     z-index: 0; }
-    /* line 86, ../sass/components/_hero.scss */
+    /* line 89, ../sass/components/_hero.scss */
     #block-ds-extras-hero .hero-background img,
     #block-ds-extras-hero-webform .hero-background img {
       width: 100%;
       height: auto; } }
-/* line 97, ../sass/components/_hero.scss */
+/* line 100, ../sass/components/_hero.scss */
 .cat-dark-blue #block-ds-extras-hero h1,
 .cat-dark-blue #block-ds-extras-hero .hero-body,
 .cat-dark-blue #block-ds-extras-hero-webform h1,
 .cat-dark-blue #block-ds-extras-hero-webform .hero-body {
   color: #005589; }
 
-/* line 106, ../sass/components/_hero.scss */
+/* line 109, ../sass/components/_hero.scss */
 .cat-blue #block-ds-extras-hero h1,
 .cat-blue #block-ds-extras-hero .hero-body,
 .cat-blue #block-ds-extras-hero-webform h1,
 .cat-blue #block-ds-extras-hero-webform .hero-body {
   color: #027DBA; }
 
-/* line 115, ../sass/components/_hero.scss */
+/* line 118, ../sass/components/_hero.scss */
 .cat-green #block-ds-extras-hero h1,
 .cat-green #block-ds-extras-hero .hero-body,
 .cat-green #block-ds-extras-hero-webform h1,
 .cat-green #block-ds-extras-hero-webform .hero-body {
   color: #02AFA6; }
 
-/* line 124, ../sass/components/_hero.scss */
+/* line 127, ../sass/components/_hero.scss */
 .cat-orange #block-ds-extras-hero h1,
 .cat-orange #block-ds-extras-hero .hero-body,
 .cat-orange #block-ds-extras-hero-webform h1,
 .cat-orange #block-ds-extras-hero-webform .hero-body {
   color: #FF8F19; }
 
-/* line 132, ../sass/components/_hero.scss */
+/* line 135, ../sass/components/_hero.scss */
 .new-hero #block-ds-extras-hero,
 .new-hero #block-ds-extras-hero-webform {
   height: 350px; }
-  /* line 135, ../sass/components/_hero.scss */
+  /* line 138, ../sass/components/_hero.scss */
   .new-hero #block-ds-extras-hero .info,
   .new-hero #block-ds-extras-hero-webform .info {
     margin-left: -422px;
     margin-top: 35px;
     width: 396px; }
-  /* line 140, ../sass/components/_hero.scss */
+  /* line 143, ../sass/components/_hero.scss */
   .new-hero #block-ds-extras-hero .hero-icon,
   .new-hero #block-ds-extras-hero-webform .hero-icon {
     display: none; }
-  /* line 143, ../sass/components/_hero.scss */
+  /* line 146, ../sass/components/_hero.scss */
   .new-hero #block-ds-extras-hero .hero-title,
   .new-hero #block-ds-extras-hero-webform .hero-title {
     width: auto;
     float: none;
     max-height: none; }
-    /* line 147, ../sass/components/_hero.scss */
+    /* line 150, ../sass/components/_hero.scss */
     .new-hero #block-ds-extras-hero .hero-title h1,
     .new-hero #block-ds-extras-hero-webform .hero-title h1 {
       margin-left: 0;
@@ -705,19 +709,19 @@ body {
       font-size: 36px;
       margin-bottom: 10px;
       line-height: 1.1em; }
-    /* line 154, ../sass/components/_hero.scss */
+    /* line 157, ../sass/components/_hero.scss */
     .new-hero #block-ds-extras-hero .hero-title .custom-title,
     .new-hero #block-ds-extras-hero-webform .hero-title .custom-title {
       display: block; }
-    /* line 157, ../sass/components/_hero.scss */
+    /* line 160, ../sass/components/_hero.scss */
     .new-hero #block-ds-extras-hero .hero-title .core-title,
     .new-hero #block-ds-extras-hero-webform .hero-title .core-title {
       display: none; }
-  /* line 161, ../sass/components/_hero.scss */
+  /* line 164, ../sass/components/_hero.scss */
   .new-hero #block-ds-extras-hero .classic-hero-background,
   .new-hero #block-ds-extras-hero-webform .classic-hero-background {
     display: none; }
-  /* line 164, ../sass/components/_hero.scss */
+  /* line 167, ../sass/components/_hero.scss */
   .new-hero #block-ds-extras-hero .new-hero-background,
   .new-hero #block-ds-extras-hero-webform .new-hero-background {
     display: block;
@@ -726,7 +730,7 @@ body {
     margin-left: 0;
     height: 350px;
     overflow: hidden; }
-    /* line 171, ../sass/components/_hero.scss */
+    /* line 174, ../sass/components/_hero.scss */
     .new-hero #block-ds-extras-hero .new-hero-background img,
     .new-hero #block-ds-extras-hero-webform .new-hero-background img {
       width: 140%;
@@ -736,7 +740,7 @@ body {
       position: absolute;
       margin: 0 auto;
       display: block; }
-  /* line 181, ../sass/components/_hero.scss */
+  /* line 184, ../sass/components/_hero.scss */
   .new-hero #block-ds-extras-hero .hero-body,
   .new-hero #block-ds-extras-hero-webform .hero-body {
     float: none;
@@ -748,7 +752,7 @@ body {
     text-decoration: none;
     line-height: 1.1em;
     margin-bottom: 10px; }
-  /* line 193, ../sass/components/_hero.scss */
+  /* line 196, ../sass/components/_hero.scss */
   .new-hero #block-ds-extras-hero .hero-link a,
   .new-hero #block-ds-extras-hero-webform .hero-link a {
     font-weight: 600;
@@ -756,27 +760,54 @@ body {
     color: #ff7900;
     font-size: 24px;
     text-decoration: none; }
-  /* line 200, ../sass/components/_hero.scss */
+  /* line 203, ../sass/components/_hero.scss */
   .new-hero #block-ds-extras-hero .hero-link a:hover,
   .new-hero #block-ds-extras-hero-webform .hero-link a:hover {
     color: #db5e12; }
 
 @media only screen and (min-width: 1200px) {
-  /* line 212, ../sass/components/_hero.scss */
+  /* line 215, ../sass/components/_hero.scss */
   .new-hero #block-ds-extras-hero .new-hero-background img,
   .new-hero #block-ds-extras-hero-webform .new-hero-background img {
     width: 100%;
     max-width: 100%;
     right: 0; } }
 @media only screen and (max-width: 750px) {
-  /* line 223, ../sass/components/_hero.scss */
+  /* line 226, ../sass/components/_hero.scss */
   #block-ds-extras-hero,
   #block-ds-extras-hero-webform {
     min-width: 0; }
-    /* line 226, ../sass/components/_hero.scss */
+    /* line 229, ../sass/components/_hero.scss */
     #block-ds-extras-hero .info,
     #block-ds-extras-hero-webform .info {
-      display: none; } }
+      display: none; }
+    /* line 232, ../sass/components/_hero.scss */
+    #block-ds-extras-hero .hero-background,
+    #block-ds-extras-hero-webform .hero-background {
+      display: none; }
+    /* line 235, ../sass/components/_hero.scss */
+    #block-ds-extras-hero .block__content,
+    #block-ds-extras-hero-webform .block__content {
+      overflow: hidden; }
+    /* line 238, ../sass/components/_hero.scss */
+    #block-ds-extras-hero .mobile-hero-background,
+    #block-ds-extras-hero-webform .mobile-hero-background {
+      display: block;
+      position: relative;
+      left: 0;
+      margin-left: 0; }
+      /* line 243, ../sass/components/_hero.scss */
+      #block-ds-extras-hero .mobile-hero-background img,
+      #block-ds-extras-hero-webform .mobile-hero-background img {
+        width: 100%;
+        height: auto; } }
+@media only screen and (max-width: 540px) {
+  /* line 254, ../sass/components/_hero.scss */
+  #block-ds-extras-hero .mobile-hero-background,
+  #block-ds-extras-hero-webform .mobile-hero-background {
+    left: 50%;
+    width: 500px;
+    margin-left: -250px; } }
 /* line 1, ../sass/components/_main-menu.scss */
 .l-region--branding {
   float: right; }

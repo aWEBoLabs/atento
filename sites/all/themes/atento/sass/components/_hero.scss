@@ -18,6 +18,9 @@
     top: 0;
     margin-top: 40px;
   }
+  .mobile-hero-background{
+    display: none;
+  }
   .hero-background{
     position: absolute;
     left: 50%;
@@ -225,6 +228,33 @@
     min-width: 0;
     .info{
       display: none;
+    }
+    .hero-background{
+      display: none;
+    }
+    .block__content{
+      overflow: hidden;
+    }
+    .mobile-hero-background{
+      display: block;
+      position: relative;
+      left: 0;
+      margin-left: 0;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 540px){
+  #block-ds-extras-hero, 
+  #block-ds-extras-hero-webform{
+    .mobile-hero-background{
+      left: 50%;
+      width: 500px;
+      margin-left: -250px;
     }
   }
 }
