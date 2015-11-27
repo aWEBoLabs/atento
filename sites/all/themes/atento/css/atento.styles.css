@@ -319,18 +319,30 @@ body {
     /* line 27, ../sass/components/_extensions.scss */
     .field--name-field-extension-icon table tbody tr td a {
       font-size: 14px; }
-  /* line 32, ../sass/components/_extensions.scss */
+  /* line 31, ../sass/components/_extensions.scss */
+  .field--name-field-extension-icon table .field_extension_icon_ext {
+    width: 100%; }
+  /* line 34, ../sass/components/_extensions.scss */
+  .field--name-field-extension-icon table td.field_title {
+    white-space: nowrap; }
+  /* line 38, ../sass/components/_extensions.scss */
   .field--name-field-extension-icon table .field_collection_item_operations ul {
     display: table;
     width: 100%; }
-    /* line 35, ../sass/components/_extensions.scss */
+    /* line 41, ../sass/components/_extensions.scss */
     .field--name-field-extension-icon table .field_collection_item_operations ul li {
       display: inline-block;
       margin: 0 10px 0 0; }
 
-/* line 43, ../sass/components/_extensions.scss */
+/* line 49, ../sass/components/_extensions.scss */
 .field--name-field-extension-icon-default {
   margin-top: 44px; }
+
+/* line 52, ../sass/components/_extensions.scss */
+.field--name-field-extension-icon-default img,
+.field--name-field-extension-icon-image img {
+  width: 220px;
+  height: 132px; }
 
 /* line 1, ../sass/components/_field-collection-view.scss */
 .field-collection-view {

@@ -1,0 +1,7 @@
+.form-item.form-type-managed-file .image-preview{
+  width: 220px;
+}
+.form-item.form-type-managed-file .image-preview img{
+  width: 100%;
+  height: auto;
+}

@@ -28,6 +28,12 @@
         font-size: 14px;
       }
     }
+    .field_extension_icon_ext{
+      width: 100%;
+    }
+    td.field_title{
+      white-space: nowrap;
+    }
     .field_collection_item_operations{
       ul{
         display: table;
@@ -42,4 +48,9 @@
 }
 .field--name-field-extension-icon-default{
   margin-top: 44px;
+}
+.field--name-field-extension-icon-default img, 
+.field--name-field-extension-icon-image img{
+  width: 220px;
+  height: 132px;
 }
