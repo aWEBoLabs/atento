@@ -2436,79 +2436,88 @@ body {
 /* line 149, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-blue .file-title strong {
   color: #027DBA; }
+/* line 153, ../sass/components/subcategory-page/_generic-page.scss */
+.cat-blue .taxonomy-term.vocabulary-categories.view-mode-full h1 {
+  color: #027DBA; }
 
-/* line 155, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 160, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-green .group-generic-page h1,
 .cat-green .group-generic-page .field-name-field-generic-intro {
   color: #02AFA6; }
-/* line 160, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 165, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-green .file-info {
   background: rgba(2, 175, 166, 0.7); }
-/* line 163, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 168, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-green .file-title strong {
   color: #02AFA6; }
+/* line 172, ../sass/components/subcategory-page/_generic-page.scss */
+.cat-green .taxonomy-term.vocabulary-categories.view-mode-full h1 {
+  color: #02AFA6; }
 
-/* line 169, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 179, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-orange .group-generic-page h1,
 .cat-orange .group-generic-page .field-name-field-generic-intro {
   color: #FF8F19; }
-/* line 174, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 184, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-orange .file-info {
   background: rgba(255, 143, 25, 0.7); }
-/* line 177, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 187, ../sass/components/subcategory-page/_generic-page.scss */
 .cat-orange .file-title strong {
   color: #FF8F19; }
+/* line 191, ../sass/components/subcategory-page/_generic-page.scss */
+.cat-orange .taxonomy-term.vocabulary-categories.view-mode-full h1 {
+  color: #FF8F19; }
 
-/* line 183, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 198, ../sass/components/subcategory-page/_generic-page.scss */
 .disable-download .download-option {
   display: none; }
 
-/* line 188, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 203, ../sass/components/subcategory-page/_generic-page.scss */
 .disable-view .view-option {
   display: none; }
 
-/* line 193, ../sass/components/subcategory-page/_generic-page.scss */
+/* line 208, ../sass/components/subcategory-page/_generic-page.scss */
 .disable-download.disable-view .data-option {
   display: none; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 201, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 216, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a.view {
     background-image: url("../images/file-icons/view-x2.png"); }
-  /* line 204, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 219, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-info a.download {
     background-image: url("../images/file-icons/download-x2.png"); }
-  /* line 208, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 223, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-thumbnail-inner {
     background-image: url("../images/file-icons/generic-file-x2.png"); } }
 @media only screen and (max-width: 750px) {
-  /* line 216, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 231, ../sass/components/subcategory-page/_generic-page.scss */
   .taxonomy-term.vocabulary-categories.view-mode-full .title-wrapper {
     min-height: 35px;
     margin-bottom: 5px;
     display: table; }
-    /* line 220, ../sass/components/subcategory-page/_generic-page.scss */
+    /* line 235, ../sass/components/subcategory-page/_generic-page.scss */
     .taxonomy-term.vocabulary-categories.view-mode-full .title-wrapper .field--name-field-hero-icon {
       display: table-cell;
       width: 35px;
       height: 35px;
       vertical-align: middle; }
-      /* line 225, ../sass/components/subcategory-page/_generic-page.scss */
+      /* line 240, ../sass/components/subcategory-page/_generic-page.scss */
       .taxonomy-term.vocabulary-categories.view-mode-full .title-wrapper .field--name-field-hero-icon img {
         width: 100%;
         height: auto; }
-  /* line 231, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 246, ../sass/components/subcategory-page/_generic-page.scss */
   .taxonomy-term.vocabulary-categories.view-mode-full h1 {
     display: table-cell;
     vertical-align: middle;
     font-size: 20px;
     padding-left: 5px; }
 
-  /* line 238, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 253, ../sass/components/subcategory-page/_generic-page.scss */
   .landing-page .title-wrapper {
     display: block; }
 
-  /* line 241, ../sass/components/subcategory-page/_generic-page.scss */
+  /* line 256, ../sass/components/subcategory-page/_generic-page.scss */
   .group-generic-page .file-title {
     margin-top: 21px;
     font-size: 11px; } }
