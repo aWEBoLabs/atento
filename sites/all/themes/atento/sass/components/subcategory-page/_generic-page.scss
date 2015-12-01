@@ -149,6 +149,11 @@
   .file-title strong{
     color: $cat-blue;
   }
+  .taxonomy-term.vocabulary-categories.view-mode-full{
+    h1{
+      color: $cat-blue;
+    }
+  }
 }
 .cat-green{
   .group-generic-page{
@@ -163,6 +168,11 @@
   .file-title strong{
     color: $cat-green;
   }
+  .taxonomy-term.vocabulary-categories.view-mode-full{
+    h1{
+      color: $cat-green;
+    }
+  }
 }
 .cat-orange{
   .group-generic-page{
@@ -176,6 +186,11 @@
   }
   .file-title strong{
     color: $cat-orange;
+  }
+  .taxonomy-term.vocabulary-categories.view-mode-full{
+    h1{
+      color: $cat-orange;
+    }
   }
 }
 
